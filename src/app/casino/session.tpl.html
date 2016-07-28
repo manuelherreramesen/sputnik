@@ -1,0 +1,47 @@
+<div id="cashier">
+    <div class="container-bg bg-{{randomBg}}">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12" ng-include="'/app/payment/navbar-pills.tpl.html'"></div>
+            </div>
+            
+            <div class="row equal-height">
+
+                <div class="col-md-9">
+                    <div class="pane">
+                    
+                        <h5 class="pane-heading" translate>Game Session History</h5>
+
+                        <div class="form-group">
+                            <button class="btn btn-sm btn-shadow" ng-click="filterBack()" translate>All</button>
+                            <button class="btn btn-sm btn-shadow" ng-click="filterBack(1)" translate>Last 24 Hours</button>
+                            <button class="btn btn-sm btn-shadow" ng-click="filterBack(30)" translate>Last Month</button>
+                        </div>
+
+                        <table ng-table="gameSessionHistory" class="table table-inverse">
+                            <tr ng-repeat="gameSession in $data">
+                                <td data-title="'Date' | translate" sortable="date">{{gameSession.date | amCalendar}}</td>
+                                <td data-title="'Game' | translate" sortable="game">
+                                    <a href="#/play/{{gameSession.gameId}}">{{gameSession.gameId}}</a>
+                                </td>
+                                <td data-title="'Bet' | translate" sortable="bet">{{(gameSession.betRealMoney + gameSession.betBonusMoney) | currency:'€'}}</td>
+                                <td data-title="'Win' | translate" sortable="win">{{(gameSession.winRealMoney + gameSession.winBonusMoney) | currency:'€'}}</td>
+                                <td data-title="'Balance (EUR)' | translate" sortable="moneyBalance">{{gameSession.moneyBalance | currency:'€'}}</td>
+                                <td data-title="'Balance (BONUS)' | translate" sortable="bonusBalance">{{gameSession.bonusBalance | currency:'€'}}</td>
+                            </tr>
+                            <tr ng-if="!$data.length">
+                                <td colspan="5" translate>No results found</td>
+                            </tr>
+                        </table>
+                        
+                    </div>
+                </div>
+
+                <div ng-include="'/app/payment/account-box.tpl.html'"></div>
+
+            </div>
+
+        </div>
+    </div>
+</div>

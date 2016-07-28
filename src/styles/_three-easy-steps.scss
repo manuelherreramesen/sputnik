@@ -1,0 +1,74 @@
+.three-easy-steps {
+    list-style: none;
+    max-width: 700px;
+    margin: 0 auto 25px;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    @include clearfix();
+
+    > li {
+        position: relative;
+        float: left;
+        width: 33%;
+
+        &.active {
+
+            > span {
+                color: #e7e7e7;
+            }
+
+            > a {
+                position: absolute;
+                left: 10%;
+            }
+
+            > i {
+                background-color: rgb(250,175,79);
+                @include filter-gradient(#faaf4f, #f3941a, vertical);
+                @include background-image(linear-gradient(top, rgba(250,175,79,1) 0%,rgba(243,148,26,1) 100%));
+            }
+        }
+
+        &:first-child {
+            > i.line {
+                left: 50%;
+            }
+        }
+        &:last-child {
+            > i.line {
+                right: 50%;
+            }
+        }
+
+        > span {
+            display: block;
+            margin-bottom: 8px;
+            padding: 0 10px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: #453c48;
+        }
+        
+        > i {
+            background-color: #453c48;
+
+            &.line {
+                position: absolute;
+                bottom: 12px;
+                left: 0;
+                right: 0;
+                height: 3px;
+            }
+            &.ball {
+                display: inline-block;
+                width: 18px;
+                height: 18px;
+                border-radius: 18px;
+            }
+        }
+
+    }
+
+}

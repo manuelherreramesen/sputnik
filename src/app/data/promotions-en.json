@@ -1,0 +1,18 @@
+[
+    {
+        "columns": 6,
+        "name": "welcome-bonus",
+        "title": "READY TO BE THE BIGGEST PLAYER IN TOWN?",
+        "subtitle": "200% Welcome bonus up to €200",
+        "link": "/#/promotions/welcome-bonus",
+        "active": true
+    },
+    {
+        "columns": 6,
+        "name": "ipad",
+        "title": "Win an iPad on Facebook",
+        "subtitle": "Go to BlingCity's Facebook page for more info",
+        "link": "https://www.facebook.com/Blingcitycasino",
+        "target": "_blank"
+    }
+]

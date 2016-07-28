@@ -1,0 +1,177 @@
+.toast-title {
+	font-weight: bold;
+}
+
+.toast-message {
+    word-wrap: break-word;
+
+    a, 
+    label {
+	   color: #fff;
+    }
+
+    a:hover {
+    	color: #ccc;
+    	text-decoration: none;
+    }
+
+}
+
+.toast-close-button {
+	position: relative;
+	right: -0.3em;
+	top: -0.3em;
+	float: right;
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+	@include text-shadow(0 1px 0 #fff);
+	@include opacity(0.8);
+
+    &:hover,
+    &:focus {
+    	color: #000;
+    	text-decoration: none;
+    	cursor: pointer;
+        @include opacity(0.4);
+    }
+}
+
+/*Additional properties for button version
+ iOS requires the button element instead of an anchor tag.
+ If you want the anchor version, it requires `href="#"`.*/
+button.toast-close-button {
+	padding: 0;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	-webkit-appearance: none;
+}
+.toast-top-full-width {
+	top: 0;
+	right: 0;
+	width: 100%;
+}
+.toast-bottom-full-width {
+	bottom: 0;
+	right: 0;
+	width: 100%;
+}
+.toast-top-left {
+	top: 12px;
+	left: 12px;
+}
+.toast-top-right {
+	top: 12px;
+	right: 26px;
+}
+.toast-bottom-right {
+	right: 12px;
+	bottom: 12px;
+}
+.toast-bottom-left {
+	bottom: 12px;
+	left: 12px;
+}
+
+#toast-container {
+	position: fixed;
+	z-index: 999999;
+	/*overrides*/
+
+    > .toast-info,
+    > .toast-error,
+    > .toast-warning,
+    > .toast-success {
+        &:before {
+            position: absolute;
+            top: 50%;
+            left: 13px;
+            margin-top: -23px;
+            // Taken from generated fonts icons.scss
+            display:inline-block;
+            vertical-align:middle;
+            font-weight:normal;
+            font-style:normal;
+            speak:none;
+            text-decoration:inherit;
+            text-transform:none;
+            text-rendering:optimizeLegibility;
+            -webkit-font-smoothing:antialiased;
+            -moz-osx-font-smoothing:grayscale;
+            font-family: 'icons';
+            font-size: 46px;
+            line-height: 46px;
+        }
+    }
+
+    > .toast-info {
+        &:before {
+            content:"\e009";
+            color: #6b476d;
+        }
+    }
+    > .toast-error,
+    > .toast-warning {
+        &:before {
+            content:"\e006";
+            color: #903435;
+        }
+    }
+    > .toast-success {
+        &:before {
+            content:"\e00e";
+            color: #6b9913;
+        }
+    }
+
+    > div {
+        position: relative;
+    	margin: 0 0 10px;
+    	padding: 15px 15px 15px 75px;
+    	width: 300px;
+        min-height: 80px;
+        @include border-radius($border-radius-base);
+    	background-position: 15px center;
+    	background-repeat: no-repeat;
+    	color: #747474;
+        @include opacity(0.8);
+    }
+
+    > :hover {
+        @include opacity(1);
+    	cursor: pointer;
+    }
+    &.toast-top-full-width,
+    &.toast-bottom-full-width {
+        > div {
+        	width: 96%;
+        	margin: auto;
+        }
+    }
+
+}
+
+.toast {
+	background-color: #f8f8f8;
+}
+
+/*Animations*/
+.toast {
+	opacity: 1 !important;
+
+    &.ng-enter {
+    	opacity: 0 !important;
+    	transition: opacity .3s linear;
+    }
+    &.ng-enter.ng-enter-active {
+    	opacity: 1 !important;
+    }
+    &.ng-leave {
+    	opacity: 1;
+    	transition: opacity .3s linear;
+    }
+    &.ng-leave.ng-leave-active {
+    	opacity: 0 !important;
+    }
+}

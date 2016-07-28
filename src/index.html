@@ -1,0 +1,314 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <title>BlingCity Casino</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css({.tmp,src}) styles/sputnik.css -->
+    <link rel="stylesheet" href="vendor/angular-snap/angular-snap.css">
+    <link rel="stylesheet" href="vendor/angular-ui-select/dist/select.css">
+    <link rel="stylesheet" href="vendor/angular-motion/dist/angular-motion.css">
+    <link rel="stylesheet" href="non_bower_components/zenbox/zenbox.css">
+    <link rel="stylesheet" href="styles/vendor.css">
+    <link rel="stylesheet" href="styles/app.css">
+    <!-- endbuild -->
+
+</head>
+<body id="ng-app" ng-app="sputnikApp" class="ng-cloak">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!--[if lt IE 9]>
+      <script src="vendor/es5-shim/es5-shim.js"></script>
+      <script src="vendor/json3/lib/json3.min.js"></script>
+    <![endif]-->
+
+    <ul id="rhs-menu" class="list-unstyled">
+          <li ng-show="user.id !== null">
+              <a href="#/deposit"><i class="icon icon-wallet"></i></a>
+          </li>
+          <li ng-class="{active: rhsActive == 2}">
+              <a ng-click="toggleRhsItem(2)"><i class="icon icon-globe"></i></a>
+              <div class="pop-out languages">
+                  <a ng-click="changeLocale('en_US')"><i class="global-flag-en"></i></a>
+                  <a ng-click="changeLocale('sv_SE')"><i class="global-flag-sv"></i></a>
+              </div>
+          </li>
+          <li ng-class="{active: rhsActive == 3}">
+              <a ng-click="openSupport()"><i class="icon icon-chat"></i></a>
+          </li>
+      </ul>
+
+    <snap-drawer>
+        <div class="inner">
+            <ul class="nav nav-stacked">
+                <li active-tab="1">
+                    <a href="#/dashboard" snap-toggle="left" translate>Home</a>
+                </li>
+                <li active-tab="1">
+                    <a href="#/vip" snap-toggle="left" translate>My Royalty</a>
+                </li>
+                <li active-tab="1">
+                    <a class="hidden-sm" href="#/games/slots" snap-toggle="left" translate>Our Games</a>
+                    <a class="visible-sm" href="#/games/slots" snap-toggle="left" translate>Games</a>
+                </li>
+                <li active-tab="1">
+                    <a href="#/promotions" snap-toggle="left" translate>Promotions</a>
+                </li>
+                <li ng-if="user.id !== null" active-tab="1">
+                    <a href="#/story/items" snap-toggle="left" translate>My Story</a>
+                </li>
+                <li ng-if="user.id !== null" active-tab="1">
+                    <a href="#/deposit" snap-toggle="left" translate>Deposit</a>
+                </li>
+                <li ng-if="user.id !== null">
+                    <a ng-click="logout()" snap-toggle="left" translate>Logout</a>
+                </li>
+            </ul>
+        </div>
+    </snap-drawer>
+    <snap-content>
+        <div class="navbar navbar-inverse navbar-fixed-top primary">
+            <div class="container top">
+
+                <div ng-if="user.id === null">
+                    <a class="global-logo" href="#/"></a>
+                </div>
+                <div ng-if="user.id !== null">
+                    <a class="global-logo" href="#/dashboard"></a>
+                </div>
+
+                <div ng-if="user.id === null">
+                    <div class="pull-left">
+                        <a class="btn btn-primary-nav navbar-btn visible-xs" ng-click="popupLogin('/dashboard')"><i class="icon icon-lock"></i></a>
+                        <a class="btn btn-primary-nav navbar-btn hidden-xs" ng-click="popupLogin('/dashboard')" translate>Login</a>
+                    </div>
+                    <div class="pull-right">
+                        <a href="#/register" class="btn btn-contrast navbar-btn visible-xs"><i class="icon icon-user-add"></i></a>
+                        <a href="#/register" class="btn btn-contrast navbar-btn hidden-xs" translate>Sign up now</a>
+                    </div>
+                </div>
+                <div ng-if="user.id !== null">
+                    <div class="pull-left">
+                        <a href="#/story/items" class="btn btn-primary-nav navbar-btn visible-xs"><i class="icon icon-user"></i></a>
+                        <a href="#/deposit" class="btn btn-primary-nav navbar-btn hidden-xs">{{ 'Cashier' | translate }} ({{(user.wallet.moneyBalance + user.wallet.bonusBalance) | currency:'€'}})</a>
+                        &nbsp;
+                        <a href="#/story/items" class="btn btn-primary-nav navbar-btn hidden-xs " translate>My Story</a>
+                    </div>
+                    <div class="pull-right">
+                        <a href="#/deposit" class="btn btn-contrast navbar-btn visible-xs"><i class="icon icon-wallet"></i></a>
+                        <a href="#/deposit" class="btn btn-contrast navbar-btn hidden-xs" translate>Deposit now</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="navbar navbar-default navbar-fixed-top secondary">
+            <div class="inner">
+                <div class="container">
+
+                    <button type="button" class="navbar-toggle" snap-toggle="left">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <ul class="nav navbar-nav logout-link pull-left hidden-xs" ng-if="user.id !== null">
+                        <li><a ng-click="logout()">
+                            <i class="icon icon-power"></i> <span translate>Logout</span></a>
+                        </li>
+                    </ul>
+
+                    <p ng-if="user.id !== null" class="navbar-text text-right visible-xs">{{ 'Balance:' | translate }} {{(user.wallet.moneyBalance + user.wallet.bonusBalance) | currency:'€'}}</p>
+                    <ol ng-if="user.id === null" class="nav nav-centered navbar-nav hidden-xs">
+                        <li active-tab="1">
+                            <a class="hidden-sm" href="#/register" translate>Sign up now</a>
+                            <a class="visible-sm" href="#/register" translate>Sign up</a>
+                            <i class="caret"></i>
+                        </li>
+                        <li active-tab="1">
+                            <a href="#/vip" translate>My Royalty</a>
+                            <i class="caret"></i>
+                        </li>
+                        <li active-tab="1">
+                            <a class="hidden-sm" href="#/games/slots" translate>Our Games</a>
+                            <a class="visible-sm" href="#/games/slots" translate>Games</a>
+                            <i class="caret"></i>
+                        </li>
+                        <li active-tab="1">
+                            <a href="#/promotions" translate>Promotions</a>
+                            <i class="caret"></i>
+                        </li>
+                        <li active-tab="1">
+                            <a href="#/bling-avenue" translate>Bling Avenue</a>
+                            <i class="caret"></i>
+                        </li>
+                        <li active-tab="1">
+                            <a class="hidden-sm" href="#/the-penthouse" translate>The Penthouse</a>
+                            <a class="visible-sm" href="#/the-penthouse" translate>Penthouse</a>
+                            <i class="caret"></i>
+                        </li>
+                    </ol>
+                    <ol ng-if="user.id !== null" class="nav nav-centered navbar-nav hidden-xs">
+                        <li active-tab="1">
+                            <a href="#/dashboard" translate>Home</a>
+                            <i class="caret"></i>
+                        </li>
+                        <li active-tab="1">
+                            <a href="#/vip" translate>My Royalty</a>
+                            <i class="caret"></i>
+                        </li>
+                        <li active-tab="1">
+                            <a class="hidden-sm" href="#/games/slots" translate>Our Games</a>
+                            <a class="visible-sm" href="#/games/slots" translate>Games</a>
+                            <i class="caret"></i>
+                        </li>
+                        <li active-tab="1">
+                            <a href="#/promotions" translate>Promotions</a>
+                            <i class="caret"></i>
+                        </li>
+                        <li active-tab="1">
+                            <a href="#/bling-avenue" translate>Bling Avenue</a>
+                            <i class="caret"></i>
+                        </li>
+                        <li active-tab="1">
+                            <a class="hidden-sm" href="#/the-penthouse" translate>The Penthouse</a>
+                            <a class="visible-sm" href="#/the-penthouse" translate>Penthouse</a>
+                            <i class="caret"></i>
+                        </li>
+                        
+                    </ol>
+                    <ul class="nav navbar-nav social-icons pull-right hidden-xs hidden-sm">
+                        <li><a target="_blank" href="https://www.facebook.com/Blingcitycasino"><i class="icon icon-facebook"></i></a></li>
+                        <li><a target="_blank" href="https://twitter.com/blingcitycasino"><i class="icon icon-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="ng-view {{currentLocale}}"></div>
+        <footer ng-include="'/app/common/_partials/footer.tpl.html'"></footer>
+    </snap-content>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-48403641-1', 'blingcity.com');
+    </script>
+
+    <!-- build:js app/angular-plugins-modules.js -->
+    <script src="/vendor/angular/angular.js"></script>
+    <script src="/vendor/ng-table/ng-table.js"></script>
+    <script src="/vendor/angular-strap/dist/angular-strap.js"></script>
+    <script src="/vendor/angular-route/angular-route.js"></script>
+    <script src="/vendor/angular-animate/angular-animate.js"></script>
+    <script src="/vendor/angular-cookies/angular-cookies.js"></script>
+    <script src="/vendor/angular-resource/angular-resource.js"></script>
+    <script src="/vendor/angular-sanitize/angular-sanitize.js"></script>
+    <script src="/vendor/angular-cache/dist/angular-cache.js"></script>
+    <script src="/vendor/angular-gettext/dist/angular-gettext.js"></script>
+    <script src="/vendor/angular-toastr/dist/angular-toastr.js"></script>
+    <script src="/vendor/moment/moment.js"></script>
+    <script src="/vendor/angular-moment/angular-moment.js"></script>
+    <script src="/vendor/snapjs/snap.js"></script>
+    <script src="/vendor/angular-snap/angular-snap.js"></script>
+    <script src="/vendor/underscore/underscore.js"></script>
+    <script src="/vendor/angular-ui-select/dist/select.js"></script>
+    <script src="/vendor/angulartics/src/angulartics.js"></script>
+    <script src="/vendor/angulartics/src/angulartics-ga.js"></script>
+    <script src="/non_bower_components/zenbox/zenbox.js"></script>
+    <script src="/non_bower_components/ui-bootstrap/carousel.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,src}) app/app.js -->
+    <script src="/app/utils.js"></script>
+    <script src="/app/app.js"></script>
+    <script src="/app/config.js"></script>
+    <script src="/app/home/home.js"></script>
+    <script src="/app/user/user.module.js"></script>
+    <script src="/app/user/user.service.js"></script>
+    <script src="/app/user/countries.constant.js"></script>
+    <script src="/app/user/login.controller.js"></script>
+    <script src="/app/user/register.controller.js"></script>
+    <script src="/app/user/verify.controller.js"></script>
+    <script src="/app/user/reset-password.controller.js"></script>
+    <script src="/app/user/gender.filter.js"></script>
+    <script src="/app/payment/payment.module.js"></script>
+    <script src="/app/payment/payment.service.js"></script>
+
+    <script src="/app/payment/deposit/deposit.service.js"></script>
+    <script src="/app/payment/deposit/deposit.controller.js"></script>
+    <script src="/app/payment/deposit/deposit-response.controller.js"></script>
+
+    <script src="/app/payment/withdrawal/withdrawal.service.js"></script>
+    <script src="/app/payment/withdrawal/withdrawal.controller.js"></script>
+
+    <script src="/app/payment/bonuses.controller.js"></script>
+    <script src="/app/payment/account-box.controller.js"></script>
+    <script src="/app/payment/transaction-history.controller.js"></script>
+    <script src="/app/payment/bling-conversion.controller.js"></script>
+    <script src="/app/payment/empty-wallet.controller.js"></script>
+    <script src="/app/casino/casino.module.js"></script>
+    <script src="/app/casino/casino.service.js"></script>
+    <script src="/app/casino/lobby.controller.js"></script>
+    <script src="/app/casino/lobby-mobile.controller.js"></script>
+    <script src="/app/casino/session.controller.js"></script>
+    <script src="/app/casino/play.controller.js"></script>
+    <script src="/app/casino/game-categories.filter.js"></script>
+    <script src="/app/dashboard/dashboard.module.js"></script>
+    <script src="/app/dashboard/dashboard.controller.js"></script>
+    <script src="/app/dashboard/dashboard-mobile.controller.js"></script>
+    <script src="/app/promotion/promotion.module.js"></script>
+    <script src="/app/promotion/promotion.service.js"></script>
+    <script src="/app/promotion/promotions.controller.js"></script>
+    <script src="/app/promotion/view.controller.js"></script>
+    <script src="/app/showroom/showroom.module.js"></script>
+    <script src="/app/showroom/showroom.service.js"></script>
+    <script src="/app/showroom/showroom.controller.js"></script>
+    <script src="/app/showroom/information.controller.js"></script>
+    <script src="/app/help/help.module.js"></script>
+    <script src="/app/help/info.controller.js"></script>
+    <script src="/app/help/responsible-gaming.controller.js"></script>
+    <script src="/app/story/story.module.js"></script>
+    <script src="/app/story/items.controller.js"></script>
+    <script src="/app/story/history.controller.js"></script>
+    <script src="/app/story/settings.controller.js"></script>
+    <script src="/app/vip/vip.js"></script>
+    <script src="/app/common/common.module.js"></script>
+    <script src="/app/common/url.service.js"></script>
+    <script src="/app/common/object.directive.js"></script>
+    <script src="/app/common/active-tab.directive.js"></script>
+    <script src="/app/common/back-img.directive.js"></script>
+    <script src="/app/common/equals-validator.directive.js"></script>
+    <script src="/app/common/date-of-birth-validator.directive.js"></script>
+    <script src="/app/common/ensure-unique.directive.js"></script>
+    <script src="/app/common/focus-me.directive.js"></script>
+    <script src="/app/common/background.service.js"></script>
+    <script src="/app/services/route.service.js"></script>
+    <script src="/app/locale/locale.module.js"></script>
+    <script src="/app/locale/locale.service.js"></script>
+    <script src="/app/leader/leader.module.js"></script>
+    <script src="/app/leader/leader.service.js"></script>
+    <script src="/app/leader/leaders.controller.js"></script>
+    <script src="/app/avatar/avatar.js"></script>
+    <script src="/app/utils/encryptCreditCard.js"></script>
+    <script src="/app/utils/utils.module.js"></script>
+    <script src="/app/utils/utils.service.js"></script>
+    <!-- This will be missing during development, not a problem though -->
+    <script src="../.tmp/templates/templates.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

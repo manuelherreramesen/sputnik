@@ -1,0 +1,18 @@
+#lobby {
+    > .container-bg {
+        > .container {
+            padding-top: 40px;
+        }
+    }
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    #lobby {
+        .game {
+            height: 122px;
+        }
+    }
+}
+
+@media (max-width: $screen-xs-max) {
+}

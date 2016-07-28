@@ -1,0 +1,175 @@
+@font-face {
+    font-family: 'montserratbold';
+    src: url('montserrat-bold-webfont.eot');
+    src: url('montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('montserrat-bold-webfont.woff') format('woff'),
+         url('montserrat-bold-webfont.ttf') format('truetype'),
+         url('montserrat-bold-webfont.svg#montserratbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserratregular';
+    src: url('montserrat-regular-webfont.eot');
+    src: url('montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('montserrat-regular-webfont.woff') format('woff'),
+         url('montserrat-regular-webfont.ttf') format('truetype'),
+         url('montserrat-regular-webfont.svg#montserratregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,body{background:#1F0D23;margin:0 auto;padding:0;font-family:arial,helvetica;width:100%;height:100%;overflow:hidden;}
+a{color:#9e9d9d;text-decoration:underline;}
+#background{display:block;position:absolute;top:0;width:100%;}
+#gWrapper{position:absolute;height:100%;width:100%;top:0;left:0;overflow:auto;overflow-x:hidden;}
+#content{background:url('../img/mid-bg.png') 0 132px no-repeat;background-size: 100%;width:642px;min-height:800px;max-height:800px;height:100%;margin:auto;position:relative;overflow:visible;}
+#theDj{position:absolute;top:0;left:-602px;}
+#quote{position:absolute;top:120px;right:-370px;}
+#spin{position:absolute;top:430px;left:50%;margin-left:-284px;}
+#logo{position:absolute;top:0;left:50%;margin-left:-191px;}
+h1,h2{width:420px;left:50%;font-family:montserratbold;font-weight:normal;text-align:justify;position:absolute;margin:0 0 0 -210px;padding:0;}
+h1:after,h2:after {content: "";display: inline-block;width: 100%;}
+h1{top:195px;color:#fff;font-size:32px;line-height:34px;}
+h2{top:228px;color:#fff;font-size:56px;line-height:59px;}
+#upp{color:#f49029;}
+#footer{width:501px;height:44px;padding-top:8px;position:absolute;bottom:0;left:50%;margin-left:-250px;}
+#footer p{margin:0;padding:0;font-size:12px;text-align:center;line-height:18px;color:#9e9d9d;}
+
+.form-group {
+margin-bottom: 10px;
+font-size: 14px;
+line-height: 1.428571429;
+}
+.form-control {
+font-size: 11px;
+}
+.form-control {
+display: block;
+width: 240px;
+height: 38px;
+padding: 0 12px;
+line-height: 1.428571429;
+color: #444;
+background-color: #f8f8f8;
+background-image: none;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+button, input, select, textarea {
+font-family: inherit;
+font-size: inherit;
+line-height: inherit;
+}
+button, input, optgroup, select, textarea {
+color: inherit;
+font: inherit;
+margin: 0;
+}
+.btn.btn-block {
+padding-left: 8px;
+padding-right: 8px;
+}
+.btn.btn-lg {
+padding: 15px 73px;
+font-size: 38px;
+line-height: 38px;
+}
+.btn-contrast {
+background-color: #ffb350;
+filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFFB350', endColorstr='#FFF29217');
+background-image: linear-gradient(to bottom,#ffb350 0,#fcac45 25%,#f59821 77%,#f29217 100%);
+color: #3c2141;
+}
+.btn-contrast:focus, .btn-contrast:hover {
+background-color: #f29216;
+filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFF29216', endColorstr='#FFC57309');
+background-image: linear-gradient(to bottom,#f29216 0,#e78a13 30%,#cd780b 77%,#c57309 100%);
+color: #3c2141;
+}
+.btn {
+padding: 11px 32px;
+border-radius: 3px;
+text-transform: uppercase;
+font-family: Montserrat,sans-serif;
+font-size: 12px;
+line-height: 12px;
+font-weight: 700;
+}
+.btn-block {
+display: block;
+width: 100%;
+padding-left: 0;
+padding-right: 0;
+}
+.btn-lg {
+padding: 10px 16px;
+font-size: 18px;
+line-height: 1.33;
+border-radius: 1px;
+}
+.btn {
+display: inline-block;
+margin-bottom: 0;
+text-align: center;
+vertical-align: middle;
+cursor: pointer;
+border: 1px solid transparent;
+white-space: nowrap;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+button, input, select, textarea {
+font-family: inherit;
+font-size: inherit;
+line-height: inherit;
+}
+button, html input[type=button], input[type=reset], input[type=submit] {
+-webkit-appearance: button;
+cursor: pointer;
+}
+button, select {
+text-transform: none;
+}
+button {
+overflow: visible;
+}
+button, input, optgroup, select, textarea {
+color: inherit;
+font: inherit;
+margin: 0;
+}
+
+#form {
+    position:absolute;
+    width: 418px;
+    top: 300px;
+    left: 50%;
+    margin-left:-209px;
+}
+
+@media screen 
+and (max-width: 660px){
+    #content{width:100%;min-height:510px;max:height:auto;}
+    h1,h2{width:70%;padding:0 15%;margin:0;left:0;}
+    h1{font-size:100%;top: 165px;}
+    h2{font-size:170%;top: 176px;}
+    #form{width:70%;margin:0 15%;left:0;top: 230px;}
+    #form button{font-size:170%;padding:10px 0;}
+    #spin{width:76%;padding:0 12%;margin:0;left:0;top: 320px;}
+    #spin img{display:block;width:100%;}
+}
+
+@media screen 
+and (max-width: 1024px){
+    #background{left:auto;right:-10%;width:auto;height:100%;}
+    #theDj,#quote{display:none;}
+}
+@media screen 
+and (max-width: 1324px){
+    #quote{right:-230px;}
+}

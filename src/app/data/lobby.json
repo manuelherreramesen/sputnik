@@ -1,0 +1,565 @@
+[{
+    "gameId": "alienrobots_sw",
+    "fullName": "Alien Robots",
+    "name": "alien-robots",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "baccarat_sw",
+    "fullName": "Baccarat - Low",
+    "name": "baccarat-low",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "baccarat_sw",
+    "fullName": "Baccarat - Medium",
+    "name": "baccarat-med",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "baccarat_sw",
+    "fullName": "Baccarat",
+    "name": "baccarat",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "beach_sw",
+    "fullName": "Beach",
+    "name": "beach",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "Beetle Frenzy",
+    "name": "beetle-frenzy",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "Bingo",
+    "name": "bingo",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "blackjackflash_sw",
+    "fullName": "Blackjack - Professional Series - Low",
+    "name": "black-jack-professional-series-low",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "blackjackflash_sw",
+    "fullName": "Blackjack - Professional Series - Medium",
+    "name": "black-jack-professional-series-med",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "blackjackflash_sw",
+    "fullName": "Blackjack - Professional Series",
+    "name": "black-jack-professional-series",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "blackjackflash_sw",
+    "fullName": "blackjack-classic-low",
+    "name": "blackjack-classic-low",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "blackjackflash_sw",
+    "fullName": "blackjack-classic-med",
+    "name": "blackjack-classic-med",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "blackjackflash_sw",
+    "fullName": "blackjack-classic",
+    "name": "blackjack-classic",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "Boom Brothers",
+    "name": "boom-brothers",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "caribbean-stud-poker",
+    "name": "caribbean-stud-poker",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "casino-holdem",
+    "name": "casino-holdem",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "creature-from-the-black-lagoon",
+    "name": "creature-from-the-black-lagoon",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "dead-or-alive",
+    "name": "dead-or-alive",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "demolition-squad",
+    "name": "demolition-squad",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "disco-spins",
+    "name": "disco-spins",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "blackjackflash_sw",
+    "fullName": "double-exposure-blackjack-professional-series-high",
+    "name": "double-exposure-blackjack-professional-series-high",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "blackjackflash_sw",
+    "fullName": "double-exposure-blackjack-professional-series-low",
+    "name": "double-exposure-blackjack-professional-series-low",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "blackjackflash_sw",
+    "fullName": "double-exposure-blackjack-professional-series-med",
+    "name": "double-exposure-blackjack-professional-series-med",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "blackjackflash_sw",
+    "fullName": "double-exposure-blackjack-professional-series",
+    "name": "double-exposure-blackjack-professional-series",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "dragon-island",
+    "name": "dragon-island",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "eggomatic",
+    "name": "eggomatic",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "egyptian-heroes",
+    "name": "egyptian-heroes",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "elements_sw",
+    "fullName": "elements-the-awakening",
+    "name": "elements-the-awakening",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "evolution",
+    "name": "evolution",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "excalibur",
+    "name": "excalibur",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "Fisticuffs",
+    "name": "fisticuffs",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "fishy-fortune",
+    "name": "fishy-fortune",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "flowers",
+    "name": "flowers",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "frankenstein",
+    "name": "frankenstein",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "fruit-case",
+    "name": "fruit-case",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "fruit-shop",
+    "name": "fruit-shop",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "geisha-wonders",
+    "name": "geisha-wonders",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "ghost-pirates",
+    "name": "ghost-pirates",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "golden-derby",
+    "name": "golden-derby",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "golden-shamrock",
+    "name": "golden-shamrock",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "gonzos-quest",
+    "name": "gonzos-quest",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "jack-and-the-beanstalk",
+    "name": "jack-and-the-beanstalk",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "jack-hammer-2",
+    "name": "jack-hammer-2",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "jack-hammer",
+    "name": "jack-hammer",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "jackpot-6000",
+    "name": "jackpot-6000",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "jungle-games",
+    "name": "jungle-games",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "kings-of-chicago",
+    "name": "kings-of-chicago",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "lucky-angler-a-snowy-catch",
+    "name": "lucky-angler-a-snowy-catch",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "magic-portals",
+    "name": "magic-portals",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "mega-fortune",
+    "name": "mega-fortune",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "mega-joker",
+    "name": "mega-joker",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "muse-wild-inspiration",
+    "name": "muse-wild-inspiration",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "mythic-maiden",
+    "name": "mythic-maiden",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "pandoras-box",
+    "name": "pandoras-box",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "piggy-riches",
+    "name": "piggy-riches",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "reel-rush",
+    "name": "reel-rush",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "reel-steal",
+    "name": "reel-steal",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "robin-hood-shifting-riches",
+    "name": "robin-hood-shifting-riches",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "roulette-advanced-high",
+    "name": "roulette-advanced-high",
+    "categories": [
+        "roulette"
+    ],
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "roulette-advanced-low",
+    "name": "roulette-advanced-low",
+    "categories": [
+        "roulette"
+    ],
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "roulette-advanced-med",
+    "name": "roulette-advanced-med",
+    "categories": [
+        "roulette"
+    ],
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "roulette-advanced",
+    "name": "roulette-advanced",
+    "categories": [
+        "roulette"
+    ],
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "scarface",
+    "name": "scarface",
+    "categories": [
+        "casino-games"
+    ],
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "secret-of-the-stones",
+    "name": "secret-of-the-stones",
+    "categories": [
+        "casino-games"
+    ],
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "secrets-of-horus",
+    "name": "secrets-of-horus",
+    "categories": [
+        "casino-games"
+    ],
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "single-deck-blackjack-professional-series-high",
+    "name": "single-deck-blackjack-professional-series-high",
+    "categories": [
+        "blackjack"
+    ],
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "single-deck-blackjack-professional-series-low",
+    "name": "single-deck-blackjack-professional-series-low",
+    "categories": [
+        "blackjack"
+    ],
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "single-deck-blackjack-professional-series-med",
+    "name": "single-deck-blackjack-professional-series-med",
+    "categories": [
+        "blackjack"
+    ],
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "single-deck-blackjack-professional-series",
+    "name": "single-deck-blackjack-professional-series",
+    "categories": [
+        "blackjack"
+    ],
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "south-park",
+    "name": "south-park",
+    "categories": [
+        "casino-games"
+    ],
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "space-wars",
+    "name": "space-wars",
+    "categories": [
+        "casino-games"
+    ],
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "starburst",
+    "name": "starburst",
+    "categories": [
+        "casino-games"
+    ],
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "subtopia",
+    "name": "subtopia",
+    "categories": [
+        "casino-games"
+    ],
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "the-funky-seventies",
+    "name": "the-funky-seventies",
+    "categories": [
+        "casino-games"
+    ],
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "the-groovy-sixties",
+    "name": "the-groovy-sixties",
+    "categories": [
+        "casino-games"
+    ],
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "the-super-eighties",
+    "name": "the-super-eighties",
+    "categories": [
+        "casino-games"
+    ],
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "thief",
+    "name": "thief",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "thrill-spin",
+    "name": "thrill-spin",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "thunderfist",
+    "name": "thunderfist",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "tiki-wonders",
+    "name": "tiki-wonders",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "trolls",
+    "name": "trolls",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "twin-spin",
+    "name": "twin-spin",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "txs-holdem-professional-series",
+    "name": "txs-holdem-professional-series",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "victorious",
+    "name": "victorious",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "wild-rockets",
+    "name": "wild-rockets",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "wild-turkey",
+    "name": "wild-turkey",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "wild-witches",
+    "name": "wild-witches",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}, {
+    "gameId": "eldorado_sw",
+    "fullName": "zombies",
+    "name": "zombies",
+    "category": "featured-slots",
+    "status": "ACTIVE"
+}]

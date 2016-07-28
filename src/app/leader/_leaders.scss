@@ -1,0 +1,99 @@
+#leaders {    
+    > .container-bg {
+        background: #1d1620 image-url('pages/leaders/back.jpg') center top no-repeat;
+
+        > .container {
+            min-height: image-height('pages/leaders/back.jpg');
+            padding-top: 40px;
+            padding-bottom: 70px;
+        }
+    }
+
+    .pane {
+        h3, h4 {
+            margin-bottom: 20px;
+        }
+        p {
+            color: #c7c7c7;
+        }
+    }
+	
+    table {
+        margin-bottom: $line-height-computed;
+    }
+	
+	table > tbody > tr:first-child > td{
+    	border-right: none;
+    	border-style:none;
+    	background:#E5D05D;
+    	color:#452243;
+    
+    }
+    
+    table tr:nth-child(2) td{
+      background-color:#E5E5E5;
+      border-right: none;
+      color:#412345;
+    }
+    
+     table tbody tr:nth-child(3) td{
+      background-color:#554C3D;
+      border-right: none;
+      color:#FFFEFA;
+    }
+    
+    .character {
+        background-repeat: no-repeat;
+    	background-position: 85% 40%;
+    	background-repeat: no-repeat;
+    	background-size: 150% auto;
+    	height: 440px;
+    	margin-top: -95px;
+    }
+
+    .character-thumb {
+        display: inline-block;
+        width: 54px;
+        height: 54px;
+        margin-right: 12px;
+        background-size: 54px;
+        vertical-align: middle;
+    }
+
+    th, td {
+        vertical-align: middle;
+    }
+
+    td {
+        padding-left: 15px;
+    }
+    
+    .featured-player {
+        margin: 40px 0;
+        @include clearfix;
+
+        .number-one {
+            float: left;
+            display: inline-block;
+            background: image-url('pages/race/number-one.png');
+            width: image-width('pages/race/number-one.png');
+            height: image-height('pages/race/number-one.png');
+            margin-right: 11px;
+        }
+
+        .pull-left {
+            padding-top: 6px;
+        }
+    
+        h3, h4 {
+            margin: 0;
+            text-transform: none;
+        }
+
+        p {
+            margin: 0;
+        }
+
+    }
+
+}

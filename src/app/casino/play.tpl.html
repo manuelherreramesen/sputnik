@@ -1,0 +1,49 @@
+<div id="play">
+    <div class="container-bg bg-{{randomBg}}">
+        <div class="container text-center">
+
+            <div id="game-window" ng-class="{open: ui.panel.open}">
+                <aside class="opened">
+                    <header>
+                        <a ng-click="ui.panel.open = !ui.panel.open"><i class="icon icon-arrow-left"></i></a>
+                        <a href="#/games/slots"><i class="icon icon-close"></i></a>
+                    </header>
+                    <h5>{{game.fullName}}</h5>
+                    
+                    <br>
+                    <img ng-src="{{cdn}}/images/pages/games/notification/{{ui.panel.blings}}.png" ng-if="ui.panel.blings != 0">
+
+                </aside>
+                <aside class="closed">
+                    <a ng-click="ui.panel.open = !ui.panel.open"><i class="icon icon-arrow-right"></i></a>
+                    <a href="#/games/slots"><i class="icon icon-close"></i></a>
+                </aside>
+                <!--<img src="{{cdn}}/images/games/screenshots/800x600/wild-water.jpg" alt="">-->
+
+                <!-- Hardcoded the games to be 20% bigger until a better game-window resizing functionality is added -->
+                <object width="{{game.width * 1.2}}" height="{{game.height * 1.2}}" ng-data="game.staticUrl" type="application/x-shockwave-flash" ng-param="{
+                    'name': 'southpark',
+                    'allowfullscreen': 'true',
+                    'allowscriptaccess': 'always',
+                    'quality': 'high',
+                    'base': '.',
+                    'scale': 'exactfit',
+                    'loop': 'false',
+                    'wmode': game.flashVersion.substr(0, 2) == '11' ? 'direct' : 'opaque',
+                    'bgcolor': '#000000',
+                    'flashvars': game.flashVars
+                }"></object>
+                <div class="reality-check" ng-show="ui.realityCheck.enabled">
+                    <p ng-if="ui.realityCheck.amount < 0">
+                        <span translate>You have been playing for {{ui.realityCheck.hours}} hour(s) and have lost {{abs(ui.realityCheck.amount) | currency:'€'}}</span>
+                    </p>
+                    <p ng-if="ui.realityCheck.amount >= 0">
+                        <span translate>You have been playing for {{ui.realityCheck.hours}} hour(s) and have won {{ui.realityCheck.amount | currency:'€'}}</span>
+                    </p>
+                    <button ng-click="closeRealityCheck()" class="btn btn-primary">Continue</button> <button ng-click="logout()" class="btn btn-shadow">Logout</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

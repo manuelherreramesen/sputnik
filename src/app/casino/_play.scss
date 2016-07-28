@@ -1,0 +1,112 @@
+#play {
+    > .container-bg {        
+        > .container {
+            min-height: inherit;
+            padding-top: 40px;
+            padding-bottom: 70px;
+        }
+    }
+}
+
+#game-window {
+	position: relative;
+	display: inline-block;
+	background: rgba(0, 0, 0, .6);
+	@include single-transition(padding, ease, .22s);
+
+	&.open {
+		padding-right: 250px;
+
+		> aside {
+			&.closed {
+				opacity: 0;
+			}
+		}
+
+	}
+
+	> .reality-check {
+		z-index: 1050;
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		padding: 20px;
+		background: rgba(0, 0, 0, .95);
+	}
+
+	object {
+		z-index: 2;
+		position: relative;
+	}
+
+	> aside {
+		z-index: 1;
+		position: absolute;
+		top: 0;
+
+		.icon-arrow-right {
+			position: relative;
+			right: -1px;
+		}
+
+		.icon-arrow-left {
+			position: relative;
+			left: -1px;
+			top: 1px;
+		}
+
+		.icon-close {
+			position: relative;
+			top: 1px;
+		}
+
+		a {
+			width: 31px;
+			height: 31px;
+			line-height: 31px;
+			border-radius: 15px;
+			text-align: center;
+			@include background-image(linear-gradient(top, #f6f6f6 0%, #eaeaea 100%));
+			font-size: 16px;
+			color: #000;
+		}
+
+		&.opened {
+			right: 0;
+			bottom: 0;
+			width: 250px;
+			padding: 0 20px;
+			text-align: left;
+
+			header {
+				padding: 10px 0;
+				margin-bottom: 24px;
+				border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+				> a {
+					display: inline-block;
+					margin-right: 9px;
+				}
+
+			}
+
+		}
+
+		&.closed {
+			opacity: 1;
+			right: -40px;
+			@include single-transition(opacity, ease, .22s);
+	
+			a {
+				display: block;
+				margin-top: 5px;
+				margin-bottom: 9px;
+			}
+
+		}
+
+	}
+
+}

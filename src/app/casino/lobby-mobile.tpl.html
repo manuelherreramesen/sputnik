@@ -1,0 +1,41 @@
+<div id="lobby">
+    <div class="container-bg bg-{{randomBg}}">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-xs-12 col-md-10 col-lg-8 col-lg-offset-1">
+                    <nav class="navbar navbar-tertiary navbar-games">
+                        <ul class="nav navbar-nav nav">
+                            <li ng-repeat="category in categories" active-tab="2"><a href="#/games/{{category.slug}}" translate>{{category.name}}</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="navbar nav-search col-xs-12 col-md-2">
+                    <input type="text" placeholder="{{ 'SEARCH' | translate }}" ng-model="gameName" class="form-control">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="lobby col-xs-12 col-lg-10 col-lg-offset-1">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-3 col-md-1-10" ng-repeat="game in selectedCategory.games | filter: gameName">
+                            <div class="game">
+                                <div class="img" back-img="{{cdn}}/images/games/165x129/{{game.slug}}.jpg"></div>
+                                <div class="content">
+                                    <i class="icon icon-play"></i>
+                                    <span translate>Play now</span>
+                                    <a ng-if="user.id === null" ng-click="popupLoginSignup('/play/' + game.gameId)"></a>
+                                    <a ng-if="user.id !== null" ng-click="playGame(game.gameId)"></a>
+                                </div>
+                                <div class="tags" ng-repeat="tag in game.tags">
+                                    <img ng-src="{{cdn}}/images/items/tags/{{tag}}.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

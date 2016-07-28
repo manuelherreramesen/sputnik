@@ -1,0 +1,22 @@
+input[type=checkbox] {
+    
+    &.switch {
+        position: relative;
+        left: -5px;
+
+        &:before {
+            position: absolute;
+            top: -7px;
+            right: -5px;
+            content: '';
+            background: sprite($globalSpriteMap, switch-off);
+            @include sprite-dimensions($globalSpriteMap, switch-off);
+        }
+
+        &:checked:before {
+            background: sprite($globalSpriteMap, switch-on);
+        }
+
+    }
+
+}

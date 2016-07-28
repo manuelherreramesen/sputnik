@@ -1,0 +1,18 @@
+[
+    {
+        "columns": 6,
+        "name": "welcome-bonus",
+        "title": "ÄR DU STANS SKÖNASTE PLAYER?",
+        "subtitle": "200% I Välkomstbonus upp till €200",
+        "link": "/#/promotions/welcome-bonus",
+        "active": true
+    },
+    {
+        "columns": 6,
+        "name": "ipad",
+        "title": "Vinn en iPad på Facebook",
+        "subtitle": "Gå till BlingCitys Facebooksida för mer info",
+        "link": "https://www.facebook.com/Blingcitycasino",
+        "target": "_blank"
+    }
+]

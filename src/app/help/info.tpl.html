@@ -1,0 +1,44 @@
+<div id="info">
+    <div class="container-bg bg-{{randomBg}}">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-xs-12 col-md-12 tabbed-page">
+
+                    <ul class="nav nav-tabs">
+                        <li active-tab="2"><a href="#/info/about-us" translate>About Us</a></li>
+                        <li active-tab="2"><a href="#/info/terms-and-conditions" translate>Terms &amp; Conditions</a></li>
+                        <li active-tab="2"><a href="#/info/privacy-policy" translate>Privacy Policy</a></li>
+                        <li><a ng-href="https://blingcity.zendesk.com/hc/{{currentLanguage}}" target="_blank" translate>Help / FAQ</a></li>
+                        <li active-tab="2"><a href="#/info/contact" translate>Contact</a></li>
+                        <li active-tab="2"><a href="#/info/play-safe" translate>Play Safe</a></li>
+                        <li active-tab="2"><a href="#/info/18" translate>18+</a></li>
+                    </ul>            
+
+                    <div class="tab-content" ng-switch on="category">
+                        <div class="tab-pane" ng-switch-when="about-us">
+                            <div ng-include="'/app/help/info/about-us.tpl.html'"></div>
+                        </div>
+                        <div class="tab-pane" ng-switch-when="terms-and-conditions">
+                            <div ng-include="'/app/help/info/terms-and-conditions.tpl.html'"></div>
+                        </div>
+                        <div class="tab-pane" ng-switch-when="privacy-policy">
+                            <div ng-include="'/app/help/info/privacy-policy.tpl.html'"></div>
+                        </div>
+                        <div class="tab-pane" ng-switch-when="contact">
+                            <div ng-include="'/app/help/info/contact.tpl.html'"></div>
+                        </div>
+                        <div class="tab-pane" ng-switch-when="play-safe">
+                            <div ng-include="'/app/help/info/responsible-gaming.tpl.html'"></div>
+                        </div>
+                        <div class="tab-pane" ng-switch-when="18">
+                            <div ng-include="'/app/help/info/18.tpl.html'"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

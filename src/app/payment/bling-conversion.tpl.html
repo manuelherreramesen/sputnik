@@ -1,0 +1,24 @@
+<div id="loginSignup" class="modal" tabindex="-1" role="dialog" ng-controller="BlingConversionCtrl">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <button type="button" class="close" ng-click="close()" aria-hidden="true">&times;</button>
+                <h4 translate>Bling Conversion</h4>
+            </div>
+
+            <div class="modal-body">
+                <p>
+                    <span translate>Are you sure you'd like to do the convert <b>{{process.amount}} blings</b> to </span>
+                    <b ng-if="process.selected.value === 'REAL_MONEY'">{{ process.amount * process.rates.realRate | currency:'€' }}</b>
+                    <b ng-if="process.selected.value === 'BONUS_MONEY'">{{ process.amount * process.rates.bonusRate | currency:'€' }}</b>?
+                </p>
+
+                <div>
+                    <button ng-click="confirm()" ng-disabled="process.thinking" class="btn btn-contrast" translate>Confirm</button>
+                    <button ng-click="close()" class="btn btn-shadow" translate>Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

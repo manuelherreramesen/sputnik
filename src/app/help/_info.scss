@@ -1,0 +1,242 @@
+#info {
+
+    > .container-bg {
+        > .container {
+            padding-top: 40px;
+            padding-bottom: 70px;
+        }
+    }
+
+    .tab-content {
+        background: #f8f8f8;
+        color: #595959;
+
+        > .tab-pane {
+            display: block;
+            padding: 12px 30px 30px;
+            min-height: 700px;
+        }
+    }
+
+    h1, h2, h3, h4, h5,
+    .h1, .h2, .h3, .h4, .h5 {
+        text-transform: initial;
+        color: #5c4f61;
+    }
+
+    .contact-method {
+        display: block;
+        height: 64px;
+        margin-bottom: 9px;
+        padding: 13px;
+        background: #ffffff;
+        border: 1px solid #eeeeee;
+        border-radius: $border-radius-base;
+
+        &:hover {
+            text-decoration: none;
+            background: #fcfcfc;
+        }
+        
+        i {
+            float: left;
+            margin-right: 15px;
+            font-size: 36px;
+            color: #b7a5b8;
+        }
+
+    }
+
+}
+
+#terms-and-conditions {
+    ul {
+        list-style-type: none;
+    }
+}
+
+#about-us {
+
+    section {
+        margin: -12px -30px 12px;
+        padding: 30px;
+        border-bottom: 1px dashed #d8d8d8;
+
+        &:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: 0;
+        }
+
+        &:nth-child(even) {
+            background: #fefefe;
+        }
+    }
+
+    h2 {
+        margin-top: 0;
+        text-transform: initial;
+    }
+
+    h4 {
+        margin-bottom: 0;
+    }
+
+    p {
+        line-height: 1.5
+    }
+
+    dl {
+        a {
+            color: #614067;
+        }
+    }
+
+    dt {
+        text-align: left;
+        width: 130px;
+        font-weight: normal;
+    }
+
+    .media {
+        
+        h2 {
+            margin-top: 0;
+        }
+
+        .pull-left {
+            margin-right: 30px;
+        }
+        .pull-right {
+            margin-left: 30px;
+        }
+    }
+
+    .lead {
+        font-size: 13px;
+        text-transform: uppercase;
+    }
+
+    .statistic {
+        padding: 23px 15px;
+        text-align: center;
+        border: 1px solid #e7e7e7;
+        background-color: #f0f0f0;
+        @include background-image(linear-gradient(top, #f0f0f0 0%, #fff 100%));
+
+        .title {
+            margin-bottom: 15px;
+            line-height: 52px;
+            font-family: 'Montserrat';
+            font-size: 72px;
+            font-weight: 700;
+            color: #438a1c;
+        }
+
+        p {
+            margin-bottom: 0;
+            line-height: 1.2;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #939393;
+        }
+    }
+
+    .form-control {
+        background: #ffffff;
+    }
+
+}
+
+#responsible-gaming {
+
+    form {
+        margin-bottom: 0;
+    }
+
+    .form-control {
+        background: #fff;
+    }
+
+    .help {
+        p {
+            margin-bottom: 2px;
+        }
+    }
+
+    // Would like to add a class like .popover-inverse
+    .popover {
+        width: 280px;
+        background-color: #281930;
+        color: #fff;
+
+        h3 {
+            color: #fff;
+        }
+
+        .popover-content {
+            text-transform: initial;
+        }
+        
+        &.right {
+            .arrow {
+                border-right-color: transparent;
+                &:after {
+                    border-right-color: #281930;
+                }
+            }
+        }
+    }
+
+    .panel {
+        height: 145px;
+        label {
+            text-align: left;
+            text-transform: uppercase;
+            font-weight: normal;
+
+            > a {
+                float: left;
+                margin-right: 7px;
+                color: #bcabbe;
+
+                > i {
+                    font-size: 18px;
+                }
+            }
+
+            > span {
+                display: block;
+                overflow: hidden;
+                zoom: 1;
+            }
+
+        }
+
+        p {
+            &:last-child {
+                margin-bottom: 0;
+            }   
+        }
+
+    }
+
+    .icon {
+        margin-right: 15px;
+        vertical-align: middle;
+        font-size: 36px;
+        color: #b7a5b9;
+    }
+}
+
+@media (min-width: $screen-xs-min) and (max-width: $screen-sm-max) {
+    #info {
+        .nav-tabs {
+            > li {
+                > a {
+                    padding: 10px 12px;
+                }
+            }
+        }
+    }
+}

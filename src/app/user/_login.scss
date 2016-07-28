@@ -1,0 +1,50 @@
+#login {
+
+    .form-control {
+        border-color: #e0e0e0;
+        @include box-shadow(none);
+        height: 48px;
+    }
+
+    .form-control-feedback {
+        width: 48px;
+        height: 48px;
+        line-height: 48px;
+        font-size: 17px;
+
+        &.icon-email {
+            font-size: 22px;
+        }
+
+    }
+
+    .side-links {
+        position: relative;
+        height: 36px;
+        line-height: 36px;
+
+        .inner {
+            display: inline-block;
+        }
+
+        a {
+            display: block;
+            line-height: 1.4;
+        }
+    }
+        
+    p {
+        b {
+            color: #7e7e7e;
+        }
+    }
+
+}
+
+@media (min-width: $screen-xs-max) {
+    #login {
+        > .modal-dialog {
+            width: 400px;
+        }
+    }
+}

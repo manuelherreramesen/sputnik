@@ -1,0 +1,96 @@
+<aside class="col-md-3" ng-controller="AccountBoxCtrl">
+    <div class="pane">
+
+        <h5 class="pane-heading" translate>Account Balance</h5>
+        <table class="table table-inverse">
+            <tbody>
+                <tr>
+                    <td class="key" translate>Balance:</td>
+                    <td class="value l">{{user.wallet.moneyBalance | currency: '€' }}</td>
+                </tr>
+                <tr>
+                    <td class="key" translate>Cashback:</td>
+                    <td class="value l">{{user.wallet.accumulatedCashBack | currency: '€' }}</td>
+                </tr>
+                <tr>
+                    <td class="key" translate>Bonus money:</td>
+                    <td class="value l">{{user.wallet.bonusBalance | currency: '€' }}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="bonus-progress" ng-if="user.wallet.bonusConversionGoal > 0">
+            <div class="progress progress-striped">
+                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="{{user.wallet.bonusConversionProgressPercentage}}" aria-valuemin="0"
+                     aria-valuemax="100" style="width: {{user.wallet.bonusConversionProgressPercentage}}%"></div>
+            </div>
+            <p translate>PLAY THROUGH PENDING:</p>
+            <p>{{ user.wallet.bonusConversionGoal - user.wallet.bonusConversionProgress | currency:'€' }} ({{user.wallet.bonusConversionProgressPercentage | number:1}}
+                {{ '% DONE' | translate }})</p>
+        </div>
+
+        <table class="table table-inverse">
+            <tbody>
+                <tr></tr>
+                <tr>
+                    <td class="key" translate>Withdrawable:</td>
+                    <td class="value l">{{user.wallet.moneyBalance | currency: '€' }}</td>
+                </tr>
+                <tr>
+                    <td class="key" translate>Total:</td>
+                    <td class="value l">{{user.wallet.moneyBalance + user.wallet.bonusBalance | currency:'€'}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+
+        <div class="streetCredConverter">
+
+            <h5 translate>Blings Converter</h5>
+
+            <form novalidate role="form" class="form-horizontal" name="streetCredForm">
+
+                <div class="form-group">
+                    <label for="credits-amount" class="control-label col-xs-5" translate>Blings</label>
+                    <div class="col-xs-6">
+                        <input id="credits-amount" type="number" class="form-control" ng-model="process.amount" ng-keyup="changeAmount()" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-xs-11">
+                        <ui-select name="selected" ng-model="process.selected" theme="bootstrap" required>
+                            <match placeholder="{{'Exchange to...' | translate}}">{{$select.selected.label}}</match>
+                            <choices repeat="option in process.options | filter: $select.search">
+                                <div ng-bind-html="option.label | highlight: $select.search"></div>
+                            </choices>
+                        </ui-select>
+                    </div>
+                </div>
+
+                <div class="form-group target">
+                    <div ng-if="process.selected.value === 'REAL_MONEY' && process.rates.realRate">
+                        <label class="control-label col-xs-5" translate>Extra Cash:</label>
+                        <div class="col-xs-6">
+                            <p class="form-control-static">{{ process.amount * process.rates.realRate | currency: '€' }}</p>
+                        </div>
+                    </div>
+                    <div ng-if="process.selected.value === 'BONUS_MONEY' && process.rates.bonusRate">
+                        <label class="control-label col-xs-5" translate>Extra Bonus:</label>
+                        <div class="col-xs-6">
+                            <p class="form-control-static">{{ process.amount * process.rates.bonusRate | currency: '€' }}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-xs-12">
+                        <button class="btn btn-shadow" ng-disabled="user.wallet.creditsBalance === 0" ng-click="convert()" translate>Convert</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</aside>

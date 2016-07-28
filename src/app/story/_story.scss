@@ -1,0 +1,210 @@
+#story {
+
+    > .container {
+        padding-top: 40px;
+        min-height: 736px;
+    }
+    
+    .form-group {
+        height: 25px;
+        margin-bottom: 0;
+
+        > .popover {
+            &.right {
+                top: -11px;
+            }
+        }
+
+    }
+    
+    .form-control {
+        width: 190px;
+        height: auto;
+        // Offset the padding so nothing is jumping
+        margin: -4px;
+    }
+
+    .form-control-feedback {
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+    }
+
+    .character-summary {
+
+        i {
+            font-size: 18px;
+            color: #adaab1;
+        }
+
+        .key {
+            font-weight: 100;
+            color: #acabad;
+        }
+
+        .value {
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .action {
+            .popover {
+                min-width: 200px;
+                margin-top: -2px;
+                margin-left: 14px;
+            }
+        }
+
+    }
+
+    .latest-activity {
+        .scroller {
+            padding: 13px;
+            border-radius: $border-radius-base;
+            overflow-y: hidden;
+            list-style: none;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        li {
+            border-bottom: 1px dashed #4a474d;
+            padding: 8px 0;
+        }
+
+        p {
+            margin: 0;
+            color: #cecece;
+        }
+
+        b {
+            color: #89838f;
+        }
+    }
+
+    .pages {
+        
+        .table > tbody > tr > td {
+            padding: 4px;
+            border-top: 0;
+        }
+
+        .key {
+            vertical-align: middle;
+            width: 150px;
+        }
+    }
+
+    h5 {
+        line-height: 22px;
+    }
+    
+    .active-items {
+        .character-item {
+            width: 92px;
+            height: 92px;
+            background-size: 60%;
+            opacity: 1;
+        }
+    }
+
+    .character-item {
+        width: 67px;
+        height: 67px;
+        margin-right: 17px;
+        margin-bottom: 17px;
+        opacity: .2;
+        border-radius: $border-radius-base;
+        text-align: center;
+        @include single-transition(opacity, .18s, ease-out);
+
+        &.ng-leave {
+            transition: 0s;
+        }
+
+        i {
+            margin-top: 17px;
+            font-size: 30px;
+        }
+
+        &:hover {
+            opacity: 1;
+        }
+
+    }
+
+    .logout-link {
+        position: absolute;
+        top: 0;
+        right: 0;
+        line-height: 33px;
+    }
+
+}
+
+.story-preview {
+    position: relative;
+    float: left;
+    width: 153px;
+    height: 153px;
+    margin-right: 13px;
+    margin-bottom: 13px;
+    background: #000;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+    @include clearfix();
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    .character,
+    .back {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-size: 100%;
+    }
+    
+    > a {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding-top: 20px;
+        opacity: 0;
+        line-height: 168px;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        background: rgba(0, 0, 0, 0.7) image-url('pages/story/preview.png') no-repeat center 56px;
+        color: #fff;
+        @include single-transition(opacity, 0.18s);
+    }
+
+    &:hover {
+        > a {
+            opacity: 1;
+        }
+    }
+
+}
+
+@media (max-width: $screen-sm-max) {
+    #story {
+        .story-container {
+            right: 0;
+            left: initial;
+
+            > .back,
+            > .character {
+                background-position: right top;
+                background-size: 65%;
+            }
+        }
+    }
+}

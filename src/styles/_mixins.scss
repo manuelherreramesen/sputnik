@@ -1,0 +1,72 @@
+%spriteImageCode {
+	display: inline-block;
+	vertical-align: text-top;
+	background-repeat: no-repeat;
+}
+
+// There probably already is a way to do this in compass but their documentation is crap
+@mixin spriteList ($spriteMap, $list) {
+
+	// List stuff like .a, .b { display: block; }
+
+	@each $name in $list {
+		.#{sprite-map-name($spriteMap)}-#{$name} {
+			@extend %spriteImageCode;
+		}
+	}
+
+	// Print the sprite and dimensions
+	@each $name in $list {
+
+	    .#{sprite-map-name($spriteMap)}-#{$name} {
+			background: sprite($spriteMap, $name);
+			@include sprite-dimensions($spriteMap, $name);
+			line-height: image-height(sprite-file($spriteMap, $name));
+		}
+	}
+
+}
+
+/*
+ * For creating hovers in a sprite using image prefixes "-off" and "-on"
+ * This will also create an off and on if you don't want hover functionality
+ */
+@mixin spriteHoverList ($spriteMap, $list) {
+
+	// List stuff like .a, .b { display: block; }
+
+	@each $name in $list {
+		.#{sprite-map-name($spriteMap)}-#{$name},
+		.#{sprite-map-name($spriteMap)}-#{$name}-off,
+		.#{sprite-map-name($spriteMap)}-#{$name}-on
+		 {
+			@extend %spriteImageCode;
+		}
+	}
+
+	// Print the sprite and dimensions
+	@each $name in $list {
+
+	    .#{sprite-map-name($spriteMap)}-#{$name},
+	    .#{sprite-map-name($spriteMap)}-#{$name}-off {
+			background: sprite($spriteMap, $name + '-off');
+			@include sprite-dimensions($spriteMap, $name + '-off');
+			line-height: image-height(sprite-file($spriteMap, $name + '-off'));
+
+		}
+
+		.#{sprite-map-name($spriteMap)}-#{$name} {
+			&:hover {
+				background: sprite($spriteMap, $name + '-on');
+			}
+		}
+
+		.#{sprite-map-name($spriteMap)}-#{$name}-on {
+			background: sprite($spriteMap, $name + '-on');
+			@include sprite-dimensions($spriteMap, $name + '-on');
+			line-height: image-height(sprite-file($spriteMap, $name + '-on'));
+		}
+
+	}
+
+}

@@ -1,0 +1,26 @@
+<div id="register">
+    <div class="container-bg bg-{{randomBg}}">
+        <div class="container">
+
+            <form novalidate role="form" name="registration">
+            
+                <ng-switch on="ui.step">
+                    <fieldset class="step1" ng-switch-when="1">
+                        <div ng-include="'/app/user/register/step-1.tpl.html'"></div>
+                    </fieldset>
+                    <fieldset class="step1" ng-switch-when="2">
+                        <div ng-include="'/app/user/register/step-2.tpl.html'"></div>
+                    </fieldset>
+                    <fieldset class="step2" ng-switch-when="3">
+                        <div ng-include="'/app/user/register/step-3.tpl.html'"></div>
+                    </fieldset>
+                    <fieldset class="step4" ng-switch-when="4">
+                        <div ng-include="'/app/user/register/step-4.tpl.html'"></div>
+                    </fieldset>
+                </ng-switch>
+                
+            </form>
+
+        </div>
+    </div>
+</div>

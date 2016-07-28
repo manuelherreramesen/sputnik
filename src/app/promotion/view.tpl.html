@@ -1,0 +1,30 @@
+<div id="promotion">
+    <div class="container-bg bg-{{randomBg}}">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-xs-12 col-md-10 col-md-offset-1">
+	           		<ul class="nav nav-tabs nav-aero pull-right">
+	           			<li ng-if="promotion.previous"><a ng-href="#/promotions/{{promotion.previous}}" translate>Previous Promotion</a></li>
+	           			<li ng-if="promotion.next"><a ng-href="#/promotions/{{promotion.next}}" translate>Next Promotion</a></li>
+	           			<li><a ng-href="#/promotions"><i class="icon icon-close"></i></a></li>
+	           		</ul>
+           		</div>
+                <div class="col-xs-12 col-md-10 col-md-offset-1 tabbed-page">
+        		
+	        		<a ng-if="promotion.image && user.id !== null" href="#/deposit"><img class="img-responsive" ng-src="{{cdn}}/images/promotions/col-12/{{promotion.name}}-{{currentLanguage}}.jpg" alt=""></a>
+                    <a ng-if="promotion.image && user.id === null" ng-click="popupLoginSignup('/deposit')"><img class="img-responsive" ng-src="{{cdn}}/images/promotions/col-12/{{promotion.name}}-{{currentLanguage}}.jpg" alt=""></a>
+	        		
+	        		<div class="tab-content">
+						<div class="tab-pane">
+							<div ng-include="promotion.tpl"></div>
+						</div>
+	        		</div>
+
+	        	</div>
+
+	        </div>
+		</div>
+	</div>
+</div>

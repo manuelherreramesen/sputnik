@@ -1,0 +1,23 @@
+<div class="text-center">
+    <ul class="three-easy-steps">
+        <li ng-class="{active: ui.step == '1' || ui.step == '2' || ui.step == '3' || ui.step == '4'}">
+            <span class="hidden-xs" translate>Personal Details</span>
+            <span class="visible-xs">1</span>
+            <i class="line"></i>
+            <i class="ball"></i>
+            <a ng-show="ui.step > 1 && ui.step < 4" ng-click="back(registration)"><i class="icon icon-arrow-left"></i></a>
+        </li>
+        <li ng-class="{active: ui.step == '3' || ui.step == '4'}">
+            <span class="hidden-xs" translate>Choose Citizen</span>
+            <span class="visible-xs">2</span>
+            <i class="line"></i>
+            <i class="ball"></i>
+        </li>
+        <li ng-class="{active: ui.step == '4'}">
+            <span class="hidden-xs" translate>Start Playing</span>
+            <span class="visible-xs">3</span>
+            <i class="line"></i>
+            <i class="ball"></i>
+        </li>
+    </ul>
+</div>

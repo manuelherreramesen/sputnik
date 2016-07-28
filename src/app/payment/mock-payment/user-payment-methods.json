@@ -1,0 +1,61 @@
+{
+    "success": true,
+    "methods": [
+        {
+            "txType": "CreditcardDeposit",
+            "method": "CREDITCARD",
+            "accounts": [
+                {
+                    "type": "creditcard",
+                    "accountId": "f3aab5ee-4dc8-41b7-bf4a-a579f6ba10db",
+                    "maskedAccount": "458109******5686",
+                    "lastUsed": "2012-10-13T16:18:00",
+                    "cardType": "Visa",
+                    "cardHolder": "Peter Svensson",
+                    "visible": "true",
+                    "startDate": "",
+                    "expiryDate": "2013-06"
+                },
+                {
+                    "type": "creditcard",
+                    "accountId": "b8731a1b-3afb-4051-8339-9e7ff5c4775c",
+                    "maskedAccount": "543077******0732",
+                    "lastUsed": "2012-10-13 16:00:00",
+                    "cardType": "MasterCard",
+                    "cardHolder": "Peter Svensson",
+                    "visible": "true",
+                    "startDate": "",
+                    "expiryDate": "2014-05"
+                }
+            ]
+        },
+        {
+            "txType": "NetellerDeposit",
+            "method": "NETELLER",
+            "accounts": [
+                {
+                    "type": "neteller",
+                    "accountId": "d451edbd-0ab6-4cea-9ee6-0c7e1a14aa8e",
+                    "maskedAccount": "******1234",
+                    "lastUsed": "2012-10-13 16:00:00.001 UTC",
+                    "visible": "true"
+                }
+            ]
+        },
+        {
+            "txType": "TrustlyDeposit",
+            "method": "TRUSTLY",
+            "accounts": []
+        },
+        {
+            "txType": "EutellerDeposit",
+            "method": "EUTELLER",
+            "accounts": []
+        },
+        {
+            "txType": "SkrillDeposit",
+            "method": "SKRILL",
+            "accounts": []
+        }
+    ]
+}

@@ -1,0 +1,300 @@
+<div id="story" ng-if="user.id !== null">
+    <div class="container">
+
+        <div class="story-container">
+            <div class="back" back-img="{{cdn}}/images/stories/saturated/{{user.avatar.avatarBaseTypeId}}/{{getLatestStoryPicture()}}"></div>
+            <div class="character" back-img="{{cdn}}/images/characters/{{user.avatar.avatarBaseTypeId}}/736x736/{{getCorrectLevelPicture()}}/s{{user.avatar.skinColor}}h{{user.avatar.hairColor}}.png"></div>
+        </div>
+        
+        <div class="row">
+            
+            <div class="col-xs-6 col-md-3">
+
+                <div class="character-summary">
+                    
+                    <h2>{{'Level' | translate}} {{user.level.level}}</h2>
+
+                    <div class="progress progress-striped">
+                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="{{user.wallet.nextLevelPercentage}}" aria-valuemin="0" aria-valuemax="100" style="width: {{user.wallet.nextLevelPercentage}}%"></div>
+                    </div>
+                        
+                    <table class="table table-inverse">
+                        <tbody>
+                            <tr>
+                                <td class="key" translate>Alias</td>
+                                <td colspan="2" class="value">{{user.nickname}}</td>
+                            </tr>
+                            <tr>
+                                <td class="key" translate>Name</td>
+                                <td colspan="2" class="value">{{user.firstName + ' ' + user.lastName}}</td>
+                            </tr>
+                            <tr>
+                                <td class="key" translate>Citizen</td>
+                                <td colspan="2" class="value">{{getCharacterName(user.avatar.avatarBaseTypeId)}}</td>
+                            </tr>
+                            <tr>
+                                <td class="key" translate>Level</td>
+                                <td class="value">{{user.level.level}}</td>
+                                <td class="action r"><a data-placement="right" data-trigger="hover" data-content="{{ 'user level popover description' | translate }}" data-title="{{ 'Level' | translate }} {{user.level.level}}" bs-popover><i class="icon icon-info"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td class="key" translate>Blings</td>
+                                <td class="value">{{user.wallet.creditsBalance | number}}</td>
+                                <td class="action r"><a data-placement="right" data-trigger="hover" data-content="{{ 'blings popover description' | translate }}" data-title="{{ 'Blings' | translate }}: {{user.wallet.creditsBalance | number}}" bs-popover><i class="icon icon-info"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td class="key" translate>Cash Back</td>
+                                <td class="value">{{user.level.cashbackPercentage | number:2}}%</td>
+                                <td class="action r"><a data-placement="right" data-trigger="hover" data-content="{{ 'cash backs popover description' | translate }}" data-title="{{ 'Cash Backs' | translate }} {{user.level.cashbackPercentage | number:2}}%" bs-popover><i class="icon icon-info"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td class="key" translate>Deposit Bonus</td>
+                                <td class="value">{{user.level.depositBonusPercentage | number}}%</td>
+                                <td class="action r"><a data-placement="right" data-trigger="hover" data-content="{{ 'deposit bonus popover description' | translate }}" data-title="{{ 'Deposit Bonus' | translate }}" bs-popover><i class="icon icon-info"></i></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+            <div class="pages col-xs-12 col-md-offset-3 col-md-6">
+                
+                <nav class="navbar navbar-pills">
+                    <ul class="nav nav-pills">
+                        <li active-tab="2"><a href="#/story/items" translate>My Stuff</a></li>
+                        <li active-tab="2"><a href="#/story/history" translate>My History</a></li>
+                        <li active-tab="2"><a href="#/story/settings" translate>Settings</a></li>
+                    </ul>
+                </nav>
+
+                <div class="pane">
+           
+                    <h5>
+                        {{'Personal Details' | translate }} &nbsp;
+                        <ng-switch on="settings.personal">
+                            <button ng-switch-when="r" ng-click="edit(personalForm, 'personal')" class="btn btn-xs btn-shadow">{{ 'Edit' | translate }}</button>
+                            <button ng-switch-when="w" ng-disabled="personalForm.thinking" ng-click="save(personalForm, 'personal')" class="btn btn-xs btn-primary">{{ 'Save' | translate }}</button>
+                        </ng-switch>
+                    </h5>
+                
+                    <form novalidate role="form" name="personalForm" class="form-inline">
+                        <table class="table table-inverse">
+                            <tbody>
+                                <tr>
+                                    <td class="key" translate>First name:</td>
+                                    <td class="value">
+                                        <ng-switch on="settings.personal">
+                                            <span ng-switch-when="r">{{user.firstName}}</span>
+                                            <div ng-switch-when="w" class="form-group" ng-class="{'has-error': personalForm.firstName.$invalid && personalForm.submitted, 'has-success': personalForm.firstName.$valid, 'has-feedback': personalForm.firstName.$valid || (personalForm.submitted && personalForm.firstName.$error)}">
+                                                <input type="text" class="form-control" name="firstName" ng-model="userCopy.firstName" ng-minlength="2" required>
+                                                <span class="form-control-feedback" ng-show="personalForm.firstName.$valid || (personalForm.submitted && personalForm.firstName.$error)" ng-class="{'icon icon-tick': personalForm.firstName.$valid, 'icon icon-close': personalForm.firstName.$invalid && personalForm.submitted}"></span>
+
+                                                <div class="popover right" ng-class="{'show': personalForm.submitted && personalForm.firstName.$invalid}">
+                                                    <div class="arrow"></div>
+                                                    <div class="popover-content">
+                                                        <p ng-show="personalForm.firstName.$error.required" translate>This field is required</p>
+                                                        <p ng-show="personalForm.firstName.$error.minlength" translate>This field requires at least 2 characters</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </ng-switch>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="key" translate>Last name:</td>
+                                    <td class="value">
+
+                                        <ng-switch on="settings.personal">
+                                            <span ng-switch-when="r">{{user.lastName}}</span>
+                                            <div ng-switch-when="w" class="form-group" ng-class="{'has-error': personalForm.lastName.$invalid && personalForm.submitted, 'has-success': personalForm.lastName.$valid, 'has-feedback': personalForm.lastName.$valid || (personalForm.submitted && personalForm.lastName.$error)}">
+                                                <input type="text" class="form-control" name="lastName" ng-model="userCopy.lastName" ng-minlength="2" required>
+                                                <span class="form-control-feedback" ng-show="personalForm.lastName.$valid || (personalForm.submitted && personalForm.lastName.$error)" ng-class="{'icon icon-tick': personalForm.lastName.$valid, 'icon icon-close': personalForm.lastName.$invalid && personalForm.submitted}"></span>
+
+                                                <div class="popover right" ng-class="{'show': personalForm.submitted && personalForm.lastName.$invalid}">
+                                                    <div class="arrow"></div>
+                                                    <div class="popover-content">
+                                                        <p ng-show="personalForm.lastName.$error.required" translate>This field is required</p>
+                                                        <p ng-show="personalForm.lastName.$error.minlength" translate>This field requires at least 2 characters</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </ng-switch>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="key" translate>Date of Birth:</td>
+                                    <td class="value">{{user.birthday | date: 'MM-dd-yyyy'}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                        
+                    <h5>
+                        {{'Contact Details' | translate }} &nbsp; 
+                        <ng-switch on="settings.contact">
+                            <button ng-switch-when="r" ng-click="edit(contactForm, 'contact')" class="btn btn-xs btn-shadow">{{ 'Edit' | translate }}</button>
+                            <button ng-switch-when="w" ng-disabled="contactForm.thinking" ng-click="save(contactForm, 'contact')" class="btn btn-xs btn-primary">{{ 'Save' | translate }}</button>
+                        </ng-switch>
+                    </h5>
+                
+                    <form novalidate role="form" name="contactForm" class="form-inline">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td class="key" translate>Email Address:</td>
+                                    <td class="value">{{user.emailAddress}}</td>
+                                </tr>
+                                <tr>
+                                    <td class="key" translate>Home Address:</td>
+                                    <td class="value">{{user.address.street}}</td>
+                                </tr>
+                                <tr>
+                                    <td class="key" translate>Post Code:</td>
+                                    <td class="value">{{user.address.zipCode}}</td>
+                                </tr>
+                                <tr>
+                                    <td class="key" translate>City:</td>
+                                    <td class="value">{{user.address.city}}</td>
+                                </tr>
+                                <tr>
+                                    <td class="key" translate>Country:</td>
+                                    <td class="value">{{user.address.country}}</td>
+                                </tr>
+                                <tr>
+                                    <td class="key" translate>Phone Number:</td>
+                                    <td class="value">
+                                        <ng-switch on="settings.contact">
+                                            <span ng-switch-when="r">{{user.phoneNumber}}</span>
+                                            <div ng-switch-when="w" class="form-group" ng-class="{'has-error': contactForm.phoneNumber.$invalid && contactForm.submitted, 'has-success': contactForm.phoneNumber.$valid, 'has-feedback': contactForm.phoneNumber.$valid || (contactForm.submitted && contactForm.phoneNumber.$error)}">
+                                                <input type="text" class="form-control" name="phoneNumber" ng-model="userCopy.phoneNumber" ng-pattern="/^[0-9-]+$/" ng-minlength="6" ng-maxlength="14" required>
+                                                <span class="form-control-feedback" ng-show="contactForm.phoneNumber.$valid || (contactForm.submitted && contactForm.phoneNumber.$error)" ng-class="{'icon icon-tick': contactForm.phoneNumber.$valid, 'icon icon-close': contactForm.phoneNumber.$invalid && contactForm.submitted}"></span>
+
+                                                <div class="popover right" ng-class="{'show': contactForm.submitted && contactForm.phoneNumber.$invalid}">
+                                                    <div class="arrow"></div>
+                                                        <div class="popover-content">
+                                                            <p ng-show="contactForm.phoneNumber.$error.required" translate>This field is required</p>
+                                                            <p ng-show="contactForm.phoneNumber.$error.pattern" translate>Number is invalid</p>
+                                                            <p ng-show="contactForm.phoneNumber.$error.minlength" translate>You must enter at least 6 numbers</p>
+                                                            <p ng-show="contactForm.phoneNumber.$error.maxlength" translate>You cannot enter more than 14 numbers</p>
+                                                        </div>
+                                                </div>
+
+                                            </div>
+                                        </ng-switch>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                        
+                    <h5>
+                        {{'Account Details' | translate }} &nbsp; 
+                        <ng-switch on="settings.account">
+                            <button ng-switch-when="r" ng-click="edit(accountForm, 'account')" class="btn btn-xs btn-shadow">{{ 'Edit' | translate }}</button>
+                            <button ng-switch-when="w" ng-disabled="accountForm.thinking" ng-click="save(accountForm, 'account')" class="btn btn-xs btn-primary">{{ 'Save' | translate }}</button>
+                        </ng-switch>
+                    </h5>
+                
+                    <form novalidate role="form" name="accountForm" class="form-inline" autocomplete="off">
+                        <div ng-switch on="settings.account">
+                            <table ng-switch-when="r" class="table">
+                                <tbody>
+                                    <tr>
+                                        <td class="key" translate>Nickname:</td>
+                                        <td class="value">{{user.nickname}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key" translate>Password:</td>
+                                        <td class="value">**********</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table ng-switch-when="w" class="table">
+                                <tbody>
+                                    <tr>
+                                        <td class="key" translate>Nickname:</td>
+                                        <td class="value">{{user.nickname}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key" translate>Current Password:</td>
+                                        <td class="value">
+                                            <div class="form-group" ng-class="{'has-error': accountForm.password.$invalid && accountForm.submitted, 'has-success': accountForm.password.$valid, 'has-feedback': accountForm.password.$valid || (accountForm.submitted && accountForm.password.$error)}">
+                                                <input type="password" class="form-control" name="password" autocomplete="off" ng-model="userCopy.password" ng-pattern="/(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\S+$).{8,40}/" required>
+                                                <span class="form-control-feedback" ng-show="accountForm.password.$valid || (accountForm.submitted && accountForm.password.$error)" ng-class="{'icon icon-tick': accountForm.password.$valid, 'icon icon-close': accountForm.password.$invalid && accountForm.submitted}"></span>
+
+                                                <div class="popover right" ng-class="{'show': accountForm.submitted && accountForm.password.$invalid}">
+                                                    <div class="arrow"></div>
+                                                    <div class="popover-content">
+                                                        <p ng-show="accountForm.password.$error.required" translate>This field is required</p>
+                                                        <p ng-show="accountForm.password.$error.password" translate>The password provided is incorrect</p>
+                                                        <p ng-show="accountForm.password.$error.pattern" translate>Your password must be at least 8 characters in length and contain at least 1 lowercase character, 1 capital letter and 1 number.</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key" translate>New Password:</td>
+                                        <td class="value">
+                                            <div class="form-group" ng-class="{'has-error': accountForm.newPassword.$invalid && accountForm.submitted, 'has-success': accountForm.newPassword.$valid, 'has-feedback': accountForm.newPassword.$valid || (accountForm.submitted && accountForm.newPassword.$error)}">
+                                                <input type="password" class="form-control" name="newPassword" autocomplete="off" ng-model="userCopy.newPassword" ng-pattern="/(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\S+$).{8,40}/" required>
+                                                <span class="form-control-feedback" ng-show="accountForm.newPassword.$valid || (accountForm.submitted && accountForm.newPassword.$error)" ng-class="{'icon icon-tick': accountForm.newPassword.$valid, 'icon icon-close': accountForm.newPassword.$invalid && accountForm.submitted}"></span>
+
+                                                <div class="popover right" ng-class="{'show': accountForm.submitted && accountForm.newPassword.$invalid}">
+                                                    <div class="arrow"></div>
+                                                    <div class="popover-content">
+                                                        <p ng-show="accountForm.newPassword.$error.required" translate>This field is required</p>
+                                                        <p ng-show="accountForm.newPassword.$error.pattern" translate>Your password must be at least 8 characters in length and contain at least 1 lowercase character, 1 capital letter and 1 number.</p>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="key" translate>Confirm Password:</td>
+                                        <td class="value">
+                                            <div class="form-group" ng-class="{'has-error': accountForm.confirmPassword.$invalid && accountForm.submitted, 'has-success': accountForm.confirmPassword.$valid, 'has-feedback': accountForm.confirmPassword.$valid || (accountForm.submitted && accountForm.confirmPassword.$error)}">
+                                                <input type="password" class="form-control" name="confirmPassword" autocomplete="off" ng-model="userCopy.confirmPassword" equals="{{userCopy.newPassword}}" required>
+                                                <span class="form-control-feedback" ng-show="accountForm.confirmPassword.$valid || (accountForm.submitted && accountForm.confirmPassword.$error)" ng-class="{'icon icon-tick': accountForm.confirmPassword.$valid, 'icon icon-close': accountForm.confirmPassword.$invalid && accountForm.submitted}"></span>
+
+                                                <div class="popover right" ng-class="{'show': accountForm.submitted && accountForm.confirmPassword.$invalid}">
+                                                    <div class="arrow"></div>
+                                                    <div class="popover-content">
+                                                        <p ng-show="accountForm.confirmPassword.$error.required" translate>This field is required</p>
+                                                        <p ng-show="accountForm.confirmPassword.$error.pattern" translate>Your password must be at least 8 characters in length and contain at least 1 lowercase character, 1 capital letter and 1 number.</p>
+                                                        <p ng-show="accountForm.confirmPassword.$error.equals && !accountForm.confirmPassword.$error.required" translate>Password must be valid and must match</p>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </form>
+
+                    <br>
+
+                    <!--
+                    <div>
+                        <label for="marketing1" class="pull-left" translate>I want to subscribe to BlingCity Newsletter with current promotions</label>
+                        <input name="marketing1" id="marketing1" type="checkbox" class="pull-right switch" checked="checked">
+                        <div class="clearfix"></div>
+                    </div>
+                    <br>
+                    -->
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>

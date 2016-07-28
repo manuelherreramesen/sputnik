@@ -1,0 +1,8 @@
+[{
+    "type": "DEPOSIT",
+    "percentage": 200,
+    "maxAmount": 200,
+    "minAmount": 20,
+    "validTo": "date",
+    "toc": "welcome-bonus"
+}]

@@ -1,0 +1,61 @@
+#loginSignup {
+
+    > .modal-dialog {
+        width: 655px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .col-sm-6 {
+        &:first-child {
+            border-right: 1px solid #f1f1f1;
+        }
+        &.last-child {
+            border-left: 1px solid #fafafa;
+        }
+    }
+
+    .form-control {
+        border-color: #e0e0e0;
+        @include box-shadow(none);
+        height: 48px;
+    }
+
+    .form-control-feedback {
+        width: 48px;
+        height: 48px;
+        line-height: 48px;
+        font-size: 17px;
+
+        &.icon-email {
+            font-size: 22px;
+        }
+
+    }
+
+    .side-links {
+        position: relative;
+        height: 36px;
+        line-height: 36px;
+
+        .inner {
+            display: inline-block;
+        }
+
+        a {
+            display: block;
+            line-height: 1.4;
+        }
+    }
+
+    h5 {
+        color: #89758b;
+    }
+        
+    p {
+        b {
+            color: #7e7e7e;
+        }
+    }
+
+}

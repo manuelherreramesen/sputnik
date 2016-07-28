@@ -1,0 +1,126 @@
+$showroom-width: 1170px;
+
+#showroom {
+    position: relative;
+
+    area {
+        display: block;
+        cursor: pointer;
+    }
+
+    .overflower {
+        overflow: hidden;
+    }
+
+    .middle {
+        position: relative;
+        margin: 0 auto;
+        width: $showroom-width;
+        height: 687px;
+        min-height: 687px;
+    
+        &:before,
+        &:after {
+            position: absolute;
+            content: ' ';
+            top: 0;
+            background-repeat: no-repeat;
+        }
+
+        &:before {
+            right: 100%;
+            background-image: image-url('pages/showroom/back-left.jpg');
+            width: image-width('pages/showroom/back-left.jpg');
+            height: image-height('pages/showroom/back-left.jpg');
+        }
+        &:after {
+            left: 100%;
+            background-image: image-url('pages/showroom/back-right.jpg');
+            width: image-width('pages/showroom/back-right.jpg');
+            height: image-height('pages/showroom/back-right.jpg');
+        }
+
+    }
+
+    .popover-list {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: $showroom-width;
+        margin-left: ($showroom-width / 2) * -1;
+    }
+
+    .popover {
+        position: absolute;
+        min-width: 524px;
+
+        h4, h5 {
+            margin-top: 0;
+            margin-bottom: 3px;
+        }
+
+        p {
+            margin-bottom: 9px;
+        }
+
+        button {
+            margin-bottom: 6px;
+        }
+
+    }
+
+    .requirements {
+        margin-bottom: 9px;
+        margin-left: -2px;
+        margin-right: -2px;
+
+        > div {
+            padding: 0 2px;
+
+            > div {
+                padding: 10px 2px;
+                text-align: center;
+                text-transform: uppercase;
+                border: 1px solid #ededed;
+                background: #fff;
+                color: #5b505f;
+            }
+        }
+    }
+
+    #popover-las-vegas {
+        left: -75px;
+        top: 435px;
+    }
+    #popover-itunes {
+        left: 155px;
+        top: 227px;
+    }
+    #popover-elle {
+        left: 155px;
+        top: 227px;
+    }
+    #popover-dolce-gusto {
+        left: 315px;
+        top: 374px;
+    }
+    #popover-victorias-secret {
+        left: 475px;
+        top: 366px;
+    }
+    #popover-ray-ban {
+        left: 685px;
+        top: 271px;
+    }
+    #popover-apple {
+        left: 762px;
+        top: 490px;
+    }
+
+}
+
+#showroomModal {
+    .modal-dialog {
+        margin: 190px auto;
+    }
+}

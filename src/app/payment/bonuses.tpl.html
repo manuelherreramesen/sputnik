@@ -1,0 +1,52 @@
+<div id="cashier" class="bonuses">
+    <div class="container-bg bg-{{randomBg}}">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12" ng-include="'/app/payment/navbar-pills.tpl.html'"></div>
+            </div>
+
+            <div class="row equal-height">
+                <div class="col-md-9">
+                    <div class="row pane">
+                        <div class="col-md-9">
+                            <div>
+                                <h5 class="pane-heading" translate>AVAILABLE BONUSES</h5>
+                                <hr/>
+                                <table class="bonus-money-info">
+                                	<tr>
+                                		<td><span translate>MY REAL MONEY</span>:</td>
+                                		<td><span class="value">{{user.wallet.moneyBalance | currency: '€' }}</span></td>
+                                	</tr>
+                                	<tr>
+                                		<td><span translate>MY ACTIVE BONUS MONEY</span>:</td>
+                                		<td><span class="text-active">{{user.wallet.bonusBalance | currency: '€' }}</span></td>
+                                	</tr>
+                                	<tr>
+                                		<td><span translate>MY TOTAL BONUS MONEY</span>:</td>
+                                		<td><span class="text-contrast">{{playerBonuses.totalAmount | currency: '€' }}</span></td>
+                                	</tr>
+                                </table>
+                                <hr ng-hide="bonus.removed" ng-repeat-start="bonus in playerBonuses.bonuses"/>
+                                <div ng-hide="bonus.removed" class="row pie-row">
+                                	<div class="col-md-4 pie-holder hidden-xs">
+                                        <div class="bonus-pie" ng-init="init()">
+                                        	<div class="overlay overlay-{{bonus.idx}}" ng-class="{big: bonus.pie.isBig}"></div>
+                                        	<div class="middle"><img src="{{cdn}}/images/sprites/global/pie-middle.png" alt="" /></div>
+                                            <h5>{{bonus.pie.pcent}}%</h5>
+                                        </div>
+                                    </div>
+                                	<div class="col-md-8 popover-holder" ng-include="bonus.tpl"></div>
+                                </div>
+                                <div ng-repeat-end></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div ng-include="'/app/payment/account-box.tpl.html'"></div>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,111 @@
+#promotions {
+
+    > .container-bg {        
+        > .container {
+            min-height: inherit;
+            padding-top: 40px;
+            padding-bottom: 70px;
+        }
+    }
+
+    .promotion-list {
+        padding: 0;
+    }
+
+    .promotion {
+        > .img {
+            height: 178px;
+        }
+    }
+
+    .promotion {
+        position: relative;
+        margin-bottom: 30px;
+        border-radius: $border-radius-base+1 $border-radius-base+1 $border-radius-base $border-radius-base;
+        box-shadow: 0 0 13px rgba(0, 0, 0, .65);
+        background: #f8f8f8;
+
+        &:hover {
+            > a {
+                opacity: 1;
+            }
+        }
+
+        > .img {
+            background-size: cover;
+            background-position: right top;
+            background-repeat: no-repeat;
+            @include single-transition(background-size, 0.1s, ease);
+            border-radius: $border-radius-base $border-radius-base 0 0;
+        }
+
+        > .content {
+            padding: 17px;
+            color: #47364e;
+        }
+
+        h4 {
+            margin: 0;
+            font-weight: 600;
+            color: #47364e;
+        }
+
+        p {
+            margin-bottom: 0;
+            color: #7a6f7f;
+        }
+
+        > a {
+            opacity: 0.1;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            text-decoration: none;
+            background: rgba(255, 255, 255, 0.1);
+            @include single-transition(opacity, .35s, ease);
+        }
+
+    }
+
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    #promotions {
+        .col-sm-6 {
+            .promotion {
+                > .img {
+                    height: 143px;
+                }
+            }
+        }
+        .col-sm-12 {
+            .promotion {
+                > .img {
+                    height: 220px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $screen-md-min) {
+    #promotions {
+        .col-sm-6 {
+            .promotion {
+                > .img {
+                    height: 190px;
+                }
+            }
+        }
+
+        .col-sm-12 {
+            .promotion {
+                > .img {
+                    height: 290px;
+                }
+            }
+        }
+    }
+}

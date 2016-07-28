@@ -1,0 +1,51 @@
+<div id="story" ng-if="user.id !== null">
+    <div class="container">
+
+        <div class="story-container">
+            <div class="back" back-img="{{cdn}}/images/stories/saturated/{{user.avatar.avatarBaseTypeId}}/{{getLatestStoryPicture()}}"></div>
+            <div class="character" back-img="{{cdn}}/images/characters/{{user.avatar.avatarBaseTypeId}}/736x736/{{getCorrectLevelPicture()}}/s{{user.avatar.skinColor}}h{{user.avatar.hairColor}}.png"></div>
+        </div>
+        
+        <div class="row">
+            
+            <div class="col-xs-6 col-md-3">
+                <div ng-include="'/app/story/character-summary.tpl.html'"></div>
+            </div>
+
+            <div class="pages col-xs-12 col-md-offset-3 col-md-6">
+                
+                <nav class="navbar navbar-pills">
+                    <ul class="nav nav-pills">
+                        <li active-tab="2"><a href="#/story/items" translate>My Stuff</a></li>
+                        <li active-tab="2"><a href="#/story/history" translate>My History</a></li>
+                        <li active-tab="2"><a href="#/story/settings" translate>Settings</a></li>
+                    </ul>
+                </nav>
+
+                <div class="pane">
+                            
+                    <h5 translate>My Gallery</h5>
+                    <section class="active-items">
+                        <div ng-repeat="item in slots.active" class="character-item">
+                            <div class="item" ng-if="item.id" data-template="/app/story/item-popover.tpl.html" data-trigger="click" data-placement="top" data-title="{{item.reward.title}}" data-placement="top" back-img="{{cdn}}/images/items/{{user.avatar.avatarBaseTypeId}}/{{item.url}}" bs-popover></div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </section>
+                        
+                    <h5 translate>My Collection</h5>
+                    <section class="used-items">
+                        <div ng-repeat="item in slots.used" class="character-item">
+                            <div class="item" ng-if="item" back-img="{{cdn}}/images/items/{{user.avatar.avatarBaseTypeId}}/{{item.url}}"></div>
+                            <i ng-if="!item" class="icon icon-lock"></i>
+                        </div>
+                        <div class="clearfix"></div>
+                    </section>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>

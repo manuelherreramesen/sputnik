@@ -1,0 +1,125 @@
+.table-inverse {
+
+    // Cells
+    > thead,
+    > tbody,
+    > tfoot {
+        > tr {
+            > th,
+            > td {
+                border-color: rgba(255, 255, 255, 0.05);
+            }
+        }
+    }
+
+    // Bottom align for column headings
+    > thead > tr > th {
+        border-color: rgba(255, 255, 255, 0.05);
+    }
+
+    // Account for multiple tbody instances
+    > tbody + tbody {
+        border-color: rgba(255, 255, 255, 0.05);
+    }
+
+    th {
+        color: #fff;
+    }
+
+    tbody > tr {
+        &:first-child { 
+            > td {
+                border-top: 0;
+            }
+        }
+        
+        > td {
+            &.key {
+                color: #c3bec1;
+            }
+            &.action a {
+                display: inline-block;
+                font-size: 12px;
+                text-transform: uppercase;
+                color: #cecece;
+                @include text-shadow(0 0 8px #1e1422);
+            }
+        }
+    }
+}
+
+table {
+    .l {
+        text-align: left;
+    }
+
+    .c {
+        text-align: center;
+    }
+
+    .r {
+        text-align: right;
+    }
+}
+
+.table-striped-fancy {
+
+    > thead {
+        background-color: #160b1b;
+
+        > tr {
+            > th {
+                border-bottom: 0;
+                padding: 15px 11px;
+                text-transform: uppercase;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 13px;
+                color: #fffdfe;
+                border-right: 1px solid #2a1d2e;
+
+                &:last-child {
+                    border-right: 0;
+                }
+            }
+        }
+    }
+    
+    > tbody {
+
+        > tr {
+            background-color: #2a1b2e;
+
+            &:nth-child(odd) {
+                > td,
+                > th {
+                    background-color: #35263b;
+                }
+            }
+
+            > td {
+                border-top: 0;
+                padding: 12px 21px;
+                color: #adadaf;
+                border-right: 1px solid #201325;
+
+                &:last-child {
+                    border-right: 0;
+                }
+            }
+        }
+
+    }
+
+}
+
+table > thead > tr,
+table > tbody > tr,
+table > tfoot > tr {
+    > td.emphasis,
+    > th.emphasis,
+    &.emphasis > td,
+    &.emphasis > th {
+        background-color: #f29216;
+        color: #3c2141;
+    }
+}

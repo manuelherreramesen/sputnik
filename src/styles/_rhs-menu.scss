@@ -1,0 +1,131 @@
+$color: #AA91B3;
+$activeColor: #fff;
+
+#rhs-menu {
+    z-index: 1031;
+    position: fixed;
+    right: 0;
+    top: 35%;
+    font-size: 29px;
+    line-height: 29px;
+    border-radius: $border-radius-base 0 0 $border-radius-base;
+    background: rgba(0, 0, 0, 0.7);
+    color: $color;
+
+    > li {
+        position: relative;
+
+        &:hover,
+        &:focus {
+            color: $activeColor;
+
+            > a {
+                color: $activeColor;
+            }
+        }
+
+        > a {
+            display: block;
+            padding: 6px 10px 5px;
+            cursor: pointer;
+            color: $color;
+            @include single-transition(color, .35s, ease);
+            text-align: center;
+            
+            /*
+            Compass won't let this go through for some reason?
+            > i {
+                background: -webkit-gradient(linear, left top, left bottom, from(#8D7C92), to(#6D5974));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            */
+
+        }
+
+        &.active {
+            background: #4c3b52;
+            color: $activeColor;
+
+            > .pop-out {
+                display: block;
+            }
+        }
+
+        > .pop-out {
+            position: absolute;
+            display: none;
+            top: 0;
+            right: 48px;
+            background: #4c3b52;
+
+            &.languages {
+                width: 82px;
+                padding: 6px 0 6px 11px;
+                @include clearfix();
+
+                /* Animations */
+                @include single-transition(width, .35s, ease);
+                // Angular <1.2.6 fix
+                &:before,
+                &:after {
+                    border-spacing: 0 0 !important;
+                }
+
+                //
+
+                > a {
+                    float: left;
+                    width: 28px;
+                    height: 28px;
+                    margin-right: 12px;
+                    cursor: pointer;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+
+            &.live-chat {
+                z-index: -1;
+                right: 0;
+                width: 212px;
+                padding: 15px;
+                text-align: center;
+
+                > form {
+                    text-align: left;
+                    margin-bottom: 10px;
+
+                    legend {
+                        margin-bottom: 20px;
+                        border-bottom: 0;
+                        font-family: 'Montserrat', sans-serif;
+                        font-size: 14px;
+                        text-transform: uppercase;
+                        line-height: 1;
+                        color: #fff;
+                    }
+                }
+
+                .form-group {
+                    margin-bottom: 7px;
+                }
+
+                input {
+                    height: 26px;
+                    font-size: 12px;
+                }
+
+                > a {
+                    font-size: 11px;
+                    color: #e1e1e1;
+                }
+            }
+
+        }
+
+    }
+
+}

@@ -1,0 +1,417 @@
+.navbar-brand {
+    float: none;
+    line-height: 49px;
+}
+
+.navbar {
+
+    .top {
+        text-align: center;
+    }
+
+}
+
+.nav > li > a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-default {
+    border-bottom: 0;
+    background-color: #78517b;
+    @include filter-gradient(#78517b, #674569, vertical);
+    @include background-image(linear-gradient(top, #78517b 0%, #674569 100%));
+
+    .navbar-text {
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    .navbar-nav {
+        > .active > a,
+        > .active > a:hover,
+        > .active > a:focus,
+        > li > a:hover,
+        > li > a:focus {
+            background-color: transparent;
+            @include background-image(linear-gradient(top, rgba(136, 102, 139, 0.65) 0%, rgba(121, 91, 123, 0.65) 100%));
+            color: #fff;
+        }
+
+        > li > a:hover,
+        > li > a:focus {
+            background-color: transparent;
+            @include background-image(linear-gradient(top, rgba(136, 102, 139, 0.3) 0%, rgba(121, 91, 123, 0.3) 100%));
+        }
+
+        .caret {
+            border-left-width: 6px;
+            border-right-width: 6px;
+            border-top-color: #735374;
+            border-bottom-color: #735374;
+        }
+
+    }
+
+    .navbar-toggle {
+        float: left;
+        padding: 10px 0;
+        border: 0;
+
+        &:hover,
+        &:focus {
+            background-color: transparent;
+        }
+
+        > .icon-bar {
+            background-color: #ebedea;
+        }
+    }
+
+}
+
+.navbar-secondary {
+    padding: 5px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background: #ebebeb;
+}
+
+.navbar-tertiary {
+    border: 0;
+    border-radius: $border-radius-base;
+    background-color: #150a1a;
+    
+    a {
+        text-transform: uppercase;
+        color: #d5d5d5;
+    }
+
+    .navbar-nav {
+
+        > li > a {
+            padding: 9px 6px;
+            font-size: 11px;
+        }
+
+        > .active > a,
+        > .active > a:hover,
+        > .active > a:focus {
+            z-index: 1;
+            background-color: #5a4961;
+            @include filter-gradient(#5a4961, #3f3045, vertical);
+            @include background-image(linear-gradient(top, #5a4961 0%, #3f3045 100%));
+            color: #fff;
+            @include box-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+            border-radius: $border-radius-base;
+        }
+
+        > li > a:hover,
+        > li > a:focus {
+            background: #312436;
+        }
+
+    }
+}
+
+.navbar-games {
+    // We either use nav-justified or have a fixed amount of categories in the lobby with this
+    > .nav {
+        width: 100%;
+
+        li {
+            width: percentage(1 / 6);
+            text-align: center;
+        }
+    }
+}
+
+.navbar-fixed-top {
+    
+    > .inner {
+        margin: 3px 0;
+        border-top: 1px dashed #8C6B8F;
+        border-bottom: 1px dashed #8C6B8F;
+    }
+
+    &.primary {
+        min-height: 103px;
+        background: #150a1a;
+
+        .navbar-btn {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            padding: 10px 25px;
+            border-radius: 3px;
+            line-height: 21px;
+
+            .glyphicon-user,
+            .glyphicon-user-add {
+                top: -1px;
+            }
+
+            .glyphicon-credit-card {
+                top: -2px; 
+            }
+
+            &.visible-xs {
+                width: 50px;
+                margin-top: 26px;
+                margin-bottom: 26px;
+                padding: 12px;
+                line-height: 1;
+                border-radius: 100%;
+                font-size: 23px;
+            }
+
+        }
+
+        .deposit-btn {
+            font-size: 13px;
+        }
+
+    }
+    &.secondary {
+        top: 103px;
+
+        .container {
+            position: relative;
+        }
+
+        .nav > li > a {
+            text-transform: uppercase;
+            margin-top: -4px;
+            margin-bottom: -4px;
+            padding: 14px 15px;
+        }
+
+        .navbar-text {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .logout-link {
+            > li {
+                > a {
+                    padding: 14px 0;
+                    font-size: 11px;
+                    color: rgba(0, 0, 0, 0.5);
+                    &:hover {
+                        background: none;
+                        color: rgba(0, 0, 0, 0.7);
+                    }
+                }
+            }
+        }
+
+        // Pull up the social icons
+        .social-icons {
+            position: absolute;
+            top: 0;
+            right: 15px;
+            margin: 0;
+
+            > li {
+                float: left;
+
+                > a {
+                    padding: 13px 6px;
+
+                    &:hover {
+                        background: none;
+                        > i {
+                            color: #cab3cc;
+                        }
+                    }
+
+                    > i {
+                        font-size: 18px;
+                        color: #523654;
+                    }
+
+                }
+            }
+        }
+
+    }
+
+    .nav-centered {
+        margin: 36px -15px 0;
+    }
+
+}
+
+.navbar-nav {
+    &.nav-justified {
+        > li {
+            float: none;
+        }
+    }
+    .caret {
+        position: absolute;
+        left: 43%;
+        bottom: ($caret-width-base + 4px) * -1;
+        margin: 0 auto;
+        display: none;
+    }
+}
+
+.navbar-pills {
+    margin-bottom: 10px;
+}
+
+.nav-pills {
+
+    > li {
+        margin-right: 10px;
+
+        &.active > a {
+            &,
+            &:hover,
+            &:focus {
+                border-top: #684a6a;
+                background-color: #5a4961;
+                @include filter-gradient(#5a4961, #3f3045, vertical);
+                @include background-image(linear-gradient(top, #5a4961 0%, #3f3045 100%));
+                @include box-shadow(0 1px 2px rgba(0, 0, 0, 0.5));
+            }
+        }
+        > a {
+            // Might be a temporary value... We shouldn't set the minimum width, perhaps increase padding?
+            min-width: 115px;
+            padding: 9px 6px;
+            font-size: 11px;
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            text-align: center;
+            background: #150a1a;
+            color: #fff;
+
+            &:hover {
+                background-color: #312436;
+            }
+        }
+    }
+}
+
+.nav-tabs {
+    background: #281930;
+
+    > li {
+        > a {
+            border-radius: 0;
+            color: #b2adb3;
+            &:hover,
+            &:active {
+                border-bottom: 0;
+                border-color: transparent;
+                background-color: #35273b;
+            }
+        }
+    }
+
+    &.nav-aero {
+        background: none;
+        border: 0;
+
+        > li {
+
+            &:last-child {
+                > a {
+
+                }
+            }
+
+            > a {
+                margin-left: 1px;
+                margin-right: 0;
+                border: 0;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 11px;
+                text-transform: uppercase;
+                background: rgba(57, 51, 63, .9);
+                color: #dedcdf;
+
+                &:hover,
+                &:focus {
+                    background: rgba(57, 51, 63, 1);
+                    color: #fff;
+                }
+
+            }
+        }
+
+    }
+
+}
+
+.nav-search {
+    border: 0;
+
+    > input {
+        height: 36px;
+        padding-left: 31px;
+        border: 0;
+        border-radius: $border-radius-base;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 11px;
+        background: #150a1a sprite($globalSpriteMap, search) no-repeat;
+        color: #fff;
+        @include single-transition(background, .35s, ease);
+
+        &::-webkit-input-placeholder,
+        &:-moz-placeholder,
+        &::-moz-placeholder,
+        &:-ms-input-placeholder {
+            color: #8e8391;
+        }
+
+        &:active,
+        &:focus {
+            background-color: #312437;
+            border-color: 0;
+            box-shadow: none;
+        }
+    }
+
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {    
+    .navbar-fixed-top {
+        &.primary {
+            .navbar-btn {
+                padding: 10px 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: $screen-xs-max) {
+    .navbar-games {
+        > .nav {
+            width: initial;
+            
+            li {
+                width: initial;
+            }
+        }
+    }
+}
+
+@media (min-width: $screen-sm-min) {
+    
+    .navbar-nav {
+        li.active > .caret {
+            display: block;
+        }
+    }
+
+    .navbar-fixed-top {
+        .nav-centered {
+            margin: 0 auto;
+            display: table;
+            table-layout: fixed;
+            float:none;
+        }
+    }
+}

@@ -1,0 +1,2860 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: BlingCity-Translation\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Fernando\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.6.5\n"
+
+#: src/app/payment/account-box.tpl.html
+msgid "% DONE"
+msgstr ""
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid "* PGSI (PROBLEM GAMBLING SEVERITY INDEX)"
+msgstr ""
+
+#: src/app/vip/vip.tpl.html
+msgid "* deposit bonus description"
+msgstr ""
+"Deposit Bonus Level is the % level of bonus you get when you deposit money "
+"to your account. The higher your level is the higher your bonus will be."
+
+#: src/app/vip/vip.tpl.html
+msgid "** cash back mondays description."
+msgstr ""
+"Cash Back starts at level 10 and increases with every 10th level you reach. "
+"It is the amount of real money you get back every Monday by noon from the "
+"former weeks play. "
+
+#: src/app/vip/vip.tpl.html
+msgid "*** blings description"
+msgstr ""
+"Blings are BlingCity’s very own currency. With Blings you can acquire real "
+"money, purchase bonus money, and also buy things in our world."
+
+#: src/languages/__dynamic-strings.html
+msgid "10% Royalty Program Bonus"
+msgstr ""
+
+#: src/app/promotion/content/100-match-bonus.tpl.html
+#, fuzzy
+msgid "100% Match Bonus"
+msgstr "Over 100 Amazing Games"
+
+#: src/app/common/_partials/footer.tpl.html src/app/help/info.tpl.html
+#: src/app/help/info/18.tpl.html
+#, fuzzy
+msgid "18+"
+msgstr "18+"
+
+#: src/languages/__dynamic-strings.html
+msgid "200% Welcome Bonus up to €200"
+msgstr ""
+
+#: src/app/promotion/content/welcome-bonus.tpl.html
+msgid "200% Welcome bonus up to €200"
+msgstr ""
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid ""
+"<b> Bet limit  </b> - Your game will close down and you will automatically "
+"be blocked from playing games and making deposits or withdrawals for your "
+"specified period of time."
+msgstr ""
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid ""
+"<b> Loss limit  </b> - Your game will close down and you will automatically "
+"be blocked from playing games and making deposits or withdrawals for your "
+"specified period of time."
+msgstr ""
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid ""
+"<b> Session time  </b> - The play session will automatically close down and "
+"you will be logged of the site. You will have to go through the log in "
+"process again."
+msgstr ""
+
+#: src/app/vip/vip.tpl.html
+msgid ""
+"<b>Bling City Surprise</b> shows how much status your citizen has. It will "
+"enhance your character with increased status, gifts and updates. You will "
+"see more in the My Story Section. Make sure you go there often and check for "
+"updates. Click on the Stuff to activate it."
+msgstr ""
+
+#: src/app/vip/vip.tpl.html
+msgid ""
+"<b>Blings</b> are our own currency which can be converted into real money, "
+"bonus money, or gifts from our Bling Avenue section. You will get more and "
+"more Blings as you level up, starting with 1-6 Blings per level reached. "
+"Once you reach higher levels you will receive 2-12, 3-18 and 4-24 Blings "
+"(see the table for more info). Remember that the Blings also go up in value "
+"when you reach certain thresholds."
+msgstr ""
+
+#: src/app/vip/vip.tpl.html
+msgid ""
+"<b>Cash Back</b> starts at level 10 and increases with every 10th level you "
+"reach. It is the amount of real money you get back every Monday by noon from "
+"the former weeks play. This is our way of saying “thank you” for continuing "
+"to play.  The cash back amount is based on your bets with real money only. "
+"It starts modestly, but you will see that it grows pretty quickly as your "
+"level up."
+msgstr ""
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid ""
+"<b>Change in behavior</b> - Gambling affecting relationships with family and "
+"friends. Absence from work, school and/or withdrawal from social activities."
+msgstr ""
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid ""
+"<b>Change in personal economy</b> - Uncontrolled spending and/or noteworthy "
+"change in personal economy, lying about or concealing gambling activity, "
+"borrowing money and/or struggling to pay bills."
+msgstr ""
+
+#: src/app/vip/vip.tpl.html
+msgid ""
+"<b>Deposit Bonus Level</b> is the % level of bonus you get when you deposit "
+"money to your account. The higher your level is the higher your bonus will "
+"be. This applies to every deposit, not just once. Remember that if we have a "
+"promotion going you will not receive both bonuses, but rather the bonus % "
+"that is the highest."
+msgstr ""
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid "<b>During the last 12 months...</b>"
+msgstr ""
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid ""
+"<b>Finland:</b><br><a href=\"http://www.peluuri.fi&gt;www.peluuri.fi\">www."
+"peluuri.fi</a><br>Peluuri-helpline.<br>"
+msgstr ""
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid ""
+"<b>Gamblers Anonymous, GA</b><br><a href=\"http://www.gamblersanonymous.org."
+"uk/\">http://www.gamblersanonymous.org</a><br><i> <b>Phone:</b> 0207 384 30 "
+"40.</i><br>"
+msgstr ""
+"<b>Gamblers Anonymous, GA</b><br><a href=\"http://www.gamblersanonymous.org."
+"uk/\">http://www.gamblersanonymous.org</a><br><b>Phone:</b> 0207 384 30 40."
+"<br>"
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid ""
+"<b>Gambling Therapy</b><br><a href=\"https://www.gamblingtherapy.org/\">www."
+"gamblingtherapy.org</a><br><b>Email:</b><a href=\"mailto:"
+"webmaster@gamblingtherapy.org\">webmaster@gamblingtherapy.org</"
+"a><br><b>Phone:</b>(+44) 0138 424 12 92<br>"
+msgstr ""
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid "<b>Mood changes</b> - Irritable, stressed, depressed and/or distant."
+msgstr ""
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid ""
+"<b>More time consuming </b> - Increased amount of time spent gambling or on "
+"a computer, lack of apparent interests and/ or leisure pursuits."
+msgstr ""
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid ""
+"<b>Norway:</b><br><a href=\"http://www.hjelpelinjen.no\">www.hjelpelinjen."
+"no</a><br>Hjelpelinjen.<br>"
+msgstr ""
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid "<b>Scoring Instructions for the PGSI</b>"
+msgstr ""
+
+#: src/app/vip/vip.tpl.html
+msgid ""
+"<b>Surprises</b> - you will be rewarded with Surprises, enhancing both your "
+"gameplay and your Citizen's standing in the City! <br><b>Deposit Bonus</b> - "
+"you are granted an automatic deposit bonus, reflecting your curent level. "
+"<br><b>Cash Back</b> - every Monday by noon, based on your play the week "
+"before. <br><b>Blings</b> - convertable into gifts from BlingCity Avenue, "
+"bonuses or real money! You earn your blings as you play. The blings you'll "
+"recieve will increas in value as you level up."
+msgstr ""
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid ""
+"<b>Sweden: </b><br>            Spelberoende.se: <a href=\"http://www."
+"spelberoende.se\">www.spelberoende.se</a><br>             Spelets Baksida: "
+"<a href=\"http://www.speletsbaksida.se\">www.speletsbaksida.se</"
+"a><br>            Stödlinjen: <a href=\"http://www.stodlinjen.se\">www."
+"stödlinjen.se</a><br>            Spelinstitutet: <a href=\"http://"
+"spelinstitutet.se\">www.spelinstitutet.se</a><br>"
+msgstr ""
+"<b>Sweden: </b><br>            Spelberoende.se: <a href=\"http://www."
+"spelberoende.se\">www.spelberoende.se</a><br>             Spelets Baksida: "
+"<a href=\"http://www.speletsbaksida.se\">www.speletsbaksida.se</"
+"a><br>            Stödlinjen: <a href=\"http://www.stodlinjen.se\">www."
+"stödlinjen.se</a><br>            Spelinstitutet: <a href=\"http://"
+"spelinstitutet.se\">www.spelinstitutet.se</a><br>"
+
+#: src/app/user/register/step-2.tpl.html
+#, fuzzy
+msgid "ADDRESS"
+msgstr "ADDRESS"
+
+#: src/app/promotion/content/welcome-bonus.tpl.html
+msgid "ARE YOU READY TO BE THE BIGGEST PLAYER IN TOWN?"
+msgstr ""
+
+#: src/app/common/_partials/footer.tpl.html
+#, fuzzy
+msgid "About"
+msgstr "About"
+
+#: src/app/help/info.tpl.html
+#, fuzzy
+msgid "About Us"
+msgstr "About Us"
+
+#: src/app/common/_partials/footer.tpl.html
+#, fuzzy
+msgid "About us"
+msgstr "About Us"
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid ""
+"Accept losses as a part of the game. Don't try and recoup your losses; "
+"chances are you’ll end up losing even more;"
+msgstr ""
+
+#: src/app/payment/account-box.tpl.html
+#, fuzzy
+msgid "Account Balance"
+msgstr "Account Balance"
+
+#: src/app/story/settings.tpl.html
+#, fuzzy
+msgid "Account Details"
+msgstr "Account Details"
+
+#: src/app/help/info/affiliates.tpl.html
+#, fuzzy
+msgid "Affiliates"
+msgstr "Affiliates"
+
+#: src/app/help/info/affiliates.tpl.html
+msgid "Affiliates description"
+msgstr "Affiliates description"
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid ""
+"After setting your individual limits, this is what happens if you reach them:"
+msgstr ""
+
+#: src/app/story/character-summary.tpl.html src/app/story/history.tpl.html
+#: src/app/story/settings.tpl.html
+#, fuzzy
+msgid "Alias"
+msgstr "Alias\t"
+
+#: src/app/casino/session.tpl.html
+#: src/app/payment/transaction-history.tpl.html
+#, fuzzy
+msgid "All"
+msgstr "All"
+
+#: src/app/help/info/responsible-gaming.tpl.html
+#, fuzzy
+msgid "Almost always"
+msgstr "We are always ready to help !"
+
+#: src/app/help/info/about-us.tpl.html
+msgid "Always ready to help you!"
+msgstr "At Your Service!"
+
+#: src/app/payment/deposit.tpl.html
+#: src/app/payment/transaction-history.tpl.html
+#: src/app/payment/withdrawal.tpl.html
+#, fuzzy
+msgid "Amount"
+msgstr "Amount"
+
+#: src/app/payment/deposit.tpl.html src/app/payment/withdrawal.tpl.html
+#, fuzzy
+msgid "Amount (EUR)"
+msgstr "Amount"
+
+#: src/languages/__dynamic-strings.html
+msgid "An email has been sent with instructions on how to reset your password."
+msgstr ""
+
+#: src/app/help/info/about-us.tpl.html
+#, fuzzy
+msgid ""
+"And make sure you use your Blings, BlingCity's very own currency. With "
+"Blings you can acquire real money, purchase bonus money, and also buy things "
+"in our world."
+msgstr ""
+"And make sure you use your Blings, BlingCity’s very own currency. With "
+"Blings you can acquire real money, purchase bonus money, and also buy things "
+"in our world."
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid "Any more questions?"
+msgstr "Got more questions?"
+
+#: src/app/payment/bling-conversion.tpl.html
+msgid ""
+"Are you sure you'd like to do the convert <b>{{process.amount}} blings</b> to"
+msgstr ""
+
+#: src/app/help/info/about-us.tpl.html
+msgid ""
+"As you will notice under the Royalty section, our policies for withdrawals "
+"and bonuses are easy to find and read. We want you to feel comfortable "
+"knowing that you are in good hands."
+msgstr ""
+"As you will notice under the Royalty section, our policies for withdrawals "
+"and bonuses are easy to find and read. Our priority is to make players feel "
+"comfortable knowing that they are in good hands."
+
+#: src/app/payment/withdrawal.tpl.html
+msgid "Awaiting approval"
+msgstr ""
+
+#: src/app/payment/withdrawal.tpl.html
+msgid "BIC"
+msgstr ""
+
+#: src/languages/__dynamic-strings.html
+msgid "BLACKJACK"
+msgstr ""
+
+#: src/app/promotion/content/free-13eur.tpl.html
+msgid "BOOST YOUR LUCK!"
+msgstr ""
+
+#: src/app/casino/session.tpl.html
+#, fuzzy
+msgid "Balance (BONUS)"
+msgstr "Balance (BONUS)"
+
+#: src/app/casino/session.tpl.html
+#, fuzzy
+msgid "Balance (EUR)"
+msgstr "Balance (EUR)"
+
+#: src/index.html src/app/payment/account-box.tpl.html
+#, fuzzy
+msgid "Balance:"
+msgstr "Balance:"
+
+#: src/app/payment/withdrawal.tpl.html
+#, fuzzy
+msgid "Bank Name"
+msgstr "Name"
+
+#: src/app/payment/withdrawal.tpl.html
+msgid "Bank Transfer"
+msgstr "BANK TRANSFER"
+
+#: src/app/leader/leaders.tpl.html
+msgid "Be on the top of the world"
+msgstr "EARN YOUR SPOT!"
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid ""
+"Before you start set limits that are healthy for you and your personal "
+"economy,"
+msgstr ""
+
+#: src/app/vip/vip.tpl.html
+msgid "Below you are introduced to the BlingCity Royalty Program including:"
+msgstr ""
+
+#: src/app/casino/session.tpl.html
+#, fuzzy
+msgid "Bet"
+msgstr "Bet"
+
+#: src/app/help/info/responsible-gaming.tpl.html
+#, fuzzy
+msgid "Bet limit"
+msgstr "Bet limit"
+
+#: src/app/help/info/responsible-gaming.tpl.html
+#, fuzzy
+msgid "Bet limit (euro)"
+msgstr "Bet limit (euro)"
+
+#: src/index.html src/app/common/_partials/footer.tpl.html
+#: src/app/dashboard/dashboard.tpl.html
+#: src/app/promotion/content/bling-avenue.tpl.html
+#: src/app/showroom/information.tpl.html
+#, fuzzy
+msgid "Bling Avenue"
+msgstr "Bling Avenue"
+
+#: src/languages/__dynamic-strings.html
+msgid "Bling City - It's not logic, it's love."
+msgstr "I'm the dancing Queen of Hearts"
+
+#: src/app/payment/bling-conversion.tpl.html
+#, fuzzy
+msgid "Bling Conversion"
+msgstr "Blings Converter"
+
+#: src/app/showroom/showroom.tpl.html
+msgid ""
+"Bling yourself in style! Get your Elle magazine one year subscription today!"
+msgstr ""
+
+#: src/app/common/_partials/footer.tpl.html
+#, fuzzy
+msgid "BlingCity"
+msgstr "BlingCity"
+
+#: src/app/common/_partials/footer.tpl.html
+#, fuzzy
+msgid ""
+"BlingCity Limited is a Maltese company with the registration number C62260. "
+"The company's address is Central Business Centre, Level 1, Suite 2, Room 1, "
+"Mdina Road, Zebbug, Malta."
+msgstr ""
+"BlingCity Limited is a Maltese company with the registration number C62260. "
+"The company's address is Central Business Centre, Level 1, Suite 2, Room 1, "
+"Mdina Road, Zebbug, Malta."
+
+#: src/app/common/_partials/footer.tpl.html
+msgid ""
+"BlingCity Limited is licensed and regulated by the Maltese Lotteries and "
+"Gaming Authority with the license LGA/CL1/832/2012 issued on the 31 of "
+"January 2013."
+msgstr ""
+
+#: src/app/vip/vip.tpl.html
+#, fuzzy
+msgid "BlingCity Surprise!"
+msgstr "BlingCity Surprise!"
+
+#: src/app/help/info/about-us.tpl.html
+#, fuzzy
+msgid ""
+"BlingCity is a brand-new Casino site created with the initiative of taking "
+"online gambling to a whole new level. What do we mean by this? Simply put, a "
+"gaming platform unlike any before it. An innovative concept that melds "
+"online gambling with social. The end result is a fresh experience for "
+"players looking for something different than what they're used to. But we "
+"are not only focusing on the game play, we also want you, our customer to "
+"have an entertaining and rewarding experience when you play our Casino "
+"Games. To this end, we have created a constantly evolving world for you. A "
+"world which we have called BlingCity, where you will be able to achieve "
+"status, interact with other players, play for real money, and live your own "
+"story for as long as you like."
+msgstr ""
+"BlingCity is a brand-new Casino site created with the initiative of taking "
+"online gambling to a whole new level. What do we mean by this? Simply put, a "
+"gaming platform unlike any before it. An innovative concept that melds "
+"online gambling with social media. The end result is a fresh experience for "
+"players looking for something different from what they’re used to. But we "
+"are not only focusing on the game play, we also want you, our customer to "
+"have an entertaining and rewarding experience when you play our Casino "
+"Games. To this end, we have created a constantly evolving world for you. A "
+"world which we have called BlingCity, where you will be able to achieve "
+"status, interact with other players, play for real money, and live your own "
+"story  for as long as you like."
+
+#: src/app/promotion/content/welcome-bonus.tpl.html
+msgid ""
+"BlingCity is ready to welcome you in style! To show our players how we do "
+"things in the Big City, we are giving them a 200% bonus on their first "
+"deposit for up to €200. This bonus will be available to you immediately "
+"after making your first deposit, with no waiting period whatsoever!"
+msgstr ""
+
+#: src/app/promotion/content/free-13eur.tpl.html
+msgid ""
+"BlingCity is rolling out the welcome mat for Sweden! For a limited time we "
+"are giving all of our Swedish players a €13 Free Chip just for singing up. "
+"That's right, no deposits, no hassles, and no waiting! All you have to do is "
+"sign up and start enjoying the BlingCity night life!"
+msgstr ""
+
+#: src/app/help/info/about-us.tpl.html
+#, fuzzy
+msgid ""
+"BlingCity uses the world-famous NetEnt casino engine, so you can enjoy a "
+"wide array of easily recognizable, top quality games while living your "
+"adventure. From Gonzo's Quest, to the South Park slot, and even the Scarface "
+"reels; they're all here! And remember that whileyou enjoy our games your "
+"Citizen levels up and gains status. The more that you play and win money the "
+"higher your status goes. A high status means special privileges and rewards, "
+"simply for playing!"
+msgstr ""
+"BlingCity uses the world-famous NetEnt casino engine, so you can enjoy a "
+"wide array of easily recognisable, top quality games while living your "
+"adventure. From Gonzo’s Quest, to the South Park slot, and even the Scarface "
+"reels; they’re all here! And remember that while you enjoy our games your "
+"Citizen levels up and gains status. The more that you play and win money the "
+"higher your status goes. A high status means special privileges and rewards, "
+"simply for playing!"
+
+#: src/app/help/info/about-us.tpl.html src/app/help/info/contact.tpl.html
+msgid ""
+"BlingCity's high level of service is made possible by a large team working "
+"every day from 7am-1am to ensure that you have a satisfying and enjoyable "
+"gaming experience."
+msgstr ""
+
+#: src/app/payment/account-box.tpl.html
+#: src/app/story/character-summary.tpl.html src/app/story/history.tpl.html
+#: src/app/story/settings.tpl.html
+#, fuzzy
+msgid "Blings"
+msgstr "Blings:"
+
+#: src/app/payment/account-box.tpl.html
+#, fuzzy
+msgid "Blings Converter"
+msgstr "Blings Converter"
+
+#: src/app/vip/vip.tpl.html
+#, fuzzy
+msgid "Blings***"
+msgstr "Blings:"
+
+#: src/app/payment/deposit.tpl.html
+#, fuzzy
+msgid "Bonus Amount:"
+msgstr "Amount"
+
+#: src/app/vip/vip.tpl.html
+msgid "Bonus Stuff"
+msgstr "Bonus Prizes"
+
+#: src/app/payment/deposit.tpl.html
+#, fuzzy
+msgid "Bonus Summary"
+msgstr "Balance (BONUS)"
+
+#: src/app/payment/account-box.tpl.html
+#, fuzzy
+msgid "Bonus money:"
+msgstr "Amount"
+
+#: src/app/payment/navbar-pills.tpl.html
+#, fuzzy
+msgid "Bonuses"
+msgstr "Amount"
+
+#: src/languages/__dynamic-strings.html
+#, fuzzy
+msgid "CASINO"
+msgstr "Casino Rules"
+
+#: src/app/help/info/about-us.tpl.html
+#, fuzzy
+msgid "CEO and Founder of BlingCity"
+msgstr "Daniel Sahlin, CEO and Founder of BlingCity.com"
+
+#: src/app/user/register/step-2.tpl.html
+#, fuzzy
+msgid "CITY"
+msgstr "CITY"
+
+#: src/app/vip/vip.tpl.html
+msgid "CLICK HERE FOR MORE INFORMATION"
+msgstr ""
+
+#: src/app/user/register/step-2.tpl.html
+#, fuzzy
+msgid "CONFIRM PASSWORD"
+msgstr "CONFIRM PASSWORD"
+
+#: src/app/user/reset-password.tpl.html
+#, fuzzy
+msgid "CONFIRM YOUR PASSWORD"
+msgstr "CONFIRM YOUR PASSWORD"
+
+#: src/app/user/register/step-2.tpl.html
+#, fuzzy
+msgid "COUNTRY"
+msgstr "COUNTRY"
+
+#: src/app/payment/withdrawal.tpl.html
+msgid "Card:"
+msgstr ""
+
+#: src/app/story/character-summary.tpl.html src/app/story/history.tpl.html
+#: src/app/story/settings.tpl.html
+#, fuzzy
+msgid "Cash Back"
+msgstr "Cash Backs"
+
+#: src/app/vip/vip.tpl.html
+#, fuzzy
+msgid "Cash Back Mondays**"
+msgstr "** cash back mondays description."
+
+#: src/app/vip/vip.tpl.html
+#, fuzzy
+msgid "Cash Back**"
+msgstr "Cash Back**"
+
+#: src/app/story/character-summary.tpl.html src/app/story/history.tpl.html
+#: src/app/story/settings.tpl.html
+#, fuzzy
+msgid "Cash Backs"
+msgstr "Cash Backs"
+
+#: src/app/payment/account-box.tpl.html
+#, fuzzy
+msgid "Cashback:"
+msgstr "Cashback:"
+
+#: src/index.html
+#, fuzzy
+msgid "Cashier"
+msgstr ""
+"Cashier ({{(user.wallet.moneyBalance + user.wallet.bonusBalance) | "
+"currency:'€'}})"
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid ""
+"Casino gaming is the heart of BlingCity and we are committed to ensuring "
+"that the focus remains on the customer’s total enjoyment. To ensure this we "
+"go to rigorous lengths in order to maintain player protection. This is why "
+"we are proud to have our entire Customer Support team educated by "
+"Sustainable Interaction. Our Customer Support is open daily from 7:00am to "
+"1:00am (CET)."
+msgstr ""
+
+#: src/languages/__dynamic-strings.html
+msgid "Champagne anyone?"
+msgstr "I will take you through Wild Waters"
+
+#: src/app/help/info/responsible-gaming.tpl.html
+#, fuzzy
+msgid "Chat with one of our agents"
+msgstr "Chat with one of our agents"
+
+#: src/app/help/info/responsible-gaming.tpl.html
+#, fuzzy
+msgid "Check our HELP/FAQ Section"
+msgstr "Check our HELP/FAQ Section"
+
+#: src/app/user/verify.tpl.html
+#, fuzzy
+msgid "Checking the code provided..."
+msgstr "Checking the code provided..."
+
+#: src/app/user/register/three-steps.tpl.html
+#, fuzzy
+msgid "Choose Citizen"
+msgstr "Choose Citizen"
+
+#: src/app/payment/deposit.tpl.html src/app/payment/withdrawal.tpl.html
+#, fuzzy
+msgid "Chosen amount (EUR)"
+msgstr "Amount"
+
+#: src/app/leader/leaders.tpl.html src/app/story/character-summary.tpl.html
+#: src/app/story/history.tpl.html src/app/story/settings.tpl.html
+#, fuzzy
+msgid "Citizen"
+msgstr "Citizen"
+
+#: src/app/help/info/about-us.tpl.html
+msgid "Citizens we have at launch for you to choose from"
+msgstr "The number of Bling Citizens to enhance your luck "
+
+#: src/app/story/settings.tpl.html
+#, fuzzy
+msgid "City:"
+msgstr "CITY"
+
+#: src/app/payment/bling-conversion.tpl.html
+msgid "Close"
+msgstr ""
+
+#: src/app/vip/vip.tpl.html
+#, fuzzy
+msgid "Close the table"
+msgstr "Close the table"
+
+#: src/app/promotion/content/free-13eur.tpl.html
+msgid ""
+"Come take a stroll down Bling Avenue and get to know some of our players "
+"from all around the world. Don't miss out on this special offer; discover "
+"for yourself what all the buzz is about!"
+msgstr ""
+
+#: src/app/payment/deposit.tpl.html
+msgid "Coming Soon!"
+msgstr "COMING SOON!"
+
+#: src/app/payment/bling-conversion.tpl.html
+msgid "Confirm"
+msgstr ""
+
+#: src/app/story/settings.tpl.html
+#, fuzzy
+msgid "Confirm Password:"
+msgstr "CONFIRM PASSWORD"
+
+#: src/app/common/_partials/footer.tpl.html src/app/help/info.tpl.html
+#, fuzzy
+msgid "Contact"
+msgstr "Contact"
+
+#: src/app/user/login-signup.tpl.html src/app/user/login.tpl.html
+#, fuzzy
+msgid "Contact Customer Support"
+msgstr "Contact Customer Support"
+
+#: src/app/story/settings.tpl.html
+#, fuzzy
+msgid "Contact Details"
+msgstr "Contact Details"
+
+#: src/app/help/info/contact.tpl.html
+msgid "Contact Us"
+msgstr ""
+"Take a look at all of our rewards below and don't hesitate to contact us if "
+"you have any questions."
+
+#: src/app/help/info/about-us.tpl.html
+#, fuzzy
+msgid "Contact details"
+msgstr "Contact Details"
+
+#: src/app/user/register/step-1.tpl.html src/app/user/register/step-2.tpl.html
+#, fuzzy
+msgid "Continue"
+msgstr "Continue"
+
+#: src/app/payment/account-box.tpl.html
+#, fuzzy
+msgid "Convert"
+msgstr "Convert"
+
+#: src/app/showroom/showroom.tpl.html
+msgid ""
+"Cool down and walk around in BlingCity - Rayban sunglasses will make you "
+"look hot!"
+msgstr ""
+
+#: src/app/help/info/about-us.tpl.html
+msgid "Corporate Info:"
+msgstr ""
+
+#: src/app/home/home.tpl.html
+#, fuzzy
+msgid "Cosmogirl"
+msgstr "Cosmogirl"
+
+#: src/app/story/settings.tpl.html
+#, fuzzy
+msgid "Country:"
+msgstr "COUNTRY"
+
+#: src/app/help/info/responsible-gaming.tpl.html
+#, fuzzy
+msgid "Create Your Play Safe Profile"
+msgstr "Create Your Play Safe Profile"
+
+#: src/app/user/login-signup.tpl.html
+#, fuzzy
+msgid "Create new account"
+msgstr "Create new account"
+
+#: src/app/help/info/about-us.tpl.html
+msgid "Creative Director and artist of the World; BlingCity"
+msgstr "Creative Director and artist of the World; BlingCity.com"
+
+#: src/app/story/settings.tpl.html
+#, fuzzy
+msgid "Current Password:"
+msgstr "Current Password:"
+
+#: src/app/user/register/step-3.tpl.html
+msgid "Customize Avatar"
+msgstr "Customize Citizen"
+
+#: src/app/user/register/step-2.tpl.html
+#, fuzzy
+msgid "DAY"
+msgstr "Day"
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid "DURATION"
+msgstr ""
+
+#: src/app/help/info/about-us.tpl.html
+msgid ""
+"Daniel has worked for almost 20 years in the gaming industry and has also "
+"studied Casino Management and Casino Marketing at University of Nevada, Las "
+"Vegas, with a Bachelors and  Masters Degree in Hospitality Management."
+msgstr ""
+
+#: src/app/casino/session.tpl.html
+#: src/app/payment/transaction-history.tpl.html
+#, fuzzy
+msgid "Date"
+msgstr "Date"
+
+#: src/app/story/settings.tpl.html
+#, fuzzy
+msgid "Date of Birth:"
+msgstr "Date of Birth:"
+
+#: src/app/payment/withdrawal.tpl.html
+#, fuzzy
+msgid "Date requested"
+msgstr "Date requested"
+
+#: src/index.html src/app/payment/navbar-pills.tpl.html
+#, fuzzy
+msgid "Deposit"
+msgstr "Deposit"
+
+#: src/app/payment/deposit.tpl.html
+#, fuzzy
+msgid "Deposit Amount:"
+msgstr "Amount"
+
+#: src/app/story/character-summary.tpl.html src/app/story/history.tpl.html
+#: src/app/story/settings.tpl.html
+#, fuzzy
+msgid "Deposit Bonus"
+msgstr "Deposit Bonus"
+
+#: src/app/payment/deposit.tpl.html
+#, fuzzy
+msgid "Deposit Method"
+msgstr "Method"
+
+#: src/app/vip/vip.tpl.html
+msgid "Deposit bonus level*"
+msgstr "Deposit bonus*"
+
+#: src/app/vip/vip.tpl.html
+#, fuzzy
+msgid "Deposit bonus*"
+msgstr "Deposit Bonus"
+
+#: src/index.html
+#, fuzzy
+msgid "Deposit now"
+msgstr "Deposit now"
+
+#: src/app/payment/empty-wallet.tpl.html
+#, fuzzy
+msgid "Deposit now to play"
+msgstr "Deposit now to play"
+
+#: src/app/payment/transaction-history.tpl.html
+#, fuzzy
+msgid "Deposits/Withdrawals History"
+msgstr "Deposits/Withdrawals History"
+
+#: src/app/user/login-signup.tpl.html src/app/user/login.tpl.html
+#, fuzzy
+msgid ""
+"Don't worry! Please provide your e-mail address and we'll send you further "
+"instructions!"
+msgstr ""
+"Don't worry! Please provide your e-mail address and we'll send you further "
+"instructions!"
+
+#: src/app/help/info/contact.tpl.html
+msgid "E-mail us to <b>info@blingcity.com</b>"
+msgstr ""
+
+#: src/app/home/home.tpl.html src/app/user/login-signup.tpl.html
+#: src/app/user/login.tpl.html src/app/user/register/step-1.tpl.html
+#, fuzzy
+msgid "EMAIL"
+msgstr "EMAIL"
+
+#: src/app/user/reset-password.tpl.html
+#, fuzzy
+msgid "ENTER YOUR NEW PASSWORD"
+msgstr "ENTER YOUR NEW PASSWORD"
+
+#: src/app/story/settings.tpl.html
+#, fuzzy
+msgid "Edit"
+msgstr "Edit"
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid "Edit your settings to play safe"
+msgstr "Edit settings to play safe"
+
+#: src/app/showroom/showroom.tpl.html
+msgid "Elle Subscription"
+msgstr "Elle Subscription Gift Card"
+
+#: src/app/story/settings.tpl.html
+#, fuzzy
+msgid "Email Address:"
+msgstr "Email Address:"
+
+#: src/app/user/login-signup.tpl.html src/app/user/login.tpl.html
+#, fuzzy
+msgid "Email address"
+msgstr "Email Address:"
+
+#: src/app/user/register/step-1.tpl.html
+#, fuzzy
+msgid "Email is in the wrong format"
+msgstr "Email is in the wrong format"
+
+#: src/app/payment/empty-wallet.tpl.html
+msgid "Empty wallet modal decription"
+msgstr "Empty wallet modal decryption"
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid "Enjoy The Game, Play It Safe"
+msgstr ""
+
+#: src/app/user/reset-password.tpl.html
+#, fuzzy
+msgid "Enter your password below to reset your password"
+msgstr "Enter your password below to reset your password"
+
+#: src/app/payment/account-box.tpl.html
+#, fuzzy
+msgid "Exchange to..."
+msgstr "Exchange to: CASH"
+
+#: src/app/help/info/responsible-gaming.tpl.html
+#, fuzzy
+msgid "Exclusion"
+msgstr "Exclusion"
+
+#: src/app/help/info/about-us.tpl.html
+#, fuzzy
+msgid "Experience + Innovation = FUN"
+msgstr "Experience + Innovation = FUN"
+
+#: src/languages/__dynamic-strings.html
+#, fuzzy
+msgid "Experience beats luck"
+msgstr "Experience beats luck"
+
+#: src/app/payment/account-box.tpl.html
+#, fuzzy
+msgid "Extra Bonus:"
+msgstr "Other bonuses:"
+
+#: src/app/payment/account-box.tpl.html
+msgid "Extra Cash:"
+msgstr ""
+
+#: src/languages/__dynamic-strings.html
+msgid "FEATURED"
+msgstr ""
+
+#: src/app/home/home.tpl.html src/app/user/login-signup.tpl.html
+#: src/app/user/register/step-1.tpl.html
+#, fuzzy
+msgid "FIRST NAME"
+msgstr "FIRST NAME"
+
+#: src/app/home/home.tpl.html
+#, fuzzy
+msgid "Fashionista"
+msgstr "Fashionista"
+
+#: src/app/payment/withdrawal.tpl.html
+#, fuzzy
+msgid "First and Last Name"
+msgstr "FIRST NAME"
+
+#: src/app/story/settings.tpl.html
+#, fuzzy
+msgid "First name:"
+msgstr "FIRST NAME"
+
+#: src/app/user/login-signup.tpl.html src/app/user/login.tpl.html
+msgid "Forgot your username or password?"
+msgstr "Forgot your username or password?"
+
+#: src/app/help/info/about-us.tpl.html
+msgid "Founder and Art Direction"
+msgstr "Founder and Art Direction"
+
+#: src/app/casino/session.tpl.html
+#, fuzzy
+msgid "Game"
+msgstr "Game"
+
+#: src/app/casino/session.tpl.html
+#, fuzzy
+msgid "Game Session History"
+msgstr "Game Session History"
+
+#: src/app/payment/navbar-pills.tpl.html
+#, fuzzy
+msgid "Game Sessions"
+msgstr "Game Sessions"
+
+#: src/app/leader/leaders.tpl.html
+msgid "Game most played"
+msgstr "Favourite Game"
+
+#: src/index.html
+#, fuzzy
+msgid "Games"
+msgstr "Games"
+
+#: src/app/help/info/contact.tpl.html
+msgid "Give us a toll free call to <b>+46 (0)20 787 623</b>"
+msgstr ""
+
+#: src/app/showroom/showroom.tpl.html
+msgid ""
+"Give yourself a secret with BlingCity - Glamour Up with Victoria Secret "
+"today!"
+msgstr ""
+
+#: src/app/help/info/contact.tpl.html
+msgid "Go to our <b>FAQ Section</b>"
+msgstr ""
+
+#: src/app/vip/vip.tpl.html
+#, fuzzy
+msgid "Good Luck, and remember to play responsibly."
+msgstr "Good luck and remember to play within your limits."
+
+#: src/languages/__dynamic-strings.html
+msgid "Greed is good"
+msgstr "Greed is Good"
+
+#: src/app/vip/vip.tpl.html
+msgid "HIDE INFORMATION"
+msgstr ""
+
+#: src/app/user/register/step-3.tpl.html
+msgid "Hair"
+msgstr ""
+
+#: src/app/home/home.tpl.html
+msgid "Harvey Goodlife"
+msgstr "Harvey Goodlife"
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid ""
+"Has gambling caused you any health problems, including stress or anxiety?"
+msgstr ""
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid ""
+"Has your gambling caused any financial problems for you or your household?"
+msgstr ""
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid ""
+"Have people criticized your betting or told you that you had a gambling "
+"problem, regardless of whether or not you thought it was true?"
+msgstr ""
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid "Have you bet more than you could really afford to lose?"
+msgstr ""
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid "Have you borrowed money or sold anything to get money to gamble?"
+msgstr ""
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid ""
+"Have you felt guilty about the way you gamble or what happens when you "
+"gamble?"
+msgstr ""
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid "Have you felt that you might have a problem with gambling?"
+msgstr ""
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid ""
+"Have you needed to gamble with larger amounts of money to get the same "
+"feeling of excitement?"
+msgstr ""
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid ""
+"Healthy gambling is about self-control. To this end we have created a Play "
+"Safe Profile which automatically monitors your limits. Edit your setting in "
+"the column to the right. Play Safe Profile is an easy way to monitor:"
+msgstr ""
+
+#: src/app/help/info.tpl.html
+msgid "Help / FAQ"
+msgstr "Help / FAQ"
+
+#: src/app/common/_partials/footer.tpl.html
+msgid "Help/FAQ"
+msgstr "Help / FAQ"
+
+#: src/app/help/info/contact.tpl.html
+msgid "Here are some of the main ways to contact us or solve your queries."
+msgstr ""
+
+#: src/app/payment/navbar-pills.tpl.html
+#, fuzzy
+msgid "History"
+msgstr "History"
+
+#: src/index.html src/app/common/_partials/footer.tpl.html
+msgid "Home"
+msgstr "BlingCity"
+
+#: src/app/story/settings.tpl.html
+#, fuzzy
+msgid "Home Address:"
+msgstr "Home Address:"
+
+#: src/languages/__dynamic-strings.html
+msgid "I am such a lucky lady"
+msgstr ""
+
+#: src/app/user/register/step-2.tpl.html
+msgid ""
+"I confirm that I am at least 18 years old and that I have read and accept "
+"the BlingCity rules, Terms &amp; Conditions and it's policies relating to "
+"privacy, age verification and KYC."
+msgstr ""
+"By ticking this box, I confirm that I am at least 18 years old and that I "
+"have read and accept the BlingCity Terms and Conditions and it's policies "
+"relating to privacy, age verification and KYC."
+
+#: src/app/user/register/step-1.tpl.html
+msgid "I do not want information about free spins and bonuses."
+msgstr ""
+
+#: src/app/payment/withdrawal.tpl.html
+msgid "IBAN"
+msgstr ""
+
+#: src/app/payment/withdrawal.tpl.html
+msgid "IBAN:"
+msgstr ""
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid ""
+"If you are worried that someone you know may have lost control over their "
+"gambling we strongly recommend you to turn to professional help and "
+"assistance. If you have any questions or concerns regarding your own "
+"gambling activities we recommend that you take a look at the Self Test below."
+msgstr ""
+
+#: src/app/help/info/contact.tpl.html
+msgid ""
+"If you have any corporate related queries, please feel free to get our "
+"contact information"
+msgstr ""
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid ""
+"If you have any questions, concerns, or would like more information about "
+"gambling you can visit the following organizations which provide "
+"professional help and assistance."
+msgstr ""
+
+#: src/app/payment/withdrawal.tpl.html
+msgid ""
+"If you withdrawal is over €2,000 you can help us speed up the payment "
+"process by sending in your verification documents to <a href=\"mailto:"
+"kyc@blingcity.com\">kyc@blingcity.com.</a>"
+msgstr ""
+"Please note that once a withdrawal has been processed by our payments team "
+"it may take some time to arrive in your account depending on the method you "
+"choose. Credit card withdrawals may take 1-3 business days, bank transfers "
+"may take 3-5 business days, while Neteller and Skrill withdrawals are "
+"instant."
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid ""
+"If your score indicates that you have a problem with your gambling, we "
+"strongly advice you seek professional help. More information about PGSI: <a "
+"href=\"https://www.problemgambling.ca/Pages/Home.aspx\">www.problemgambling."
+"ca/Pages/Home.aspx</a>"
+msgstr ""
+"If your score indicates that you have a problem with your gambling, we "
+"advice you seek professional help. More information about PGSI: <a href="
+"\"https://www.problemgambling.ca/Pages/Home.aspx\">www.problemgambling.ca/"
+"Pages/Home.aspx</a>"
+
+#: src/languages/__dynamic-strings.html
+msgid ""
+"In order to withdraw that amount you need to provide us with documents to "
+"kyc@blingcity.com"
+msgstr ""
+
+#: src/app/help/info/responsible-gaming.tpl.html
+#, fuzzy
+msgid "Info & Help"
+msgstr "Terms &amp; Conditions"
+
+#: src/languages/__dynamic-strings.html
+msgid "Instructions sent"
+msgstr ""
+
+#: src/app/help/info/18.tpl.html
+msgid ""
+"It is illegal for anyone under the age of 18 to open up and hold a User "
+"account at Bling City. We safeguard the usage of the site and reserve the "
+"right request proof of age from all Citizens.  If you share your computer or "
+"household with someone under the age of 18 it is important that you make "
+"sure that they do not have access to your user name, password and/or banking "
+"information. Below are some software that we think may be to your help."
+msgstr ""
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid ""
+"It is not easy to identify unhealthy or problematic gambling behavior, but "
+"it helps if you know what to look for. Below are some signs that may "
+"indicate unhealthy or problematic gambling behavior:"
+msgstr ""
+
+#: src/app/help/info/about-us.tpl.html src/app/help/info/contact.tpl.html
+msgid ""
+"It is our goal to provide top-notch customer attention while finding new "
+"ways to improve our service every day. We understand that having the best "
+"games is only half of the battle, with customer care being an equally "
+"necessary component to providing the service our players deserve. When you "
+"join BlingCity you immediately become a VIP in our eyes, and we will treat "
+"you as such."
+msgstr ""
+"When you join BlingCity you immediately become a VIP in our eyes, and we "
+"will treat you as such. Since we have the best games on the market we are "
+"determined to deliver top-notch customer attention to enhance your fun.  "
+
+#: src/app/payment/deposit.tpl.html
+msgid ""
+"Just add the deposit amount below and here you'll see how much the bonus is "
+"worth."
+msgstr ""
+
+#: src/app/home/home.tpl.html src/app/user/register/step-1.tpl.html
+msgid "LAST NAME"
+msgstr "LAST NAME"
+
+#: src/app/casino/session.tpl.html
+#: src/app/payment/transaction-history.tpl.html
+msgid "Last 24 Hours"
+msgstr "Last 24 Hours"
+
+#: src/app/casino/session.tpl.html
+#: src/app/payment/transaction-history.tpl.html
+#, fuzzy
+msgid "Last Month"
+msgstr "Last Month"
+
+#: src/app/story/settings.tpl.html
+#, fuzzy
+msgid "Last name:"
+msgstr "Last name:"
+
+#: src/app/showroom/showroom.tpl.html src/app/story/character-summary.tpl.html
+#: src/app/story/history.tpl.html src/app/story/settings.tpl.html
+#: src/app/vip/vip.tpl.html
+msgid "Level"
+msgstr "Level"
+
+#: src/app/vip/vip.tpl.html
+#, fuzzy
+msgid "Level Acquired"
+msgstr "Level Acquired"
+
+#: src/app/help/info/responsible-gaming.tpl.html
+#, fuzzy
+msgid "Limit on Losses (euro)"
+msgstr "Losses Limit (Euro)"
+
+#: src/app/help/info/responsible-gaming.tpl.html
+#, fuzzy
+msgid "Limit your sessions"
+msgstr "Game Sessions"
+
+#: src/languages/__dynamic-strings.html
+#, fuzzy
+msgid "Limits"
+msgstr "Save"
+
+#: src/index.html src/app/user/login-signup.tpl.html
+#, fuzzy
+msgid "Login"
+msgstr "Login"
+
+#: src/languages/__dynamic-strings.html
+#, fuzzy
+msgid "Login is currently disabled"
+msgstr "Login"
+
+#: src/app/user/login-signup.tpl.html
+#, fuzzy
+msgid "Login or Register to play"
+msgstr "Login or Register to play"
+
+#: src/index.html
+#, fuzzy
+msgid "Logout"
+msgstr "Logout"
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid "Losses limit"
+msgstr "Losses Limit"
+
+#: src/app/user/login-signup.tpl.html src/app/user/login.tpl.html
+#, fuzzy
+msgid "Lost your Password?"
+msgstr "Lost your Password?"
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid "Low level of problems with few or no identified negative consequences."
+msgstr ""
+
+#: src/app/promotion/content/loyalty-rewards.tpl.html
+#, fuzzy
+msgid "Loyalty Rewards program"
+msgstr "Loyalty Rewards Program"
+
+#: src/app/user/register/step-2.tpl.html
+#, fuzzy
+msgid "MONTH"
+msgstr "Month"
+
+#: src/app/promotion/content/welcome-bonus.tpl.html
+msgid ""
+"Make your first deposit count by taking advantage of this special promotion. "
+"Enjoy the glamour and extravagance of BlingCity for yourself and see what "
+"it's all about. See you downtown!"
+msgstr ""
+
+#: src/app/help/info/terms-and-conditions.good.html
+msgid "March 19, 2014, Version no.1.0"
+msgstr "May 12, 2014, Version no. 1.2"
+
+#: src/app/payment/deposit.tpl.html
+msgid "Max Deposit"
+msgstr "Max"
+
+#: src/app/help/info/terms-and-conditions.tpl.html
+msgid "May 12, 2014, Version no. 1.2"
+msgstr "May 12, 2014, Version no. 1.2"
+
+#: src/app/payment/transaction-history.tpl.html
+#: src/app/payment/withdrawal.tpl.html
+msgid "Method"
+msgstr "Method"
+
+#: src/app/help/info/about-us.tpl.html
+msgid ""
+"Mikael is a creative artist that for the past years has split his creative "
+"life between spending time in the studio as a music producer as well as "
+"exploring his creative streaks in drawing and painting."
+msgstr ""
+
+#: src/app/payment/deposit.tpl.html
+msgid "Min Deposit"
+msgstr "Min"
+
+#: src/app/payment/withdrawal.tpl.html
+msgid "Min Withdrawal"
+msgstr "Min Withdrawal"
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid "Moderate level of problems leading to some negative consequences."
+msgstr ""
+
+#: src/languages/__dynamic-strings.html
+msgid "Money won is twice as sweet as money earned"
+msgstr "Money won is twice as sweet as money earned"
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid "Monitor your limit of wagers and losses"
+msgstr "Monitor your limit of wagers and losses"
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid "Most of the time"
+msgstr "Game most played"
+
+#: src/app/home/home.tpl.html
+msgid "Mr Vegas"
+msgstr "Mr Vegas"
+
+#: src/app/home/home.tpl.html
+msgid "Mr Wallstreet"
+msgstr "Mr Wallstreet"
+
+#: src/app/help/info/responsible-gaming.tpl.html
+#, fuzzy
+msgid "My Bet Limit"
+msgstr "Bet limit"
+
+#: src/app/story/items.tpl.html
+#, fuzzy
+msgid "My Collection"
+msgstr "My Collection"
+
+#: src/app/story/items.tpl.html
+#, fuzzy
+msgid "My Gallery"
+msgstr "My Gallery"
+
+#: src/app/story/history.tpl.html src/app/story/items.tpl.html
+#: src/app/story/settings.tpl.html
+#, fuzzy
+msgid "My History"
+msgstr "My History"
+
+#: src/app/help/info/responsible-gaming.tpl.html
+#, fuzzy
+msgid "My Loss Limit"
+msgstr "My Wheel is my fortune"
+
+#: src/index.html src/app/common/_partials/footer.tpl.html
+#, fuzzy
+msgid "My Royalty"
+msgstr "My Royalty"
+
+#: src/app/help/info/responsible-gaming.tpl.html
+#, fuzzy
+msgid "My Session Time"
+msgstr "Session time (minutes)"
+
+#: src/index.html src/app/dashboard/dashboard.tpl.html
+#, fuzzy
+msgid "My Story"
+msgstr "My Story"
+
+#: src/app/story/history.tpl.html
+#, fuzzy
+msgid "My Story Gallery"
+msgstr "My Story Gallery"
+
+#: src/app/user/login.tpl.html
+#, fuzzy
+msgid "My Story Login"
+msgstr "My Story Login"
+
+#: src/app/story/history.tpl.html src/app/story/items.tpl.html
+#: src/app/story/settings.tpl.html
+#, fuzzy
+msgid "My Stuff"
+msgstr "My Stuff"
+
+#: src/languages/__dynamic-strings.html
+msgid "My Wheel is my fortune"
+msgstr "My Wheel is my fortune"
+
+#: src/app/user/register/step-2.tpl.html
+msgid "NICKNAME"
+msgstr "NICKNAME"
+
+#: src/app/story/character-summary.tpl.html src/app/story/history.tpl.html
+#: src/app/story/settings.tpl.html
+msgid "Name"
+msgstr "Name"
+
+#: src/app/showroom/showroom.tpl.html
+msgid "Nescafe Edg625.s Dolce Gusto Melody"
+msgstr ""
+
+#: src/app/help/info/responsible-gaming.tpl.html
+#, fuzzy
+msgid "Never"
+msgstr "Good luck and remember to play within your limits."
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid ""
+"Never = 0<br>Sometimes = 1<br>most of the time = 2   <br>almost always = "
+"3<br>"
+msgstr ""
+
+#: src/app/story/settings.tpl.html
+msgid "New Password:"
+msgstr "New Password:"
+
+#: src/app/vip/vip.tpl.html
+msgid "New Status"
+msgstr "New Status"
+
+#: src/app/promotion/content/new-york-trip.tpl.html
+#, fuzzy
+msgid "New York Trip"
+msgstr "New Password:"
+
+#: src/app/payment/deposit.tpl.html src/app/payment/withdrawal.tpl.html
+msgid "Next"
+msgstr "Next"
+
+#: src/app/promotion/view.tpl.html
+msgid "Next Promotion"
+msgstr "Next Promotion"
+
+#: src/app/story/settings.tpl.html
+msgid "Nickname:"
+msgstr "Nickname:"
+
+#: src/app/casino/session.tpl.html
+#: src/app/payment/transaction-history.tpl.html
+msgid "No results found"
+msgstr ""
+
+#: src/app/payment/deposit.tpl.html
+msgid "No thank you, no bonus at this time"
+msgstr ""
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid "Non-problem gambling."
+msgstr ""
+
+#: src/app/showroom/showroom.tpl.html
+msgid ""
+"Now you're a real player! BlingCity and Bellagio In Las Vegas have opened "
+"their doors for you! Are you ready for Vegas?"
+msgstr ""
+
+#: src/app/story/settings.tpl.html src/app/user/register/step-2.tpl.html
+#, fuzzy
+msgid "Number is invalid"
+msgstr "PHONE NUMBER"
+
+#: src/languages/__dynamic-strings.html
+#, fuzzy
+msgid "OTHER"
+msgstr "Other bonuses:"
+
+#: src/app/help/info/about-us.tpl.html
+#, fuzzy
+msgid "Office address:"
+msgstr "Office address:"
+
+#: src/app/showroom/information.tpl.html
+msgid "Ok, I got it"
+msgstr ""
+
+#: src/app/payment/empty-wallet.tpl.html
+msgid "Oops! Your wallet is empty"
+msgstr "Oops! Your wallet is curently empty"
+
+#: src/app/help/info/contact.tpl.html
+msgid "Open our <b>Help/Chat Centre</b>"
+msgstr ""
+
+#: src/app/common/_partials/footer.tpl.html
+#, fuzzy
+msgid "Others"
+msgstr "Others"
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid "Our Commitment To Responsible Gambling"
+msgstr "Our Commitment to Responsible Gambling"
+
+#: src/index.html src/app/common/_partials/footer.tpl.html
+#, fuzzy
+msgid "Our Games"
+msgstr "Our Games"
+
+#: src/app/help/info/about-us.tpl.html
+#, fuzzy
+msgid ""
+"Our goal is for players to feel secure and confident in their transactions "
+"so they can focus on enjoying their experience."
+msgstr ""
+"Our goal is for players to feel secure and confident in their transactions "
+"so they can focus on enjoying their experience."
+
+#: src/app/dashboard/dashboard.tpl.html
+#, fuzzy
+msgid "Over 100 Amazing Games"
+msgstr "Over 100 Amazing Games"
+
+#: src/app/user/login-signup.tpl.html src/app/user/login.tpl.html
+#: src/app/user/register/step-2.tpl.html
+#, fuzzy
+msgid "PASSWORD"
+msgstr "PASSWORD"
+
+#: src/app/user/register/step-2.tpl.html
+#, fuzzy
+msgid "PHONE NUMBER"
+msgstr "PHONE NUMBER"
+
+#: src/app/payment/account-box.tpl.html
+#, fuzzy
+msgid "PLAY THROUGH PENDING:"
+msgstr "Pending withdrawals"
+
+#: src/app/user/register/step-2.tpl.html
+#, fuzzy
+msgid "POST CODE"
+msgstr "POST CODE"
+
+#: src/app/help/info/about-us.tpl.html
+msgid "PR/Marketing:"
+msgstr ""
+
+#: src/app/payment/withdrawal.tpl.html
+msgid "Password"
+msgstr "Password"
+
+#: src/languages/__dynamic-strings.html
+#, fuzzy
+msgid "Password Reset"
+msgstr "Reset Password"
+
+#: src/app/story/settings.tpl.html src/app/user/register/step-2.tpl.html
+#: src/app/user/reset-password.tpl.html
+msgid "Password must be valid and must match"
+msgstr "Password must be valid and must match the one provided."
+
+#: src/app/story/settings.tpl.html
+msgid "Password:"
+msgstr "Password:"
+
+#: src/app/payment/withdrawal.tpl.html
+#, fuzzy
+msgid "Pending withdrawals"
+msgstr "Pending withdrawals"
+
+#: src/app/promotion/content/penthouse.tpl.html
+#, fuzzy
+msgid "Penthouse promotion"
+msgstr "Penthouse"
+
+#: src/app/story/settings.tpl.html src/app/user/register/three-steps.tpl.html
+msgid "Personal Details"
+msgstr "Personal Details"
+
+#: src/app/story/settings.tpl.html
+msgid "Phone Number:"
+msgstr "Phone Number:"
+
+#: src/app/help/info/about-us.tpl.html
+#, fuzzy
+msgid "Phone number:"
+msgstr "PHONE NUMBER"
+
+#: src/app/home/home.tpl.html
+#, fuzzy
+msgid "Pick me"
+msgstr "Pick me"
+
+#: src/app/common/_partials/footer.tpl.html src/app/help/info.tpl.html
+#: src/app/help/info/responsible-gaming.tpl.html
+#, fuzzy
+msgid "Play Safe"
+msgstr "Play Safe"
+
+#: src/app/help/info/responsible-gaming.tpl.html
+#, fuzzy
+msgid ""
+"Play for Fun - don't think of gambling as investing your money or a way of "
+"coping with emotional or physical stress;"
+msgstr ""
+"Play for Fun - don't think of gambling as investing your money or a way of "
+"coping with emotional or physical stress; "
+
+#: src/app/casino/lobby-mobile.tpl.html src/app/casino/lobby.tpl.html
+#: src/app/dashboard/dashboard-mobile.tpl.html
+#, fuzzy
+msgid "Play now"
+msgstr "Play now"
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid ""
+"Playing at BlingCity is an entertaining and exciting experience. We want all "
+"our Citizens to enjoy the games yet play it safe. We recommend that you keep "
+"the following guidelines in mind when playing:"
+msgstr ""
+
+#: src/app/showroom/information.tpl.html
+msgid "Please don't show me this popup anymore"
+msgstr ""
+
+#: src/app/story/settings.tpl.html
+msgid "Post Code:"
+msgstr "Post Code:"
+
+#: src/app/promotion/view.tpl.html
+#, fuzzy
+msgid "Previous Promotion"
+msgstr "Previous Promotion"
+
+#: src/app/common/_partials/footer.tpl.html src/app/help/info.tpl.html
+#: src/app/help/info/privacy-policy.tpl.html
+msgid "Privacy Policy"
+msgstr "Privacy Policy"
+
+#: src/languages/__dynamic-strings.html
+msgid "Problem"
+msgstr ""
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid ""
+"Problem gambling with negative consequences and a possible loss of control."
+msgstr ""
+
+#: src/app/user/verify.tpl.html
+#, fuzzy
+msgid "Promotion of the week"
+msgstr "Week"
+
+#: src/index.html src/app/common/_partials/footer.tpl.html
+msgid "Promotions"
+msgstr "Promotions"
+
+#: src/app/payment/withdrawal.tpl.html
+#, fuzzy
+msgid "Provide"
+msgstr ""
+"Don't worry! Please provide your e-mail address and we'll send you further "
+"instructions!"
+
+#: src/app/payment/withdrawal.tpl.html
+msgid "Provide details for bank transfer"
+msgstr ""
+
+#: src/app/payment/deposit.tpl.html
+msgid "Provide your card details"
+msgstr "Provide your payment details"
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid ""
+"Quit while you're ahead - enjoy your winnings, <a href=\"https://www."
+"blingcity.com/#/bling-avenue\">Bling Avenue</a>"
+msgstr ""
+
+#: src/languages/__dynamic-strings.html
+msgid "ROULETTE"
+msgstr ""
+
+#: src/app/leader/leaders.tpl.html
+msgid "Ranking"
+msgstr ""
+
+#: src/app/showroom/showroom.tpl.html
+msgid "Rayban Glasses"
+msgstr ""
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid "Recognise A Problem"
+msgstr ""
+
+#: src/languages/__dynamic-strings.html
+#, fuzzy
+msgid "Registration"
+msgstr ""
+"BlingCity Limited is a Maltese company with the registration number C62260. "
+"The company's address is Central Business Centre, Level 1, Suite 2, Room 1, "
+"Mdina Road, Zebbug, Malta."
+
+#: src/languages/__dynamic-strings.html
+msgid "Registration is currently disabled"
+msgstr ""
+
+#: src/app/user/reset-password.tpl.html
+msgid "Reset Password"
+msgstr "Reset Password"
+
+#: src/app/user/reset-password.tpl.html
+msgid "Reset your password"
+msgstr "Reset your password"
+
+#: src/app/showroom/showroom.tpl.html
+msgid "Reward your Blings"
+msgstr "Shop Now!"
+
+#: src/app/home/home.tpl.html
+msgid "Rocker"
+msgstr "Rocker"
+
+#: src/app/casino/lobby-mobile.tpl.html src/app/casino/lobby.tpl.html
+#: src/app/dashboard/dashboard-mobile.tpl.html
+msgid "SEARCH"
+msgstr "SEARCH"
+
+#: src/languages/__dynamic-strings.html
+msgid "SLOTS"
+msgstr "video slots"
+
+#: src/app/story/settings.tpl.html
+msgid "Save"
+msgstr "Save"
+
+#: src/app/help/info/responsible-gaming.tpl.html
+#, fuzzy
+msgid "Save Limit"
+msgstr "Save"
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid ""
+"Scores for the nine items are summed, and the results are interpreted as "
+"follows:"
+msgstr ""
+
+#: src/app/vip/vip.tpl.html
+#, fuzzy
+msgid "See the whole table"
+msgstr "See the whole table"
+
+#: src/app/vip/vip.tpl.html
+msgid ""
+"See under the cashier section if you want to exchange your Blings to Cash or "
+"Bonus Money. Remember if you convert it to bonus money, it becomes x3 more."
+msgstr ""
+
+#: src/app/payment/deposit.tpl.html
+#, fuzzy
+msgid "Select deposit method"
+msgstr "Method"
+
+#: src/app/payment/withdrawal.tpl.html
+#, fuzzy
+msgid "Select withdrawal method"
+msgstr "Choose your withdrawal method"
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid "Self Test"
+msgstr ""
+
+#: src/app/help/info/responsible-gaming.tpl.html
+#, fuzzy
+msgid "Send us an email"
+msgstr "Send us an email"
+
+#: src/app/help/info/responsible-gaming.tpl.html
+#, fuzzy
+msgid "Session limit"
+msgstr "Session limit"
+
+#: src/app/help/info/responsible-gaming.tpl.html
+#, fuzzy
+msgid "Session time (minutes)"
+msgstr "Session time (minutes)"
+
+#: src/app/story/history.tpl.html src/app/story/items.tpl.html
+#: src/app/story/settings.tpl.html
+#, fuzzy
+msgid "Settings"
+msgstr "Settings"
+
+#: src/index.html
+#, fuzzy
+msgid "Sign up"
+msgstr "Sign up"
+
+#: src/app/promotion/content/free-13eur.tpl.html
+msgid "Sign up and get €13 Free Chip"
+msgstr ""
+
+#: src/app/promotion/content/free-25eur.tpl.html
+msgid "Sign up and get €25 Free Chip"
+msgstr ""
+
+#: src/index.html src/app/home/home.tpl.html
+#: src/app/user/register/step-3.tpl.html
+#, fuzzy
+msgid "Sign up now"
+msgstr "Sign up now"
+
+#: src/app/user/login-signup.tpl.html
+#, fuzzy
+msgid "Signup"
+msgstr "Sign up"
+
+#: src/app/help/info/sitemap.tpl.html
+#, fuzzy
+msgid "Sitemap"
+msgstr "Sitemap"
+
+#: src/app/help/info/sitemap.tpl.html
+msgid "Sitemap description"
+msgstr "Visit our Sitemap"
+
+#: src/app/user/register/step-3.tpl.html
+msgid "Skin"
+msgstr ""
+
+#: src/app/home/home.tpl.html
+msgid "Slotmachine Betty"
+msgstr "Slotmachine Betty"
+
+#: src/app/common/_partials/footer.tpl.html
+#, fuzzy
+msgid "Social Media"
+msgstr "Social Media"
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid "Sometimes"
+msgstr ""
+
+#: src/languages/__dynamic-strings.html
+msgid "Spin it"
+msgstr "Spin that shit"
+
+#: src/app/user/register/three-steps.tpl.html
+#, fuzzy
+msgid "Start Playing"
+msgstr "Start Playing"
+
+#: src/app/payment/transaction-history.tpl.html src/app/vip/vip.tpl.html
+#, fuzzy
+msgid "Status"
+msgstr "Status"
+
+#: src/app/showroom/showroom.tpl.html
+msgid ""
+"Stay in touch with your friends in BlingCity - Take a bite of your Apple "
+"iPhone today!"
+msgstr ""
+
+#: src/app/payment/deposit.tpl.html src/app/payment/withdrawal.tpl.html
+msgid "Step {{process.step}}"
+msgstr ""
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid ""
+"Stop playing when you reach your limits, regardless of whether you are "
+"winning or losing. Edit your Play Safe Profile to help you manage your "
+"activity and stay on top of your game. For more info see Create your Play "
+"Safe Profile below;"
+msgstr ""
+
+#: src/app/vip/vip.tpl.html
+#, fuzzy
+msgid "Surprise!"
+msgstr "Surprise!"
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid ""
+"Sustainable Interaction is an organization that specializes in educating and "
+"assisting people in the field of social responsibility, addictions and "
+"psychological health. For more info you can go to, <a target=\"_blank\" href="
+"\"http://www.sustainableinteraction.com/\">www.sustainableinteraction.com</a>"
+msgstr ""
+"Please remember that our Customer Support is open daily from 7:00am to "
+"1:00am (CET)."
+
+#: src/app/help/info/responsible-gaming.tpl.html
+#, fuzzy
+msgid "Take a break from BlingCity"
+msgstr "We are BlingCity"
+
+#: src/app/help/info/responsible-gaming.tpl.html
+#, fuzzy
+msgid "Take a break from playing"
+msgstr "Exclude me from playing"
+
+#: src/app/common/_partials/footer.tpl.html src/app/help/info.tpl.html
+#: src/app/payment/deposit.tpl.html
+msgid "Terms &amp; Conditions"
+msgstr "Terms and Conditions"
+
+#: src/app/showroom/showroom.tpl.html
+#, fuzzy
+msgid "Terms &amp; Conditions apply"
+msgstr "Terms &amp; Conditions"
+
+#: src/app/help/info/privacy-policy.tpl.html src/app/leader/leaders.tpl.html
+#: src/app/promotion/content/100-match-bonus.tpl.html
+#: src/app/promotion/content/bling-avenue.tpl.html
+#: src/app/promotion/content/free-13eur.tpl.html
+#: src/app/promotion/content/free-25eur.tpl.html
+#: src/app/promotion/content/loyalty-rewards.tpl.html
+#: src/app/promotion/content/new-york-trip.tpl.html
+#: src/app/promotion/content/penthouse.tpl.html
+#: src/app/promotion/content/welcome-bonus.tpl.html
+#: src/app/promotion/content/super-sunday.tpl.html
+#, fuzzy
+msgid "Terms and Conditions"
+msgstr "Terms and Conditions"
+
+#: src/app/promotion/content/super-sunday.tpl.html
+msgid "YOU GET A SECOND CHANCE TO WIN WITH FREE SPINS!"
+msgstr "YOU GET A SECOND CHANCE TO WIN WITH FREE SPINS!"
+
+#: src/app/promotion/content/super-sunday.tpl.html
+msgid "Start the fun with up to €150 in bonus money, our 50% bonus begins now. Not a bad, huh? You can use this bonus up to 10 times to make sure you always have a little extra coins to keep those slots spinning! Did we say spinning? How about some FREE SPINS? If your account balance is less than €1 by Sunday noon, you’ll be awarded with up to 140 free spins on some crowd favorite slots to keep the fun going."
+msgstr "Start the fun with up to €150 in bonus money, our 50% bonus begins now. Not a bad, huh? You can use this bonus up to 10 times to make sure you always have a little extra coins to keep those slots spinning! Did we say spinning? How about some FREE SPINS? If your account balance is less than €1 by Sunday noon, you’ll be awarded with up to 140 free spins on some crowd favorite slots to keep the fun going."
+
+#: src/app/promotion/content/super-sunday.tpl.html
+msgid "But the fun doesn’t stop there! If you used the 50% bonus four times or more, you will receive additional free spins on Sunday for some of our best games to finish your weekend with a bang!"
+msgstr "But the fun doesn’t stop there! If you used the 50% bonus four times or more, you will receive additional free spins on Sunday for some of our best games to finish your weekend with a bang!"
+
+#: src/app/help/info/terms-and-conditions.good.html
+#, fuzzy
+msgid "Terms and conditions"
+msgstr "Terms and Conditions"
+
+#: src/app/payment/withdrawal.tpl.html
+msgid ""
+"Thank you for your MasterCard withdrawal request! Please note that it may "
+"take up to 2 business days for your withdrawal to reach your bank account "
+"once it has been processed by our payments team."
+msgstr ""
+"Thank you for your withdrawal request! This has now been sent to our "
+"payments team for review who are available during the week following normal "
+"business hours (Monday to Friday, 9:00 - 17:00)."
+
+#: src/app/payment/withdrawal.tpl.html
+msgid ""
+"Thank you for your NETELLER withdrawal request! Please note that your "
+"withdrawal will reach your NETELLER account immediately once it has been "
+"processed by our payments team."
+msgstr ""
+"Thank you for your withdrawal request! This has now been sent to our "
+"payments team for review who are available during the week following normal "
+"business hours (Monday to Friday, 9:00 - 17:00)."
+
+#: src/app/payment/withdrawal.tpl.html
+msgid ""
+"Thank you for your Skrill withdrawal request! Please note that your "
+"withdrawal will reach your Skrill account immediately once it has been "
+"processed by our payments team."
+msgstr ""
+"Thank you for your withdrawal request! This has now been sent to our "
+"payments team for review who are available during the week following normal "
+"business hours (Monday to Friday, 9:00 - 17:00)."
+
+#: src/app/payment/withdrawal.tpl.html
+msgid ""
+"Thank you for your Visa withdrawal request! Please note that it may take up "
+"to 2 business days for your withdrawal to reach your bank account once it "
+"has been processed by our payments team."
+msgstr ""
+"Thank you for your withdrawal request! This has now been sent to our "
+"payments team for review who are available during the week following normal "
+"business hours (Monday to Friday, 9:00 - 17:00)."
+
+#: src/app/payment/withdrawal.tpl.html
+msgid ""
+"Thank you for your bank withdrawal request! Please note that it may take up "
+"to 3 business days for your withdrawal to reach your bank account once it "
+"has been processed by our payments team."
+msgstr ""
+"Thank you for your withdrawal request! This has now been sent to our "
+"payments team for review who are available during the week following normal "
+"business hours (Monday to Friday, 9:00 - 17:00)."
+
+#: src/languages/__dynamic-strings.html
+msgid "That's a winning combination!"
+msgstr ""
+
+#: src/app/home/home.tpl.html
+msgid "The DJ"
+msgstr "The DJ"
+
+#: src/app/home/home.tpl.html
+msgid "The Driver"
+msgstr "The Driver"
+
+#: src/app/help/info/about-us.tpl.html
+#, fuzzy
+msgid "The best casino games"
+msgstr "The best casino games"
+
+#: src/app/user/verify.tpl.html
+#, fuzzy
+msgid "The code provided is incorrect"
+msgstr "The code provided is incorrect"
+
+#: src/app/help/info/about-us.tpl.html
+msgid ""
+"The concept of BlingCity is a constantly growing world for players to "
+"immerse themselves in. A world full of different locations and games for you "
+"to explore.  A world where you will be able to interact with other players "
+"from all over the world and chat, befriend, compete and trade with them. All "
+"while developing your own unique character (characters are referred to as "
+"“Citizens”) designed specially by you. Creating your own character is just "
+"the beginning of the story, a story written by you."
+msgstr ""
+"The concept of BlingCity is a constantly growing world for players to "
+"immerse themselves in. A world full of different locations and games for you "
+"to explore.  A world where you will be able to interact with other players "
+"from all over the world and chat, befriend, compete and trade with them. All "
+"while developing your own unique character (characters are referred to as "
+"“Citizens”) designed by you. Creating your own Citizen is just the beginning "
+"of the story, a story written by you."
+
+#: src/app/user/login-signup.tpl.html src/app/user/login.tpl.html
+#, fuzzy
+msgid "The field is required"
+msgstr "The field is required"
+
+#: src/app/help/info/about-us.tpl.html
+#, fuzzy
+msgid "The idea"
+msgstr "The idea"
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid "The key is to stay on top of your game - to play on the safe side!"
+msgstr ""
+
+#: src/app/help/info/about-us.tpl.html
+msgid "The number of stunning video slots we have for you"
+msgstr "The number of stunning video slots we have for you"
+
+#: src/languages/__dynamic-strings.html src/app/payment/withdrawal.tpl.html
+#: src/app/story/settings.tpl.html
+#, fuzzy
+msgid "The password provided is incorrect"
+msgstr "The code provided is incorrect"
+
+#: src/languages/__dynamic-strings.html
+msgid "There was an issue registering. Please contact customer support."
+msgstr ""
+
+#: src/languages/__dynamic-strings.html
+msgid "There was an issue resetting your password."
+msgstr ""
+
+#: src/app/payment/deposit.tpl.html
+msgid "There was an issue with your deposit."
+msgstr ""
+
+#: src/languages/__dynamic-strings.html
+msgid "There was an issue with your withdrawal"
+msgstr ""
+"There was an issue with your withdrawal. For assistance, plase take a print-"
+"screen and contact <a href=\"mailto:support@blingcity.com"
+"\">support@blingcity.com.</a>"
+
+#: src/app/user/register/step-1.tpl.html
+#, fuzzy
+msgid "This email is already in our system"
+msgstr "This email is already in our system"
+
+#: src/app/payment/deposit.tpl.html src/app/payment/withdrawal.tpl.html
+#: src/app/story/settings.tpl.html src/app/user/register/step-1.tpl.html
+#: src/app/user/register/step-2.tpl.html src/app/user/reset-password.tpl.html
+msgid "This field is required"
+msgstr "Required field"
+
+#: src/app/story/settings.tpl.html src/app/user/register/step-1.tpl.html
+msgid "This field requires at least 2 characters"
+msgstr "This field requires at least 2 characters"
+
+#: src/app/payment/withdrawal.tpl.html
+#, fuzzy
+msgid "This field requires at least 8 characters"
+msgstr "This field requires at least 2 characters"
+
+#: src/app/help/info/about-us.tpl.html
+msgid "This is what we call the Third Generation of Online Casino!"
+msgstr "This is what we call the Third Generation of Online Casinos!"
+
+#: src/app/user/register/step-2.tpl.html
+msgid "This nickname is already in our system"
+msgstr "This nickname is already in use"
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid ""
+"Total your score. The higher your score the greater the risk that your "
+"gambling is a problem.Score the following for each response:"
+msgstr ""
+"Total your score. The higher your score the greater the risk that your "
+"gambling is a problem. Score the following for each response:"
+
+#: src/app/payment/account-box.tpl.html src/app/payment/deposit.tpl.html
+msgid "Total:"
+msgstr "Total:"
+
+#: src/app/help/info/about-us.tpl.html
+msgid "Transparency drives us"
+msgstr "Transparency drives us"
+
+#: src/app/user/login-signup.tpl.html src/app/user/login.tpl.html
+msgid "Try to login again"
+msgstr "Try to login again"
+
+#: src/app/showroom/showroom.tpl.html
+msgid "Tune in with BlingCity - Get your favorite media on iTunes today!"
+msgstr ""
+
+#: src/app/payment/transaction-history.tpl.html
+msgid "Type"
+msgstr "Type"
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid ""
+"Upon exclusion, you will be logged out instantly and unable to log back in "
+"for the period of time specified."
+msgstr ""
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid ""
+"Upon setting this limit, you must wait 7 days until you can reduce or remove "
+"it."
+msgstr ""
+
+#: src/app/story/item-popover.tpl.html
+#, fuzzy
+msgid "Use Item"
+msgstr "Use Item"
+
+#: src/app/leader/leaders.tpl.html
+#, fuzzy
+msgid "Username"
+msgstr "Username"
+
+#: src/languages/__dynamic-strings.html
+msgid "VIDEO_POKER"
+msgstr "VIDEO POKER"
+
+#: src/app/showroom/showroom.tpl.html
+#, fuzzy
+msgid "Vegas Trip"
+msgstr "Mr Vegas"
+
+#: src/app/showroom/showroom.tpl.html
+msgid "Victoria Secret Gift Card"
+msgstr ""
+
+#: src/app/showroom/showroom.tpl.html
+msgid ""
+"Wake up in a good mood with BlingCity that never sleeps - morning glory with "
+"Dolce Gusto!"
+msgstr ""
+
+#: src/app/common/_partials/footer.tpl.html
+msgid ""
+"Warning: Gambling may be addictive. <a target=\"_blank\" href=\"http://www."
+"gambleaware.co.uk/\">GambleAware</a> | <a target=\"_blank\" href=\"http://"
+"www.gamblersanonymous.org/\">Gamblers Anonymous</a>"
+msgstr ""
+"Warning: Gambling may be addictive. <a target=\"_blank\" href=\"http://www."
+"gambleaware.co.uk/\">GambleAware</a> | <a target=\"_blank\" href=\"http://"
+"www.gamblersanonymous.org/\">Gamblers Anonymous</a>"
+
+#: src/app/help/info/about-us.tpl.html
+#, fuzzy
+msgid "We are BlingCity"
+msgstr "We are BlingCity"
+
+#: src/languages/__dynamic-strings.html
+msgid "We could not find the email provided."
+msgstr ""
+
+#: src/app/leader/leaders.tpl.html
+msgid "Weekly Race"
+msgstr "The Penthouse"
+
+#: src/app/vip/vip.tpl.html
+#, fuzzy
+msgid "Welcome to BlingCity Royalty!"
+msgstr "Welcome to BlingCity Royalty!"
+
+#: src/app/user/register/step-4.tpl.html
+#, fuzzy
+msgid "Welcome to BlingCity!"
+msgstr "Welcome to BlingCity!"
+
+#: src/app/showroom/showroom.tpl.html
+msgid "What do you need?"
+msgstr "This is what you need: "
+
+#: src/app/showroom/showroom.tpl.html
+msgid "What do you need? (1 person)"
+msgstr "This is what you need (1 person):"
+
+#: src/app/showroom/showroom.tpl.html
+msgid "What do you need? (2 person)"
+msgstr "This is what you need (2 persons):"
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid ""
+"When conducting the test below, consider your behavior the latest 12 months. "
+"Answer each question with one of the following options:<i> </i>"
+msgstr ""
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid ""
+"When you gambled, did you go back another day to try to win back the money "
+"you lost?"
+msgstr ""
+
+#: src/app/casino/session.tpl.html
+#, fuzzy
+msgid "Win"
+msgstr "Win"
+
+#: src/app/payment/account-box.tpl.html
+#, fuzzy
+msgid "Withdrawable:"
+msgstr "Withdrawable:"
+
+#: src/app/payment/navbar-pills.tpl.html
+#, fuzzy
+msgid "Withdrawal"
+msgstr "Withdrawal"
+
+#: src/app/payment/withdrawal.tpl.html
+#, fuzzy
+msgid "Withdrawal Method"
+msgstr "Choose your withdrawal method"
+
+#: src/app/payment/deposit.tpl.html
+msgid "Would you like a bonus?"
+msgstr ""
+
+#: src/app/user/login.tpl.html
+#, fuzzy
+msgid "Wrong email address or password. Please try again"
+msgstr "Wrong email address or password. Please try again."
+
+#: src/app/user/register/step-2.tpl.html
+#, fuzzy
+msgid "YEAR"
+msgstr "YEAR"
+
+#: src/app/help/info/about-us.tpl.html
+#, fuzzy
+msgid "YOUR E-MAIL ADDRESS"
+msgstr "Your e-mail address"
+
+#: src/app/help/info/about-us.tpl.html
+#, fuzzy
+msgid "YOUR MESSAGE"
+msgstr "YOUR MESSAGE"
+
+#: src/app/help/info/about-us.tpl.html
+#, fuzzy
+msgid "YOUR NAME"
+msgstr "YOUR NAME"
+
+#: src/app/help/info/responsible-gaming.tpl.html
+#, fuzzy
+msgid "YOUR PASSWORD"
+msgstr "Enter your password below to reset your password"
+
+#: src/app/home/home.tpl.html
+#, fuzzy
+msgid "Yacht Club William"
+msgstr "Yacht Club William"
+
+#: src/app/help/info/terms-and-conditions.good.html
+#: src/app/help/info/terms-and-conditions.tpl.html
+#, fuzzy
+msgid ""
+"You can download the terms and conditions in <a href=\"{{cdn}}/images/terms-"
+"and-conditions.pdf\">PDF</a> format"
+msgstr ""
+"You can download the terms and conditions in <a href=\"/images/terms-and-"
+"conditions.pdf\">PDF</a> format"
+
+#: src/app/user/register/step-3.tpl.html
+#, fuzzy
+msgid ""
+"You can now customize your avatar, select any other from our 30 amazing "
+"avatars or just click 'Continue' button to start playing!"
+msgstr ""
+"You can now customize your avatar, select any other from our 30 amazing "
+"avatars or just click ‘Continue’ button to start playing!"
+
+#: src/app/common/_partials/footer.tpl.html
+#, fuzzy
+msgid "You can trust us"
+msgstr "You can trust us"
+
+#: src/app/payment/withdrawal.tpl.html
+#, fuzzy
+msgid "You cannot enter more than 11 characters"
+msgstr "This field requires at least 2 characters"
+
+#: src/app/user/register/step-2.tpl.html
+msgid "You cannot enter more than 14 characters"
+msgstr ""
+
+#: src/app/story/settings.tpl.html src/app/user/register/step-2.tpl.html
+msgid "You cannot enter more than 14 numbers"
+msgstr ""
+
+#: src/languages/__dynamic-strings.html
+msgid "You cannot increase your limits"
+msgstr ""
+
+#: src/languages/__dynamic-strings.html
+#, fuzzy
+msgid "You cannot withdraw more than what is in your wallet"
+msgstr "This field requires at least 2 characters"
+
+#: src/app/casino/play.tpl.html
+msgid ""
+"You have been playing for {{ui.realityCheck.hours}} hour(s) and have lost "
+"{{abs(ui.realityCheck.amount) | currency:'€'}}"
+msgstr ""
+"You have been playing for {{ui.realityCheck.hours}} hour(s) and have lost "
+"{{abs(ui.realityCheck.amount) | currency:'€'}}"
+
+#: src/app/casino/play.tpl.html
+msgid ""
+"You have been playing for {{ui.realityCheck.hours}} hour(s) and have won "
+"{{ui.realityCheck.amount | currency:'€'}}"
+msgstr ""
+"You have been playing for {{ui.realityCheck.hours}} hour(s) and have won "
+"{{ui.realityCheck.amount | currency:'€'}}"
+
+#: src/app/user/register/step-3.tpl.html
+msgid "You have chosen {{getCharacterName(user.avatar.avatarBaseTypeId)}}"
+msgstr "You have chosen {{getCharacterName(user.avatar.avatarBaseTypeId)}}"
+
+#: src/languages/__dynamic-strings.html
+msgid ""
+"You have successfully changed your password, you may now login using the new "
+"one."
+msgstr ""
+
+#: src/languages/__dynamic-strings.html
+msgid "You have successfully set limits on your account."
+msgstr ""
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid ""
+"You may edit your Play Safe settings at any moment. Decreasing your limits "
+"(making them harder on yourself) will have immediate effect. Increasing or "
+"removing your limits (making them easier on yourself) requires a 7 days cool-"
+"off period before taking effect. You may also edit your Play Safe Profile to "
+"take a break from playing at BlingCity for a specified period of time. If "
+"you feel that you would like to permanently exclude yourself from the site "
+"please contact our support team for assistance (link to support chat). "
+"Please note that such request will not be reversible."
+msgstr ""
+
+#: src/app/user/register/step-2.tpl.html
+msgid "You must be at least {{ui.minimumAge}} to register"
+msgstr "You must be at least {{ui.minimumAge}} to register"
+
+#: src/app/payment/deposit.tpl.html src/app/payment/withdrawal.tpl.html
+msgid "You must deposit at least &euro;10"
+msgstr ""
+
+#: src/app/payment/deposit.tpl.html src/app/payment/withdrawal.tpl.html
+#, fuzzy
+msgid "You must deposit at most &euro;20,000"
+msgstr "The maximum deposit amount is €20,000"
+
+#: src/app/user/register/step-2.tpl.html
+#, fuzzy
+msgid "You must enter at least 4 characters"
+msgstr "This field requires at least 2 characters"
+
+#: src/app/story/settings.tpl.html src/app/user/register/step-2.tpl.html
+#, fuzzy
+msgid "You must enter at least 6 numbers"
+msgstr "You must be at least {{ui.minimumAge}} to register"
+
+#: src/app/user/verify.tpl.html
+msgid ""
+"You need to contact support as there appears to be an issue with the code "
+"provided."
+msgstr ""
+"You need to contact customer support as there appears to be an issue with "
+"the code provided."
+
+#: src/app/user/verify.tpl.html
+#, fuzzy
+msgid "Your account has been activated"
+msgstr "Your account has been activated"
+
+#: src/app/user/register/step-4.tpl.html
+msgid ""
+"Your account has been registered but you first need to verify your email "
+"before being able to login. Check your inbox and junk folder and then click "
+"the link provided to activate your account."
+msgstr ""
+"Your account has been registered but you first need to verify your email "
+"before being able to log in. Check your inbox and then click the link "
+"provided to activate your account. If you do not find the email check your "
+"junk box."
+
+#: src/app/user/verify.tpl.html
+#, fuzzy
+msgid "Your account has now been activated and you can log into BlingCity!"
+msgstr "Your account has now been activated and you can log into BlingCity!"
+
+#: src/app/payment/deposit.tpl.html
+msgid "Your deposit is pending, your wallet will automatically refresh."
+msgstr ""
+
+#: src/app/payment/deposit.tpl.html
+#, fuzzy
+msgid "Your deposit was successful, you can now play."
+msgstr "Your deposit was successful, you can now play."
+
+#: src/app/user/login-signup.tpl.html src/app/user/login.tpl.html
+#, fuzzy
+msgid "Your e-mail address"
+msgstr "Your e-mail address"
+
+#: src/app/story/settings.tpl.html src/app/user/register/step-2.tpl.html
+#: src/app/user/reset-password.tpl.html
+#, fuzzy
+msgid ""
+"Your password must be at least 8 characters in length and contain at least 1 "
+"lowercase character, 1 capital letter and 1 number."
+msgstr ""
+"Your password must be at least 8 characters in length and contain at least 1 "
+"lowercase character, 1 capital letter and 1 number."
+
+#: src/app/payment/deposit.tpl.html
+msgid "Your payment is complete!"
+msgstr "Your payment is complete!"
+
+#: src/app/payment/deposit.tpl.html
+#, fuzzy
+msgid "Your payment is pending"
+msgstr "YOUR NAME"
+
+#: src/app/payment/deposit.tpl.html
+msgid "Your payment was unsuccessful"
+msgstr "Your payment was unsuccessful"
+
+#: src/languages/__dynamic-strings.html
+msgid "bank-transfer deposit tooltip description"
+msgstr ""
+"Make a bank transfer deposit to your BlingCity account instantly. Simply "
+"follow the on screen instructions to make a payment."
+
+#: src/languages/__dynamic-strings.html
+msgid "bank-transfer deposit tooltip title"
+msgstr "BANK TRANSFER"
+
+#: src/languages/__dynamic-strings.html
+msgid "bank-transfer withdrawal tooltip description"
+msgstr ""
+"At Bling City we do not charge our players any withdrawal fees. Once "
+"approved, your withdrawal may take up to 5 business days to reach your "
+"account."
+
+#: src/languages/__dynamic-strings.html
+msgid "bank-transfer withdrawal tooltip title"
+msgstr "BANK TRANSFER"
+
+#: src/app/showroom/information.tpl.html
+msgid "bling avenue popup description"
+msgstr ""
+"Welcome to BlingCity Avenue - Your VIP Shop! Turn your Blings into a luxury "
+"product or the trip of your dreams. All you need to do is choose your "
+"desired product or dream travel and press \"SHOP NOW\".Make your order and "
+"let us handle the rest for you. Once you place your order, we'll send you "
+"the product purchase confirmation of your choice. Happy shopping! T&C's "
+"apply."
+
+#: src/app/story/character-summary.tpl.html src/app/story/history.tpl.html
+#: src/app/story/settings.tpl.html
+msgid "blings popover description"
+msgstr ""
+"Blings are BlingCity's currency, check out the Bling Avenue for great ways "
+"to use your Blings!"
+
+#: src/app/story/character-summary.tpl.html src/app/story/history.tpl.html
+#: src/app/story/settings.tpl.html
+msgid "cash backs popover description"
+msgstr ""
+"We reward player loyalty every week with our Cash Back Mondays, check out "
+"our Royalty program for more."
+
+#: src/app/story/character-summary.tpl.html src/app/story/history.tpl.html
+#: src/app/story/settings.tpl.html
+msgid "deposit bonus popover description"
+msgstr "This is your current deposit bonus % based on your Citizen level."
+
+#: src/app/leader/leaders.tpl.html
+msgid "description describing the weekly race winner"
+msgstr ""
+"This week's Penthouse resident! <br /><br />Every week we have a race to the "
+"top of the Penthouse! The more you play the more chances you have of earning "
+"this week's bragging rights.<br />"
+
+#: src/languages/__dynamic-strings.html
+#, fuzzy
+msgid "direct-ebanking deposit tooltip description"
+msgstr ""
+"Simply enter your credit or debit card credentials  to make a payment, your "
+"funds will be instantly available.  For your safety, your transaction is "
+"encrypted,  BlingCity does not store your CVC/CVV code."
+
+#: src/languages/__dynamic-strings.html
+msgid "direct-ebanking deposit tooltip title"
+msgstr "DIRECT E-BANKING"
+
+#: src/languages/__dynamic-strings.html
+msgid "direct-ebanking withdrawal tooltip description"
+msgstr ""
+"At Bling City we do not charge our players any withdrawal fees. Once "
+"approved, your withdrawal may take up to 5 business days to reach your "
+"account."
+
+#: src/languages/__dynamic-strings.html
+msgid "direct-ebanking withdrawal tooltip title"
+msgstr "DIRECT E-BANKING"
+
+#: src/languages/__dynamic-strings.html
+msgid "f**ck it - let's play"
+msgstr "Fuck it - Let's Play"
+
+#: src/app/help/info/contact.tpl.html
+#, fuzzy
+msgid "from about us page"
+msgstr "About Us"
+
+#: src/languages/__dynamic-strings.html
+#, fuzzy
+msgid "giropay deposit tooltip description"
+msgstr ""
+"Simply enter your credit or debit card credentials  to make a payment, your "
+"funds will be instantly available.  For your safety, your transaction is "
+"encrypted,  BlingCity does not store your CVC/CVV code."
+
+#: src/languages/__dynamic-strings.html
+msgid "giropay deposit tooltip title"
+msgstr "GIROPAY"
+
+#: src/languages/__dynamic-strings.html
+msgid "giropay withdrawal tooltip description"
+msgstr ""
+"At Bling City we do not charge our players any withdrawal fees. Once "
+"approved, your withdrawal may take up to 5 business days to reach your "
+"account."
+
+#: src/languages/__dynamic-strings.html
+msgid "giropay withdrawal tooltip title"
+msgstr "GIROPAY"
+
+#: src/app/help/info/responsible-gaming.tpl.html
+#, fuzzy
+msgid "how long your session lasts."
+msgstr "limit on your session time."
+
+#: src/app/showroom/showroom.tpl.html
+msgid "iPhone 5S"
+msgstr ""
+
+#: src/app/showroom/showroom.tpl.html
+msgid "iTunes Gift Card"
+msgstr ""
+
+
+#: src/languages/__dynamic-strings.html
+msgid "NETELLER deposit tooltip description"
+msgstr ""
+"Neteller is an online wallet solution proving instant deposits and "
+"withdrawals. You will be prompted to log in to your Neteller account to "
+"complete the payment."
+
+#: src/languages/__dynamic-strings.html
+msgid "NETELLER deposit tooltip title"
+msgstr "NETELLER"
+
+#: src/languages/__dynamic-strings.html
+msgid "NETELLER withdrawal tooltip description"
+msgstr ""
+"At Bling City we do not charge our players a withdrawal fee. Once approved, "
+"your Neteller withdrawal will reach your account immediately."
+
+#: src/languages/__dynamic-strings.html
+msgid "NETELLER withdrawal tooltip title"
+msgstr "NETELLER"
+
+#: src/languages/__dynamic-strings.html
+msgid "PAYSAFECARD deposit tooltip description"
+msgstr ""
+"Paysafecard is a prepaid card. Pay by entering the 16-digit PIN code on your "
+"card. Make larger deposits by combining up to 10 paysafecard PIN codes. "
+
+#: src/languages/__dynamic-strings.html
+msgid "PAYSAFECARD deposit tooltip title"
+msgstr "PAYSAFECARD"
+
+#: src/languages/__dynamic-strings.html
+msgid "PAYSAFECARD withdrawal tooltip description"
+msgstr "*Paysafecard not avaliable for withdrawal"
+
+#: src/languages/__dynamic-strings.html
+msgid "PAYSAFECARD withdrawal tooltip title"
+msgstr "Paysafecard"
+
+#: src/languages/__dynamic-strings.html
+msgid "PUGGLEPAY withdrawal tooltip title"
+msgstr "PUGGLEPAY"
+
+#: src/languages/__dynamic-strings.html
+msgid "PUGGLEPAY deposit tooltip description"
+msgstr ""
+"You only need to enter your mobile number and confirm the deposit via a"
+"unique SMS code that PugglePay will send you. You will receive an invoice"
+"from PugglePay via SMS and e-mail. For more information contact kundservice@pugglepay.com."
+
+#: src/languages/__dynamic-strings.html
+msgid "PUGGLEPAY deposit tooltip title"
+msgstr "PUGGLEPAY"
+
+#: src/languages/__dynamic-strings.html
+msgid "PUGGLEPAY withdrawal tooltip description"
+msgstr "*PUGGLEPAY not avaliable for withdrawal"
+
+
+#: src/languages/__dynamic-strings.html
+msgid "SKRILL deposit tooltip description"
+msgstr ""
+"Skrill is an online wallet solution proving instant deposits and "
+"withdrawals. You will be prompted to log in to your Skrill account to "
+"complete the payment."
+
+#: src/languages/__dynamic-strings.html
+msgid "SKRILL deposit tooltip title"
+msgstr "SKRILL"
+
+#: src/languages/__dynamic-strings.html
+msgid "SKRILL withdrawal tooltip description"
+msgstr ""
+"At Bling City we do not charge our players a withdrawal fee. Once approved, "
+"your Skrill withdrawal will reach your account immediately."
+
+#: src/languages/__dynamic-strings.html
+msgid "SKRILL withdrawal tooltip title"
+msgstr "SKRILL"
+
+#: src/languages/__dynamic-strings.html
+msgid "BANK deposit tooltip description"
+msgstr ""
+"Trustly is an online banking solution allowing you to make a bank transfer "
+"deposit to your BlingCity account instantly. Simply follow the on screen "
+"instructions to make a payment."
+
+#: src/languages/__dynamic-strings.html
+msgid "BANK deposit tooltip title"
+msgstr "TRUSTLY (Bank Transfer)"
+
+#: src/languages/__dynamic-strings.html
+msgid "BANK withdrawal tooltip description"
+msgstr ""
+"At Bling City we do not charge our players any withdrawal fees. Once "
+"approved, your withdrawal may take up to 1 business day to reach your "
+"account."
+
+#: src/languages/__dynamic-strings.html
+msgid "BANK withdrawal tooltip title"
+msgstr "TRUSTLY (Bank Transfer)"
+
+#: src/app/story/character-summary.tpl.html src/app/story/history.tpl.html
+#: src/app/story/settings.tpl.html
+msgid "user level popover description"
+msgstr "Your current level! Check out Royalty Program for more!"
+
+#: src/languages/__dynamic-strings.html
+msgid "CREDITCARD deposit tooltip description"
+msgstr ""
+"Simply enter your credit or debit card credentials  to make a payment, your "
+"funds will be instantly available. For your safety, your transaction is "
+"encrypted,  BlingCity does not store your CVC/CVV code."
+
+#: src/languages/__dynamic-strings.html
+msgid "CREDITCARD deposit tooltip title"
+msgstr "CREDITCARD"
+
+#: src/languages/__dynamic-strings.html
+msgid "CREDITCARD withdrawal tooltip description"
+msgstr ""
+"At Bling City we do not charge our players any withdrawal fees. Once "
+"approved, your withdrawal may take up to 3 business days to reach your "
+"account."
+
+#: src/languages/__dynamic-strings.html
+msgid "CREDITCARD withdrawal tooltip title"
+msgstr "CREDITCARD"
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid "your bet limit within a day, week or month."
+msgstr ""
+
+#: src/app/help/info/responsible-gaming.tpl.html
+msgid "your loss limit within a day, week or month."
+msgstr ""
+
+#: src/app/casino/lobby-mobile.tpl.html
+#: src/app/dashboard/dashboard-mobile.tpl.html
+msgid "{{category.name}}"
+msgstr ""
+
+#: src/app/home/home.tpl.html
+msgid "{{slide.title}}"
+msgstr ""
+
+#, fuzzy
+#~ msgid "Penthouse"
+#~ msgstr "Penthouse"
+
+#, fuzzy
+#~ msgid "April 24, 2014, Version no.1.1"
+#~ msgstr "March 19, 2014, Version no.1.0"
+
+#, fuzzy
+#~ msgid "Deposit bonus:"
+#~ msgstr "Deposit Bonus"
+
+#~ msgid "Have Fun, Play Safe"
+#~ msgstr "Enjoy the game, play it safe"
+
+#~ msgid ""
+#~ "If you feel that you would like to permanently exclude yourself from the "
+#~ "site please contact our support team for assistance (link to support "
+#~ "chat). Please note that such request will not be reversible."
+#~ msgstr ""
+#~ "If you feel that you would like to permanently exclude yourself from the "
+#~ "site please contact our support team for assistance. Please note that "
+#~ "such request will not be reversible."
+
+#, fuzzy
+#~ msgid "Monitor your limit of losses"
+#~ msgstr "Losses Limit"
+
+#, fuzzy
+#~ msgid "Other Countries:"
+#~ msgstr "Other bonuses:"
+
+#~ msgid "Our Customer Support is open daily from 7:00am to 1:00am (CET)."
+#~ msgstr ""
+#~ "Sustainable Interaction is an organization that specializes in educating "
+#~ "and assisting people in the field of social responsibility, addictions "
+#~ "and psychological health. For more info you can go to, <a target=\"_blank"
+#~ "\" href=\"http://www.sustainableinteraction.com/\">www."
+#~ "sustainableinteraction.com</a>."
+
+#, fuzzy
+#~ msgid "Play Safe Profile allows you to:"
+#~ msgstr "My Play Safe Profile"
+
+#~ msgid "Quit while you're ahead - enjoy your winnings IRL."
+#~ msgstr "Quit while you're ahead - enjoy your winnings, Bling Avenue "
+
+#~ msgid ""
+#~ "Stop playing when you reach your limits, regardless of whether you are "
+#~ "winning or losing."
+#~ msgstr ""
+#~ "Stop playing when you reach your limits, regardless of whether you are "
+#~ "winning or losing. Edit your Play Safe Profile to help you manage your "
+#~ "activity and stay on top of your game. For more info see Create your Play "
+#~ "Safe Profile below;"
+
+#, fuzzy
+#~ msgid "Withdrawal from social activities"
+#~ msgstr "Withdrawals from User Account"

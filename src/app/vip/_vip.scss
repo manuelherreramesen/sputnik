@@ -1,0 +1,54 @@
+#vip {    
+    > .container-bg {       
+        > .container {
+            min-height: inherit;
+            padding-top: 40px;
+            padding-bottom: 70px;
+        }
+    }
+
+    .video {
+        float: right;
+        width: 444px;
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    table {
+        margin-bottom: $line-height-computed;
+    }
+    
+    .thead {
+        position: absolute;
+    }
+
+    .level-data {
+        position: relative;
+        padding: 0;
+    }
+
+    aside {
+        position: absolute;
+        left: 100%;
+        top: 0;
+        width: 180px;
+        margin-left: 15px;
+        padding: 15px;
+        border-radius: $border-radius-base;
+        background: #160d19;
+    }
+
+}
+
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    #vip {
+        iframe {
+            width: 360px;
+            height: 235px;
+        }
+    }
+}

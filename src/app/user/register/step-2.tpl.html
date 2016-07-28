@@ -1,0 +1,173 @@
+<div class="row">
+    <div class="pane col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+
+        <div ng-include="'/app/user/register/three-steps.tpl.html'"></div>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-offset-3 col-sm-6">
+
+                <div class="form-group" ng-class="{'has-error': registration.nickname.$invalid && registration.submitted, 'has-success': registration.nickname.$valid, 'has-feedback': registration.nickname.$valid || (registration.submitted && registration.nickname.$error)}">
+                    <input type="text" placeholder="{{ 'NICKNAME' | translate }}" class="form-control" ng-model="user.nickname" name="nickname" ensure-unique="nickname" required>
+                    <span class="form-control-feedback" ng-show="registration.nickname.$valid || (registration.submitted && registration.nickname.$error)" ng-class="{'icon icon-tick': registration.nickname.$valid, 'icon icon-close': registration.nickname.$invalid && registration.submitted, 'icon icon-refresh loading': false}"></span>
+
+                    <div class="popover right" ng-class="{'show': registration.submitted && registration.nickname.$invalid}">
+                        <div class="arrow"></div>
+                        <div class="popover-content">
+                            <p ng-show="registration.nickname.$error.required" translate>This field is required</p>
+                            <p ng-show="registration.nickname.$error.unique && !registration.nickname.$error.required" translate>This nickname is already in our system</p>
+                        </div>
+                    </div>
+
+                </div>
+            
+                <div class="form-group" ng-class="{'has-error': registration.password.$invalid && registration.submitted, 'has-success': registration.password.$valid, 'has-feedback': registration.password.$valid || (registration.submitted && registration.password.$error)}">
+                    <input type="password" placeholder="{{ 'PASSWORD' | translate }}" class="form-control" ng-model="user.password" name="password" ng-pattern="/(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\S+$).{8,40}/" required>
+                    <span class="form-control-feedback" ng-show="registration.password.$valid || (registration.submitted && registration.password.$error)" ng-class="{'icon icon-tick': registration.password.$valid, 'icon icon-close': registration.password.$invalid && registration.submitted}"></span>
+
+                    <div class="popover right" style="z-index:1011" ng-class="{'show': registration.submitted && registration.password.$invalid}">
+                        <div class="arrow"></div>
+                        <div class="popover-content">
+                            <p ng-show="registration.password.$error.required" translate>This field is required</p>
+                            <p ng-show="registration.password.$error.pattern" translate>Your password must be at least 8 characters in length and contain at least 1 lowercase character, 1 capital letter and 1 number.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-group" ng-class="{'has-error': registration.confirmPassword.$invalid && registration.submitted, 'has-success': registration.confirmPassword.$valid, 'has-feedback': registration.confirmPassword.$valid || (registration.submitted && registration.confirmPassword.$error)}">
+                    <input type="password" placeholder="{{ 'CONFIRM PASSWORD' | translate }}" class="form-control" ng-model="user.confirmPassword" name="confirmPassword" equals="{{user.password}}" required>
+                    <span class="form-control-feedback" ng-show="registration.confirmPassword.$valid || (registration.submitted && registration.confirmPassword.$error)" ng-class="{'icon icon-tick': registration.confirmPassword.$valid, 'icon icon-close': registration.confirmPassword.$invalid && registration.submitted}"></span>
+
+                    <div class="popover right" ng-class="{'show': registration.submitted && registration.confirmPassword.$invalid}">
+                        <div class="arrow"></div>
+                        <div class="popover-content">
+                            <p ng-show="registration.confirmPassword.$error.required" translate>This field is required</p>
+                            <p ng-show="registration.confirmPassword.$error.equals && !registration.confirmPassword.$error.required" translate>Password must be valid and must match</p>
+                        </div>
+                    </div>
+
+                </div>
+            
+                <div class="form-group" ng-class="{'has-error': registration.street.$invalid && registration.submitted, 'has-success': registration.street.$valid, 'has-feedback': registration.street.$valid || (registration.submitted && registration.street.$error)}">
+                    <input type="text" placeholder="{{ 'ADDRESS' | translate }}" class="form-control" ng-model="user.address.street" name="street" required>
+                    <span class="form-control-feedback" ng-show="registration.street.$valid || (registration.submitted && registration.street.$error)" ng-class="{'icon icon-tick': registration.street.$valid, 'icon icon-close': registration.street.$invalid && registration.submitted}"></span>
+
+                    <div class="popover right" ng-class="{'show': registration.submitted && registration.street.$invalid}">
+                        <div class="arrow"></div>
+                        <div class="popover-content">
+                            <p ng-show="registration.street.$error.required" translate>This field is required</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="form-group" ng-class="{'has-error': registration.zipCode.$invalid && registration.submitted, 'has-success': registration.zipCode.$valid, 'has-feedback': registration.zipCode.$valid || (registration.submitted && registration.zipCode.$error)}">
+                    <input type="text" placeholder="{{ 'POST CODE' | translate }}" class="form-control" name="zipCode" ng-model="user.address.zipCode" ng-minlength="4" ng-maxlength="14" required>
+                    <span class="form-control-feedback" ng-show="registration.zipCode.$valid || (registration.submitted && registration.zipCode.$error)" ng-class="{'icon icon-tick': registration.zipCode.$valid, 'icon icon-close': registration.zipCode.$invalid && registration.submitted}"></span>
+
+                    <div class="popover right" ng-class="{'show': registration.submitted && registration.zipCode.$invalid}">
+                        <div class="arrow"></div>
+                        <div class="popover-content">
+                            <p ng-show="registration.zipCode.$error.required" translate>This field is required</p>
+                            <p ng-show="registration.zipCode.$error.minlength" translate>You must enter at least 4 characters</p>
+                            <p ng-show="registration.zipCode.$error.maxlength" translate>You cannot enter more than 14 characters</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group" ng-class="{'has-error': registration.city.$invalid && registration.submitted, 'has-success': registration.city.$valid, 'has-feedback': registration.city.$valid || (registration.submitted && registration.city.$error)}">
+                    <input type="text" placeholder="{{ 'CITY' | translate }}" class="form-control" ng-model="user.address.city" name="city" required>
+                    <span class="form-control-feedback" ng-show="registration.city.$valid || (registration.submitted && registration.city.$error)" ng-class="{'icon icon-tick': registration.city.$valid, 'icon icon-close': registration.city.$invalid && registration.submitted}"></span>
+
+                    <div class="popover right" ng-class="{'show': registration.submitted && registration.city.$invalid}">
+                        <div class="arrow"></div>
+                        <div class="popover-content">
+                            <p ng-show="registration.city.$error.required" translate>This field is required</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group" ng-class="{'has-error': registration.country.$invalid && registration.submitted, 'has-success': registration.country.$valid}">
+
+                    <ui-select name="country" ng-model="user.address.country" ng-change="changeCountry()" theme="bootstrap" required>
+                        <match placeholder="{{'COUNTRY' | translate}}">{{$select.selected.name}}</match>
+                        <choices repeat="country in ui.countries | filter: $select.search">
+                            <div ng-bind-html="country.name | highlight: $select.search"></div>
+                        </choices>
+                    </ui-select>
+
+                    <div class="popover right" ng-class="{'show': registration.submitted && registration.country.$invalid}">
+                        <div class="arrow"></div>
+                        <div class="popover-content">
+                            <p ng-show="registration.country.$error.required" translate>This field is required</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group" ng-class="{'has-error': registration.phoneNumber.$invalid && registration.submitted, 'has-success': registration.phoneNumber.$valid, 'has-feedback': registration.phoneNumber.$valid || (registration.submitted && registration.phoneNumber.$error)}">
+                    <input type="text" placeholder="{{ 'PHONE NUMBER' | translate }}" class="form-control" name="phoneNumber" ng-model="user.phoneNumber" ng-pattern="/^[0-9-]+$/" ng-minlength="6" ng-maxlength="14" required>
+                    <span class="form-control-feedback" ng-show="registration.phoneNumber.$valid || (registration.submitted && registration.phoneNumber.$error)" ng-class="{'icon icon-tick': registration.phoneNumber.$valid, 'icon icon-close': registration.phoneNumber.$invalid && registration.submitted}"></span>
+                    
+                    <div class="popover right" ng-class="{'show': registration.submitted && registration.phoneNumber.$invalid}">
+                        <div class="arrow"></div>
+                        <div class="popover-content">
+                            <p ng-show="registration.phoneNumber.$error.required" translate>This field is required</p>
+                            <p ng-show="registration.phoneNumber.$error.pattern" translate>Number is invalid</p>
+                            <p ng-show="registration.phoneNumber.$error.minlength" translate>You must enter at least 6 numbers</p>
+                            <p ng-show="registration.phoneNumber.$error.maxlength" translate>You cannot enter more than 14 numbers</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group date-of-birth" ng-class="{'has-error': registration.birthday.$invalid && registration.submitted, 'has-success': registration.birthday.$valid}">
+
+                    <input type="hidden" name="birthday" date-of-birth-validator date-pieces="ui.dateOfBirth" min-age="ui.minimumAge" ng-model="user.birthday" required>
+
+                    <ui-select name="day" class="col-xs-4 day" ng-model="ui.dateOfBirth.day" theme="bootstrap" ng-change="changeDateOfBirth()" required>
+                        <match placeholder="{{'DAY' | translate}}">{{$select.selected}}</match>
+                        <choices repeat="value in dob.days | filter: $select.search">{{value}}</choices>
+                    </ui-select>
+                    <ui-select name="month" class="col-xs-4 month" ng-model="ui.dateOfBirth.month" theme="bootstrap" ng-change="changeDateOfBirth()" required>
+                        <match placeholder="{{'MONTH' | translate}}">{{$select.selected.label}}</match>
+                        <choices repeat="month in dob.months | filter: $select.search">
+                            <div ng-bind-html="month.label | highlight: $select.search"></div>
+                            {{value}}
+                        </choices>
+                    </ui-select>
+                    <ui-select name="year" class="col-xs-4 year" ng-model="ui.dateOfBirth.year" theme="bootstrap" ng-change="changeDateOfBirth()" required>
+                        <match placeholder="{{'YEAR' | translate}}">{{$select.selected}}</match>
+                        <choices repeat="value in dob.years | filter: $select.search">{{value}}</choices>
+                    </ui-select>
+
+                    <div class="popover right" ng-class="{'show': registration.birthday.$invalid && registration.submitted}">
+                        <div class="arrow"></div>
+                        <div class="popover-content">
+                            <p ng-show="registration.birthday.$error.required" translate>This field is required</p>
+                            <p ng-show="registration.birthday.$error.tooYoung && !registration.birthday.$error.required" translate>You must be at least {{ui.minimumAge}} to register</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <br>
+
+        <div class="form-group" ng-class="{'has-error': registration.termsConditions.$invalid && registration.submitted}">
+            <div class="checkbox">
+                <label for="termsConditions">
+                    <input type="checkbox" ng-model="user.termsConditions" name="termsConditions" id="termsConditions" required>
+                    {{ "I confirm that I am at least 18 years old and that I have read and accept the BlingCity rules, Terms &amp; Conditions and it's policies relating to privacy, age verification and KYC." | translate }}
+                </label>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="text-center">
+            <button ng-click="forward(registration, user)" class="btn btn-contrast" translate>Continue</button>
+        </div>
+
+    </div>
+</div>

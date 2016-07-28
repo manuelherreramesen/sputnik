@@ -1,0 +1,131 @@
+{
+    "id": 1,
+    "username": "intellix",
+    "email": "domwatson@live.co.uk",
+    "first_name": "Dominic",
+    "last_name": "Watson",
+    "birthday": 1285320927251,
+    "address1": "82 Avenue Street",
+    "post_code": "de555nl",
+    "city": "Alfreton",
+    "country": "United Kingdom",
+    "phone": "+356 996 14280",
+    "security_question": "What is your dog's name?",
+    "security_answer": "Rambo",
+    "level": 22,
+    "xp": 62313,
+    "required_xp": 100000,
+    "avatar": "rocker-girl",
+    "locale": "en_GB",
+    "role": "user",
+    "wallet": {
+        "currency": "EUR",
+        "currency_symbol": "€",
+        "balance": 200,
+        "cashbacks": 30,
+        "deposit_bonus": 20,
+        "other_bonuses": 0,
+        "withdrawable": 240,
+        "street_cred": 4500
+    },
+    "activeStory": 1,
+    "stories": [1, 2, 3],
+    "activity": [
+        {
+            "date": "20 Aug 2013",
+            "text": "Reached level 73 and received 20 free spins"
+        },
+        {
+            "date": "17 Aug 2013",
+            "text": "Used new shoes for £10 cash back"
+        },
+        {
+            "date": "19 Jul 2013",
+            "text": "You reached level 73 and received 20 free spins"
+        }
+    ],
+    "items": {
+        "active": [
+            {
+                "id": 1,
+                "name": "Belt",
+                "slug": "belt",
+                "reward": {
+                    "title": "Cash back: €10",
+                    "text": "Lorem ipsum dolor sit amet, consecr adipisicing elit."
+                }
+            },
+            {
+                "id": 2,
+                "name": "Briefcase",
+                "slug": "briefcase",
+                "reward": {
+                    "title": "Cash back: €25",
+                    "text": "Lorem ipsum dolor sit amet, consectetur adipising elit."
+                }
+            },
+            {
+                "id": 3,
+                "name": "Drink Cosmopolitan",
+                "slug": "drink-cosmopolitan",
+                "reward": {
+                    "title": "Cash back: €10",
+                    "text": "Lorem ipssit amet, consectetur adipisicing elit."
+                }
+            },
+            {
+                "id": 4,
+                "name": "Boots",
+                "slug": "boots",
+                "reward": {
+                    "title": "Deposit bonus 10€ up to 200%",
+                    "text": "Lorem ipsum dolet, consecteticing elit. Adipisic consecr."
+                }
+            }
+        ],
+        "used": [
+            {
+                "name": "Belt",
+                "slug": "belt"
+            },
+            {
+                "name": "Briefcase",
+                "slug": "briefcase"
+            },
+            {
+                "name": "Drink Cosmopolitan",
+                "slug": "drink-cosmopolitan"
+            },
+            {
+                "name": "Boots",
+                "slug": "boots"
+            },
+            {
+                "name": "Drink Cosmopolitan",
+                "slug": "drink-cosmopolitan"
+            },
+            {
+                "name": "T-Shirt",
+                "slug": "t-shirt"
+            },
+            {
+                "name": "Belt",
+                "slug": "belt"
+            }
+        ],
+        "storage": [
+            {
+                "name": "Belt",
+                "slug": "belt"
+            },
+            {
+                "name": "Drink Cosmopolitan",
+                "slug": "drink-cosmopolitan"
+            },
+            {
+                "name": "T-Shirt",
+                "slug": "t-shirt"
+            }
+        ]
+    }
+}

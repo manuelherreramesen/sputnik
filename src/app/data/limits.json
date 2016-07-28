@@ -1,0 +1,23 @@
+{
+	"limitList": [
+		{
+			"limitationType": "LOSS_AMOUNT",
+			"timeUnit": "MONTH",
+			"amount": 200,
+			"percent": null
+		},
+		{
+			"limitationType": "BET_AMOUNT",
+			"timeUnit": "MONTH",
+			"amount": 400,
+			"percent": null
+		},
+		{
+			"limitationType": "BET_AMOUNT",
+			"timeUnit": "DAY",
+			"amount": 600,
+			"percent": null
+		},
+	],
+	"sessionLength": 10
+}

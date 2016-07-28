@@ -1,0 +1,82 @@
+<div id="dashboard" ng-if="user.id !== null">
+    <div class="container">
+    
+        <div class="story-container">
+            <div class="back" back-img="{{cdn}}/images/stories/saturated/{{user.avatar.avatarBaseTypeId}}/{{getLatestStoryPicture()}}"></div>
+            <div class="character" back-img="{{cdn}}/images/characters/{{user.avatar.avatarBaseTypeId}}/736x736/{{getCorrectLevelPicture()}}/s{{user.avatar.skinColor}}h{{user.avatar.hairColor}}.png"></div>
+        </div>
+            
+        <div class="row">
+
+            <div class="col-xs-6 col-md-3">
+
+                <div class="character-summary">
+
+                    <div ng-include="'/app/story/character-summary.tpl.html'"></div>
+
+                    <br>
+                    
+                    <section class="item-list">
+                        <div class="character-item" ng-repeat="item in user.items.active | limitTo: 3" back-img="{{cdn}}/images/items/53x53/{{item.slug}}.png"></div>
+                    </section>
+                    <a href="#/story/items" class="btn btn-primary btn-lg btn-block story-btn" translate>My Story</a>
+
+                </div>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-offset-3">
+                
+                <carousel class="game-carousel bottom-controls" interval="games.interval">
+                    <slide ng-repeat="slide in games.slides" active="slide.active">
+                        <a ng-href="{{slide.link}}"><img ng-src="{{cdn}}{{slide.image}}"></a>
+                    </slide>
+                </carousel>
+
+                <div class="row">
+                    
+                    <div class="col-xs-6">
+                        
+                        <h5 translate>Over 100 Amazing Games</h5>
+                        <carousel class="amazing-game-carousel">
+                            <slide>
+                                <a href="#/games/slots"><img class="img-responsive" ng-src="{{cdn}}/images/pages/dashboard/262x203/featured-games.jpg" alt=""></a>
+                            </slide>
+                        </carousel>
+
+                    </div>
+                    <div class="col-xs-6">
+
+                        <h5 translate>Bling Avenue</h5>
+                        <carousel class="amazing-game-carousel">
+                            <slide>
+                                <a href="#/bling-avenue"><img class="img-responsive" ng-src="{{cdn}}/images/pages/dashboard/bling-avenue.jpg" alt=""></a>
+                            </slide>
+                        </carousel>
+                        <!--
+                        <div class="activity-scroller"> 
+                            <ul>
+                                <li ng-repeat="story in activity">
+                                    <div class="media">
+                                        <div class="pull-left">
+                                            <div class="media-object" back-img="{{cdn}}/images/items/large/{{story.item.slug}}.png"></div>
+                                        </div>
+                                        <div class="media-body">
+                                            <p ng-bind-html="story.content"></p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        -->
+                        
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,21 @@
+{
+    "success": true,
+    "messages": [
+        {
+            "value": "************2410",
+            "label": "Credit card"
+        },
+        {
+            "value": "123.00 USD",
+            "label": "Amount deposited to user account"
+        },
+        {
+            "value": "3.08 USD",
+            "label": "Deposit fee"
+        },
+        {
+            "value": "126.08 USD",
+            "label": "Amount withdrawn from credit card"
+        }
+    ]
+}

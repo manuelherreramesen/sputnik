@@ -1,0 +1,75 @@
+<div class="row">
+    <div class="pane col-xs-12" ng-class="{ 'choose-your-citizen': user.avatar.id == null }">
+
+        <div ng-include="'/app/user/register/three-steps.tpl.html'"></div>
+    
+        <div ng-if="user.avatar.id != null" class="col-md-5">
+
+            <div class="popover-container">
+                <div class="popover top">
+                    <div class="arrow"></div>
+                    <h3 class="popover-title" translate>You have chosen {{getCharacterName(user.avatar.avatarBaseTypeId)}}</h3>
+                    <div class="popover-content">
+                        <p translate>You can now customize your avatar, select any other from our 30 amazing avatars or just click 'Continue' button to start playing!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 media">
+                    
+                    <div class="pull-left">
+                        <div class="selected-character" back-img="{{cdn}}/images/characters/{{user.avatar.avatarBaseTypeId}}/736x736/{{user.avatar.level}}/s{{user.avatar.skinColor}}h{{user.avatar.hairColor}}.png"></div>
+                    </div>
+
+                    <div class="media-content">
+
+                        <h5>{{getCharacterName(user.avatar.avatarBaseTypeId)}}</h5>
+                        <p>"{{getCharacterDescription(user.avatar.avatarBaseTypeId)}}"</p>
+                        <br>
+                        <h5 translate>Customize Avatar</h5>
+                        <table class="table" style="width: 180px;">
+                            <tbody>
+                                <tr>
+                                    <td class="key" translate>Skin</td>
+                                    <td class="value">
+                                        <div style="background-color: #{{ui.customizationOptions[user.avatar.avatarBaseTypeId].skin[$index+1]}}" ng-repeat="skin in avatars.skins" class="customization" ng-click="chooseAvatar(skin)"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="key" translate>Hair</td>
+                                    <td class="value">
+                                        <div style="background-color: #{{ui.customizationOptions[user.avatar.avatarBaseTypeId].hair[$index+1]}}" ng-repeat="hair in avatars.hairs" class="customization" ng-click="chooseAvatar(hair)"></div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div ng-if="user.avatar.id == null" class="col-md-5"></div>
+
+        <div class="col-md-7">
+
+            <div class="character-container">
+                <div class="character-selection" ng-repeat="avatar in avatars.types" ng-click="chooseAvatar(avatar)">
+                    <div class="image">
+                        <i class="character-small-citizen-{{avatar.avatarBaseTypeId}}"></i>
+                    </div>
+                    <span>{{getCharacterName(avatar.avatarBaseTypeId)}}</span>
+                </div>
+            </div>
+    
+            <br>
+
+            <div class="text-center">
+                <button class="btn btn-lg btn-contrast" ng-hide="ui.loading || user.avatar.id == null" ng-disabled="registration.thinking" ng-click="completeRegistration(registration, user)" translate>Sign up now</button>
+            </div>
+
+        </div>
+
+    </div>
+</div>

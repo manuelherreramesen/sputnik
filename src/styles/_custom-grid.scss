@@ -1,0 +1,11 @@
+/* 10 column */
+
+@media (min-width: $screen-md-min) {
+	.col-md-1-10 {
+		position: relative;
+	    float: left;
+	    padding-left: 15px;
+	    padding-right: 15px;
+	    width: 20%;
+	}
+}

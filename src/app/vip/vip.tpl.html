@@ -1,0 +1,96 @@
+<div id="vip">
+    <div class="container-bg bg-{{randomBg}}">
+        <div class="container">
+            
+            <div class="row">
+        
+                <div class="pane col-xs-12 col-lg-10 col-lg-offset-1">
+
+                    <div class="row">
+                        
+                        <div class="col-xs-12">                         
+                            <div class="video">
+                                <iframe ng-if="currentLanguage == 'en'" width="444" height="252" src="//www.youtube.com/embed/6Rghf7LCUqI?controls=0&showinfo=0&rel=0" frameborder="0" allowfullscreen></iframe>
+                                <iframe ng-if="currentLanguage == 'sv'" width="444" height="252" src="//www.youtube.com/embed/jZyle16ujyM?controls=0&showinfo=0&rel=0" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <h4 translate>Welcome to BlingCity Royalty!</h4>
+                            <p translate>Below you are introduced to the BlingCity Royalty Program including:</p> 
+                            <p translate><b>Surprises</b> - you will be rewarded with Surprises, enhancing both your gameplay and your Citizen's standing in the City! <br/><b>Deposit Bonus</b> - you are granted an automatic deposit bonus, reflecting your curent level. <br/><b>Cash Back</b> - every Monday by noon, based on your play the week before. <br/><b>Blings</b> - convertable into gifts from BlingCity Avenue, bonuses or real money! You earn your blings as you play. The blings you'll recieve will increas in value as you level up.</p>
+                            <button ng-show="welcomeMore == false" ng-click="toggleWelcomeMore()" class="btn btn-primary" translate>CLICK HERE FOR MORE INFORMATION</button>
+                            <div ng-show="welcomeMore == true">
+                                <p translate><b>Bling City Surprise</b> shows how much status your citizen has. It will enhance your character with increased status, gifts and updates. You will see more in the My Story Section. Make sure you go there often and check for updates. Click on the Stuff to activate it.</p>
+                                <p translate><b>Deposit Bonus Level</b> is the % level of bonus you get when you deposit money to your account. The higher your level is the higher your bonus will be. This applies to every deposit, not just once. Remember that if we have a promotion going you will not receive both bonuses, but rather the bonus % that is the highest.</p>
+                                <p translate><b>Cash Back</b> starts at level 10 and increases with every 10th level you reach. It is the amount of real money you get back every Monday by noon from the former weeks play. This is our way of saying “thank you” for continuing to play.  The cash back amount is based on your bets with real money only. It starts modestly, but you will see that it grows pretty quickly as your level up.</p>
+                                <p translate><b>Blings</b> are our own currency which can be converted into real money, bonus money, or gifts from our Bling Avenue section. You will get more and more Blings as you level up, starting with 1-6 Blings per level reached. Once you reach higher levels you will receive 2-12, 3-18 and 4-24 Blings (see the table for more info). Remember that the Blings also go up in value when you reach certain thresholds.</p>
+                                <p translate>See under the cashier section if you want to exchange your Blings to Cash or Bonus Money. Remember if you convert it to bonus money, it becomes x3 more.</p>
+                                <p translate>Good Luck, and remember to play responsibly.</p>
+                            </div>
+                            <button ng-show="welcomeMore == true" ng-click="toggleWelcomeMore()" class="btn btn-shadow" translate>HIDE INFORMATION</button>
+                        </div>
+
+                    </div>
+
+                </div>
+                
+            </div>
+
+            <div class="row">
+                    
+                <div class="level-data col-xs-12 col-lg-10 col-lg-offset-1 ">
+                    
+                    <aside class="hidden-xs" sticky>
+                        <p translate>* deposit bonus description</p>
+                        <p translate>** cash back mondays description.</p>
+                        <p translate>*** blings description</p>
+                    </aside>
+
+                    <table class="table table-striped-fancy">
+                        <thead>
+                            <tr>
+                                <th class="visible-xs visible-sm" translate>Level</th>
+                                <th class="hidden-xs hidden-sm" translate>Level Acquired</th>
+                                <th class="visible-sm" translate>Status</th>
+                                <th class="hidden-xs hidden-sm" translate>New Status</th>
+                                <th class="visible-xs"><i class="icon icon-tick"></i></th>
+                                <th class="hidden-xs" translate>Bonus Stuff</th>
+                                <th class="visible-xs visible-sm" translate>Deposit bonus*</th>
+                                <th class="hidden-xs hidden-sm" translate>Deposit bonus level*</th>
+                                <th class="visible-xs visible-sm" translate>Cash Back**</th>
+                                <th class="hidden-xs hidden-sm" translate>Cash Back Mondays**</th>
+                                <th translate>Blings***</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="level in levels" ng-hide="$index >= rowsVisible" ng-class="{emphasis: level.level % 10 === 0}">
+                                <td>{{level.level}}</td>
+                                <td class="hidden-xs">{{ level.level % 10 === 0 ? 'Status Update' : '' | translate }}</td>
+                                <td class="visible-xs">
+                                    <div ng-show="levelHasSurprise(level.level) === true">
+                                        <i class="visible-xs icon icon-tick"></i>
+                                    </div>
+                                </td>
+                                <td class="visible-sm"><div ng-show="levelHasSurprise(level.level) === true">{{ 'Surprise!' | translate }} &nbsp; <i class="icon icon-tick"></i></div></td>
+                                <td class="hidden-xs hidden-sm"><div ng-show="levelHasSurprise(level.level) === true">{{ 'BlingCity Surprise!' | translate }} &nbsp; <i class="icon icon-tick"></i></div></td>
+                                <td>{{level.depositBonusPercentage > 0 ? level.depositBonusPercentage + '%' : '-' }}</td>
+                                <td>{{level.cashbackPercentage > 0 ? level.cashbackPercentage + '%' : '-'}}</td>
+                                <td>
+                                    <!--<span translate translate-n="level.creditDices" translate-plural="{{level.creditDices}} Dice">{{level.creditDices}} Die</span>-->
+                                    <span ng-if="level.creditDices == 0">-</span>
+                                    <span ng-if="level.creditDices > 0">{{level.creditDices}} - {{level.creditDices * 6}}</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+            
+                    <div class="text-center">
+                        <button ng-show="rowsVisible == 12" ng-click="toggleTable()" class="btn btn-shadow" translate>See the whole table</button>
+                        <button ng-hide="rowsVisible == 12" ng-click="toggleTable()" class="btn btn-shadow" translate>Close the table</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>

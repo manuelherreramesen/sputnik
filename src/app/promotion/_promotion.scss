@@ -1,0 +1,26 @@
+#promotion {
+
+    > .container-bg {
+        > .container {
+            padding-top: 40px;
+            padding-bottom: 70px;
+        }
+    }
+
+    .tab-content {
+        background: #f8f8f8;
+        color: #595959;
+
+        > .tab-pane {
+            display: block;
+            padding: 12px 30px 30px;
+            min-height: 700px;
+        }
+    }
+
+    h1, h2, h3, h4, h5,
+    .h1, .h2, .h3, .h4, .h5 {
+        color: #5c4f61;
+    }
+
+}

@@ -1,0 +1,53 @@
+// Fix for not being able to have controls that stick to the bottom. This makes them more flexible
+.carousel {
+    > .carousel-indicators {
+        margin-left: inherit;
+        left: inherit;
+        width: 100%;
+
+        > ol {
+            display: inline-block;
+            list-style: none;
+            padding: 0;
+        }
+    }
+    
+    &.bottom-controls {
+        margin-bottom: 60px;
+
+        .carousel-control {
+            display: none;
+        }
+
+        .carousel-indicators {
+            top: 100%;
+
+            > * {
+                margin: 0;
+                padding: 7px 14px;
+                background-color: #140715;
+                border-radius: 0 0 10px 10px;
+            }
+
+            li {
+                background: #714c74;
+                border: 0;
+                margin: 0 7px 0 0;
+                width: 12px;
+                height: 12px;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+
+            .active {
+                background: #e5a82d;
+                margin: 1px 7px 1px 0;
+                width: 9px;
+                height: 9px;
+            }
+
+        }
+    }
+
+}

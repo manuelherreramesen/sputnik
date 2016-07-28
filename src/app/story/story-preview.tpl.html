@@ -1,0 +1,11 @@
+<div id="storyPreview" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="back" ng-if="story.nightBackgroundUrl" back-img="{{cdn}}/images/stories/normal/{{story.avatarBaseTypeId}}/{{story.nightBackgroundUrl}}"></div>
+                <div class="back" ng-if="!story.nightBackgroundUrl" back-img="{{cdn}}/images/stories/normal/{{story.avatarBaseTypeId}}/{{story.dayBackgroundUrl}}"></div>
+                <div class="character" back-img="{{cdn}}/images/characters/{{user.avatar.avatarBaseTypeId}}/736x736/{{story.level}}/s{{user.avatar.skinColor}}h{{user.avatar.hairColor}}.png"></div>
+            </div>
+        </div>
+    </div>
+</div>

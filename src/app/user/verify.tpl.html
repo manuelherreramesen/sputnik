@@ -1,0 +1,52 @@
+<div id="register">
+    <div class="container-bg bg-{{randomBg}}">
+        <div class="container">
+            <div class="row">
+                <div class="pane col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+
+                    <div ng-include="'views/register/three-steps.tpl.html'"></div>
+
+                    <h2 ng-if="ui.loading === true" class="text-center">
+                        <span translate>Checking the code provided...</span>
+                    </h2>
+                    <h2 ng-if="ui.loading !== true && ui.correctCode === false" class="text-center">
+                        <span translate>The code provided is incorrect</span>
+                    </h2>
+                    <h2 ng-if="ui.loading !== true && ui.correctCode === true" class="text-center">
+                        <span translate>Your account has been activated</span>
+                    </h2>
+
+                    <div ng-switch on="ui.correctCode">
+                        <div ng-switch-when="true" class="popover-container">
+                            <div class="popover top">
+                                <div class="popover-content">
+                                    <p translate>Your account has now been activated and you can log into BlingCity!</p>
+                                    <!--
+                                    <p translate>Thank you!</p>
+                                    <p translate>Success, You are now registered at BlingCity Casino.</p>
+                                    <p translate>Due to the overwhelming support and registrations we've received during our launch we've had to close login temporarily. But don't worry, we will reward you with something great for your patience.</p>
+                                    <p translate>Please come back tomorrow and check your e-mail for a good surprise!</p>
+                                    <p translate>The BlingCity Team!</p>
+                                    -->
+                                </div>
+                            </div>
+                        </div>
+                        <div ng-switch-when="false" class="popover-container">
+                            <div class="popover top">
+                                <div class="popover-content">
+                                    <p translate>You need to contact support as there appears to be an issue with the code provided.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4 translate>Promotion of the week</h4>
+                    <a href="#/promotions/welcome-bonus">
+                        <img src="{{cdn}}/images/promotions/col-12/welcome-bonus-{{currentLanguage}}.jpg" class="img-responsive">
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

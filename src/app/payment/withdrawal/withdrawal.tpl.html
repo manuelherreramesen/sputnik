@@ -1,0 +1,120 @@
+<div id="cashier">
+<div class="container-bg bg-{{randomBg}}">
+<div class="container">
+
+<div class="row">
+    <div class="col-md-12" ng-include="'/app/payment/navbar-pills.tpl.html'"></div>
+</div>
+
+<div class="row equal-height">
+
+<div class="col-md-9">
+    <div class="pane">
+
+        <div ng-if="process.step == 1">
+
+            <h5 class="pane-heading"><span class="text-contrast" translate>Step {{process.step}}</span> - <span translate>Select withdrawal method</span></h5>
+
+            <table class="table payment-methods withdrawal">
+                <thead>
+                <tr>
+                    <th colspan="2" class="type" translate>Withdrawal Method</th>
+                    <th class="hidden-xs hidden-sm"></th>
+                    <th class="actions" translate>Amount (EUR)</th>
+                </tr>
+                </thead>
+                <tbody ng-repeat="method in process.withdrawal.methods" class="no-border">
+                <tr ng-repeat="account in method.accounts" class="space">
+                    <td class="type" ng-if="account.type === 'creditcard'">
+                        <i class="methods-deposit-{{account.cardType}} pull-left"></i>
+                        <a data-placement="right" data-trigger="hover" data-content="{{ 'CREDITCARD withdrawal tooltip description' | translate }}" data-title="{{ 'CREDITCARD:' | translate }}" bs-popover><i class="icon icon-info"></i></a>
+                    </td>
+                    <td class="type" ng-if="account.type === 'neteller'">
+                        <i class="methods-deposit-{{method.providerType}} pull-left"></i>
+                        <a data-placement="right" data-trigger="hover" data-content="{{ 'NETELLER withdrawal tooltip description' | translate }}" data-title="{{ 'NETELLER:' | translate }}" bs-popover><i class="icon icon-info"></i></a>
+                    </td>
+                    <td class="type" ng-if="account.type === 'skrill'">
+                        <i class="methods-deposit-{{method.providerType}} pull-left"></i>
+                        <a data-placement="right" data-trigger="hover" data-content="{{ 'SKRILL withdrawal tooltip description' | translate }}" data-title="{{ 'SKRILL:' | translate }}" bs-popover><i class="icon icon-info"></i></a>
+                    </td>
+                    <td></td>
+                    <td class="limits hidden-xs hidden-sm">
+                        <div>{{ 'Min Withdrawal' | translate }}: 10 EUR</div>
+                    </td>
+                    <td class="actions">
+                        <form novalidate class="form-inline" name="withdrawalForm">
+                            <span>&euro;</span>
+
+                            <div class="form-group" ng-class="{'has-error': withdrawalForm.amount.$invalid && withdrawalForm.submitted}">
+                                <input type="number" class="form-control" placeholder="{{ 'Amount' | translate }}" name="amount" ng-model="withdrawalParameters.amount" min="10"
+                                       max="20000" required>
+
+                                <div class="popover top" ng-class="{'show': withdrawalForm.submitted && withdrawalForm.amount.$invalid}">
+                                    <div class="arrow"></div>
+                                    <div class="popover-content">
+                                        <p ng-show="withdrawalForm.amount.$error.required" translate>This field is required</p>
+
+                                        <p ng-show="withdrawalForm.amount.$error.min" translate>You must deposit at least &euro;10</p>
+
+                                        <p ng-show="withdrawalForm.amount.$error.max" translate>You must deposit at most &euro;20,000</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-contrast" ng-disabled="process.thinking" ng-click="start(withdrawalForm, method.providerType, account.accountId)"
+                                    translate>Next
+                            </button>
+                        </form>
+                    </td>
+                    </td>
+                </tr>
+                <tr class="space"></tr>
+                </tbody>
+            </table>
+
+            <div ng-if="$data">
+                <br>
+                <h5 translate>Pending withdrawals</h5>
+                <table ng-table="pendingWithdrawals" class="table table-inverse">
+                    <tr ng-repeat="transaction in $data">
+                        <td data-title="'Date requested' | translate">{{transaction.date | amCalendar}}</td>
+                        <td data-title="'Amount' | translate">{{transaction.amount | currency:'€'}}</td>
+                        <td data-title="'Method' | translate">{{transaction.paymentMethod}}</td>
+                        <td data-title="'Status' | translate">{{transaction.status}}</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+        <div ng-if="process.step == 3">
+
+            <div ng-if="process.responseType == 'basic'">
+                <h5 class="pane-heading"><span class="text-contrast" translate>Step {{process.step}}</span> - <span translate>Your withdrawal is complete!</span></h5>
+                <p translate>Your deposit was successful. {{process.responseData.messages[3].value}} withdrawn from your account.</p>
+            </div>
+            <div ng-if="process.responseType == 'iframe'" class="IFrameContainer">
+
+                <h5 class="pane-heading"><span class="text-contrast" translate>Step {{process.step}}</span> - <span translate>Your withdraw is pending</span></h5>
+                <p translate>Your deposit is pending, your wallet will automatically refresh.</p>
+
+
+                <iframe name="depositIFrame" class="depositIFrame" src=""></iframe>
+
+                <form name="iFrameForm" action="{{iframeProperties.url}}" method="post" target="depositIFrame">
+                    <input ng-repeat="property in iframeProperties.parameters" type="hidden" name="{{property.key}}" value="{{property.value}}" form-submit-directive/>
+                </form>
+
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div ng-include="'/app/payment/account-box.tpl.html'"></div>
+
+</div>
+
+</div>
+</div>
+</div>

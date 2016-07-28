@@ -1,0 +1,76 @@
+
+$globalSpriteMap:                    sprite-map('sprites/global/*.png', $spacing: 20px);
+$methodsSpriteMap:                   sprite-map('sprites/methods/*.png', $spacing: 20px);
+$characterSpriteMap:                 sprite-map('sprites/character/*.png', $spacing: 20px);
+$characterSmallSpriteMap:            sprite-map('sprites/character-small/*.png', $spacing: 20px);
+
+$headings-color:                     #cecdce;
+$font-size-h5:                       14px;
+$text-color:                         #a6a6a6;
+$font-family-base:                   Ubuntu;
+$navbar-height:                      36px;
+$navbar-default-bg:                  #fff;
+$navbar-default-link-color:          #fff;
+$font-size-base:                     13px;
+$font-size-small:                    11px;
+$padding-small-vertical:             8px;
+$link-color:                         #807c81;
+$table-cell-padding:                 5px;
+$progress-bar-warning-bg:            #c68314;
+$popover-bg:                         #f8f8f8;
+$popover-arrow-color:                #f8f8f8;
+$popover-border-color:               transparent;
+$popover-fallback-border-color:      #f8f8f8;
+$popover-arrow-width:				 6px;
+$border-radius-base:                 4px;
+$border-radius-small:                4px;
+$border-radius-large:                4px;
+$input-bg:     						 #f8f8f8;
+$input-color:                        #444;
+$input-height-base:                  38px;
+$input-border-radius:                $border-radius-base;
+$input-color-placeholder:        	 #b9b9b9;
+$modal-content-bg:                   #f8f8f8;
+$modal-content-border-color: 		 transparent;
+$modal-content-fallback-border-color:$modal-content-border-color;
+$nav-tabs-active-link-hover-bg:      $modal-content-bg;
+$nav-tabs-active-link-hover-color:   #333;
+$nav-pills-active-link-hover-bg:     inherit;
+$carousel-control-color:             #403146;
+
+$pane-padding-vertical: 26px;
+$pane-padding-horizontal: 28px;
+
+$pagination-bg: #150a1a;
+$pagination-border: #332938;
+$pagination-color: #ffffff;
+$pagination-active-bg: #403146;
+$pagination-hover-bg: #403146;
+$pagination-active-color: #ffffff;
+$pagination-disabled-color: #a2a2a2;
+$pagination-disabled-bg: #150a1a;
+$pagination-disabled-border: $pagination-hover-bg;
+
+// Fonts
+
+@include font-face('Ubuntu', font-files(
+	'ubuntu-regular-webfont.woff',
+	'ubuntu-regular-webfont.ttf',
+	'ubuntu-regular-webfont.svg'
+), 'ubuntu-regular-webfont.eot', 400);
+@include font-face('Ubuntu', font-files(
+	'ubuntu-bold-webfont.woff',
+	'ubuntu-bold-webfont.ttf',
+	'ubuntu-bold-webfont.svg'
+), 'ubuntu-bold-webfont.eot', 700);
+
+@include font-face('Montserrat', font-files(
+	'montserrat-regular-webfont.woff',
+	'montserrat-regular-webfont.ttf',
+	'montserrat-regular-webfont.svg'
+), 'montserrat-regular-webfont.eot', 400);
+@include font-face('Montserrat', font-files(
+	'montserrat-bold-webfont.woff',
+	'montserrat-bold-webfont.ttf',
+	'montserrat-bold-webfont.svg'
+), 'montserrat-bold-webfont.eot', 700);

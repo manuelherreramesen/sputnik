@@ -1,0 +1,30 @@
+node_modules
+dist
+.tmp
+.sass-cache
+/src/vendor/
+/src/app/config.js
+
+# angular_gettext files
+src/languages/*.mo
+src/languages/*.json
+src/languages/template.pot
+
+# Sublime files
+*.sublime-*
+
+# IntelliJ crap
+.idea/artifacts
+.idea/dictionaries
+.idea/libraries
+.idea/runConfigurations
+.idea/bashsupport_project.xml
+.idea/modules.xml
+.idea/gradle.xml
+.idea/workspace.xml
+.idea/dataSources.*
+atlassian-ide-plugin.xml
+
+# Mac Coputer crap
+src/app/data/.DS_Store
+src/app/leader/.DS_Store

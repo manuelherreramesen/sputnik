@@ -1,0 +1,26 @@
+[
+    {
+        "link": "#/game/slotfather",
+        "content": "johnB just won <em>€10,000</em> playing Slotfather",
+        "item": {
+            "name": "Briefcase",
+            "slug": "briefcase"
+        }
+    },
+    {
+        "link": "#/promotions/20-cashback",
+        "content": "Andy82 reached level 23 and received <em>€20 cashback</em>",
+        "item": {
+            "name": "T-Shirt",
+            "slug": "t-shirt"
+        }
+    },
+    {
+        "link": "#/promotions/20-cashback",
+        "content": "johnB just won <em>€10,000</em> playing Slotfather",
+        "item": {
+            "name": "Shoes",
+            "slug": "shoes"
+        }
+    }
+]

@@ -1,0 +1,30 @@
+<div class="popover-static">
+    <div class="popover right">
+        <div class="arrow"></div>
+        <h3 class="popover-title">{{bonus.name}} <span ng-if="bonus.active" class="text-active">(<span translate>ACTIVE BONUS</span>)</span></h3>
+        <a href="#/promotions" class="terms-n-cond" translate>Terms and Conditions</a>
+
+        <div class="popover-content">
+            <hr/>
+            <table class="popover-bonus-info">
+                <tr>
+                    <td><span translate>YOUR BONUS MONEY</span>:</td>
+                    <td><span ng-class="bonus.active ? 'text-active' : 'text-contrast'">{{bonus.currentBalance | currency: '€'}}</span></td>
+                </tr>
+                <tr>
+                    <td><span translate>WAGER TIMES</span>:</td>
+                    <td><span class="value">{{bonus.wagerTimes}}</span></td>
+                </tr>
+                <tr>
+                    <td><span translate>MONEY TO WAGER</span>:</td>
+                    <td><span class="value">{{bonus.bonusConversionGoal | currency: '€'}}<br/>({{bonus.wagerTimes}}x{{bonus.initialAmount | currency: '€'}})</span></td>
+                </tr>
+                <tr>
+                    <td><span translate>PLAYTHROUGH PENDING</span>:</td>
+                    <td><span class="value">{{bonus.playthroughPending | currency: '€'}}<br/>({{bonus.pie.pendingPcent}}%)</span></td>
+                </tr>
+            </table>
+            <a href="" ng-click="cancelBonus(bonus.id, bonus.idx)" class="cancel-bonus-link" translate>Cancel this bonus</a>
+        </div>
+    </div>
+</div>

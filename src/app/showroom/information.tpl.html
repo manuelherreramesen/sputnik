@@ -1,0 +1,22 @@
+<div id="showroomModal" class="modal" tabindex="-1" role="dialog" ng-controller="InformationCtrl">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" ng-click="close()" aria-hidden="true">&times;</button>
+                <h4 translate>Bling Avenue</h4>
+            </div>
+            <div class="modal-body">
+                <p translate>bling avenue popup description</p>
+
+                <br>
+                <button class="btn btn-primary" ng-click="close()" translate>Ok, I got it</button>
+
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" ng-model="ui.annoyed"> <span translate>Please don't show me this popup anymore</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

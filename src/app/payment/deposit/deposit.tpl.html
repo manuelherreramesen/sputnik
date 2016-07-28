@@ -1,0 +1,173 @@
+<div id="cashier">
+    <div class="container-bg bg-{{randomBg}}">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12" ng-include="'/app/payment/navbar-pills.tpl.html'"></div>
+            </div>
+
+            <div class="row equal-height">
+
+                <div class="col-md-9">
+                    <div class="pane">
+
+                        <div ng-switch on="process.step">
+                            <div ng-switch-when="1">
+
+                                <h5 class="pane-heading"><span class="text-contrast" translate>Step {{process.step}}</span> - <span translate>Select deposit method</span></h5>
+                                <article class="bonus-selection">
+                                    <section class="summary">
+                                        <h5 translate>Bonus Summary</h5>
+                                        <p translate>Just add the deposit amount below and here you'll see how much the bonus is worth.</p>
+
+                                        <dl class="dl-horizontal">
+                                            <dt translate>Deposit Amount:</dt>
+                                                <dd>{{ depositParameters.amount || 0 | currency: '€' }}</dd>
+                                            <dt translate>Bonus Amount:</dt>
+                                                <dd>{{ process.totalAmount - depositParameters.amount | currency: '€' }}</dd>
+                                        </dl>
+
+                                        <footer>
+                                            <dl class="dl-horizontal">
+                                                <dt translate>Total:</dt>
+                                                    <dd>{{ process.totalAmount | currency: '€' }}</dd>
+                                            </dl>
+                                        </footer>
+                                    </section>
+                                    <section class="selection">
+                                        <h5 translate>Would you like a bonus?</h5>
+                                        <ul>
+                                            <li ng-repeat="bonus in process.bonuses" ng-click="selectBonus(bonus)" ng-class="{'active': bonusParameters.selectedBonus === bonus}">{{bonus.name}} <a class="pull-right" target="_blank" ng-href="#/promotions/{{bonus.toc}}" translate>Terms &amp; Conditions</a></li>
+                                            <!--<li ng-click="enterBonusCode()" translate>I have a bonus code</li>-->
+                                            <li ng-click="selectNoBonus()" ng-class="{'active': bonusParameters.selectedBonus.bonusType === undefined}" translate>No thank you, no bonus at this time</li>
+                                        </ul>
+                                    </section>
+                                </article>
+
+                                <table class="table payment-methods deposit">
+                                    <thead>
+                                        <tr>
+                                            <th colspan="2" class="type" translate>Deposit Method</th>
+                                            <th class="hidden-xs hidden-sm"></th>
+                                            <th class="actions" translate>Amount (EUR)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr ng-repeat-start="method in process.deposit.methods">
+                                            <td class="type" ng-class="{soon: process.upcomingMethods[method.slug]}">
+                                                <i class="methods-deposit-{{method.providerType}}"></i>
+                                                <!--<div ng-if="process.upcomingMethods[method.slug]" class="soon-overlay"></div>-->
+                                            </td>
+                                            <td class="type" ng-class="{soon: process.upcomingMethods[method.slug]}">
+                                                <a data-placement="right" data-trigger="hover" data-content="{{ method.providerType + ' deposit tooltip description' | translate }}" data-title="{{ method.providerType + ' deposit tooltip title' | translate }}" bs-popover><i class="icon icon-info"></i></a>
+                                                <!--<div ng-if="process.upcomingMethods[method.slug]" class="soon-overlay"></div>-->
+                                            </td>
+                                            <td class="limits hidden-xs hidden-sm" ng-class="{soon: process.upcomingMethods[method.slug]}">
+                                                <div class="method-td-content">
+                                                    <div>
+                                                        {{ 'Min Deposit' | translate }}:
+                                                        <span>0 €</span>
+                                                    </div>
+                                                    <div>
+                                                        {{ 'Max Deposit' | translate }}:
+                                                        <span>0 €</span>
+                                                    </div>
+                                                    <!--<div ng-if="process.upcomingMethods[method.slug]" class="soon-overlay"></div>-->
+                                                    <span ng-show="process.upcomingMethods[method.slug]" class="soon-message" translate>Coming Soon!</span>
+                                                </div>
+                                            </td>
+                                            <td class="actions" ng-class="{soon: process.upcomingMethods[method.slug]}">
+                                                <div class="method-td-content">
+                                                    <form novalidate class="form-inline" name="depositForm">
+                                                        <span class="hidden-xs hidden-md">&euro;</span>
+                                                        <div class="form-group" ng-class="{'has-error': depositForm.amount.$invalid && depositForm.submitted}">
+                                                            <input type="number" class="form-control" name="amount" ng-model="depositParameters.amount" min="10" max="20000" placeholder="{{ 'Amount' | translate }}" required>
+                                                            <div class="popover top" ng-class="{'show': depositForm.submitted && depositForm.amount.$invalid}">
+                                                                <div class="arrow"></div>
+                                                                <div class="popover-content">
+                                                                    <p ng-show="depositForm.amount.$error.required" translate>This field is required</p>
+                                                                    <p ng-show="depositForm.amount.$error.min" translate>You must deposit at least &euro;10</p>
+                                                                    <p ng-show="depositForm.amount.$error.max" translate>You must deposit at most &euro;20,000</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <button class="btn btn-contrast" ng-disabled="process.thinking" ng-click="prepareDeposit(depositForm, method.providerType)" translate>Next</button>
+                                                    </form>
+                                                    <div ng-if="process.upcomingMethods[method.slug]" class="soon-overlay"></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="spacer" ng-repeat-end><td colspan="4"></td></tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                            <div ng-switch-when="2">
+
+                                <h5 class="pane-heading"><span class="text-contrast" translate>Step {{process.step}}</span> - <span translate>Provide your card details</span></h5>
+                                <hr>
+
+                                <form novalidate role="form" class="form-horizontal" name="depositForm">
+
+                                    <div class="row">
+                                        <div class="col-xs-7">
+                                            <div class="form-group">
+                                                <label class="control-label col-xs-5" translate>Chosen amount (EUR)</label>
+                                                <div class="col-xs-3">
+                                                    <input type="text" class="form-control" name="name" ng-model="depositParameters.amount" disabled required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </form>
+
+                                <hr>
+                                    <div ng-if="process.chosenDepositMethod === 'CREDITCARD'" ng-include="'/app/payment/partials/credit-card.tpl.html'"></div>
+                                    <div ng-if="process.chosenDepositMethod === 'NETELLER'" ng-include="'/app/payment/partials/neteller.tpl.html'"></div>
+                                    <div ng-if="process.chosenDepositMethod === 'BANK'" ng-include="'/app/payment/partials/trustly.tpl.html'"></div>
+                                    <div ng-if="process.chosenDepositMethod === 'EUTELLER'" ng-include="'/app/payment/partials/euteller.tpl.html'"></div>
+                                    <div ng-if="process.chosenDepositMethod === 'SKRILL'" ng-include="'/app/payment/partials/skrill.tpl.html'"></div>
+                                    <div ng-if="process.chosenDepositMethod === 'PUGGLEPAY'" ng-include="'/app/payment/partials/pugglepay.tpl.html'"></div>
+                                    <div ng-if="process.chosenDepositMethod === 'PAYSAFECARD'" ng-include="'/app/payment/partials/paysafecard.tpl.html'"></div>
+
+                            </div>
+                            <div ng-switch-when="3">
+                                <div ng-if="process.responseType == 'basic'">
+                                    <h5 class="pane-heading"><span class="text-contrast" translate>Step {{process.step}}</span> - <span translate>Your payment is complete!</span></h5>
+                                    <p translate>Your deposit was successful. {{process.responseData.messages[3].value}} deposited into your account.</p>
+                                    <a href="#/games/slots" class="btn btn-contrast">Play</a>
+                                </div>
+
+                                <div ng-if="process.responseType == 'iframe' && iframeProperties.methodType === 'POST'" class="IFrameContainer">
+                                    <iframe name="depositIFrame" class="depositIFrame" src=""></iframe>
+                                    <form name="iFrameForm" action="{{iframeProperties.url}}" method="{{iframeProperties.methodType}}" target="depositIFrame">
+                                        <input ng-repeat="property in iframeProperties.parameters" type="hidden" name="{{property.key}}" value="{{property.value}}" form-submit-directive/>
+                                    </form>
+                                </div>
+
+                                <div ng-if="process.responseType == 'iframe' && iframeProperties.methodType === 'GET'" class="IFrameContainer">
+                                    <iframe name="depositIFrame" class="depositIFrame" src="{{iframeProperties.url}}"></iframe>
+                                </div>
+
+                                <div ng-if="process.responseType == 'iframeWithHtml'" class="IFrameContainer">
+                                    <iframe name="depositIFrameWithHtml" class="depositIFrame" append-html></iframe>
+                                </div>
+                                <!--<div ng-if="process.result == 'failed'">-->
+                                    <!--<h5 class="pane-heading"><span class="text-contrast" translate>Step {{process.step}}</span> - <span translate>Your payment was unsuccessful</span></h5>-->
+                                    <!--<p translate>There was an issue with your deposit.</p>-->
+                                    <!--<a ng-click="process.step = 1" class="btn btn-contrast">Retry</a>-->
+                                <!--</div>-->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div ng-include="'/app/payment/account-box.tpl.html'"></div>
+
+            </div>
+
+        </div>
+    </div>
+</div>

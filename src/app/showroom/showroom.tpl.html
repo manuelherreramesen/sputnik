@@ -1,0 +1,204 @@
+<div id="showroom">
+    <div class="overflower">
+    	<div class="middle">
+    		<img ng-if="user.id !== null || user.gender !== 'female'" ng-src="{{cdn}}/images/pages/showroom/back-middle-male.jpg" border="0" width="1170" height="687" usemap="#bling-avenue" alt="" ng-click="togglePopover('')" />
+            <img ng-if="user.id !== null && user.gender === 'female'" ng-src="{{cdn}}/images/pages/showroom/back-middle-female.jpg" border="0" width="1170" height="687" usemap="#bling-avenue" alt="" ng-click="togglePopover('')" />
+    		<map name="bling-avenue">
+    			<area shape="poly" alt="Las Vegas" title="Las Vegas" coords="9,215,5,433,40,439,317,420,316,231,42,211" ng-click="togglePopover('las-vegas')" />
+                <area ng-if="user.id !== null || user.gender !== 'female'" shape="poly" alt="iTunes" title="iTunes" coords="327,87,323,220,509,226,516,220,518,86,508,79" ng-click="togglePopover('itunes')" />
+                <area ng-if="user.id !== null && user.gender === 'female'" shape="poly" alt="Elle" title="Elle" coords="327,87,323,220,509,226,516,220,518,86,508,79" ng-click="togglePopover('elle')" />
+    			<area shape="poly" alt="Dolce Gusto" title="Dolce Gusto" coords="477,254,475,375,668,373,668,261" ng-click="togglePopover('dolce-gusto')" />
+    			<area shape="poly" alt="Victorias Secret" title="Victorias Secret" coords="674,291,675,361,799,361,798,290" ng-click="togglePopover('victorias-secret')" />
+    			<area shape="poly" alt="Ray Ban" title="Ray Ban" coords="846,70,847,264,860,266,1045,265,1042,70" ng-click="togglePopover('ray-ban')" />
+    			<area shape="poly" alt="Apple" title="Apple" coords="902,294,899,474,1156,497,1161,493,1163,279" ng-click="togglePopover('apple')" />
+    		</map>
+        </div>
+    </div>
+    <div class="popover-list">
+		<div id="popover-las-vegas" class="popover bottom" ng-class="{'show': ui.visiblePopover === 'las-vegas'}">
+			<div class="arrow"></div>
+			<div class="popover-content media">
+                <div class="pull-left">
+                    <img class="media-object" ng-src="{{cdn}}/images/pages/showroom/products/vegas.jpg" alt="">
+                </div>
+                <div class="media-body">
+    				<h4 translate>Vegas Trip</h4>
+    				<p translate>Now you're a real player! BlingCity and Bellagio In Las Vegas have opened their doors for you! Are you ready for Vegas?</p>
+    				<br>
+                    <h5 translate>What do you need? (1 person)</h5>
+                    <div class="requirements row">
+                        <div class="col-xs-6">
+                            <div>250 BLINGS</div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div>{{ 'Level' | translate}} 50</div>
+                        </div>
+                    </div>
+                    <br>
+                    <h5 translate>What do you need? (2 person)</h5>
+                    <div class="requirements row">
+                        <div class="col-xs-6">
+                            <div>500 BLINGS</div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div>{{ 'Level' | translate}} 60</div>
+                        </div>
+                    </div>
+
+                    <button ng-click="openSupport()" class="btn btn-primary btn-block" translate>Reward your Blings</button>
+                    <div><a href="#/promotions/bling-avenue" translate>Terms &amp; Conditions apply</a></div>
+                </div>
+			</div>
+		</div>
+        <div id="popover-itunes" class="popover bottom" ng-class="{'show': ui.visiblePopover === 'itunes'}">
+            <div class="arrow"></div>
+            <div class="popover-content media">
+                <div class="pull-left">
+                    <img class="media-object" ng-src="{{cdn}}/images/pages/showroom/products/itunes.jpg" alt="">
+                </div>
+                <div class="media-body">
+                    <h4 translate>iTunes Gift Card</h4>
+                    <p translate>Tune in with BlingCity - Get your favorite media on iTunes today!</p>
+                    <br>
+                    <h5 translate>What do you need?</h5>
+                    <div class="requirements row">
+                        <div class="col-xs-6">
+                            <div>25 BLINGS</div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div>{{ 'Level' | translate}} 15</div>
+                        </div>
+                    </div>
+
+                    <button ng-click="openSupport()" class="btn btn-primary btn-block" translate>Reward your Blings</button>
+                    <div><a href="#/promotions/bling-avenue" translate>Terms &amp; Conditions apply</a></div>
+                </div>
+            </div>
+        </div>
+		<div id="popover-elle" class="popover bottom" ng-class="{'show': ui.visiblePopover === 'elle'}">
+			<div class="arrow"></div>
+			<div class="popover-content media">
+                <div class="pull-left">
+                    <img class="media-object" ng-src="{{cdn}}/images/pages/showroom/products/elle.jpg" alt="">
+                </div>
+                <div class="media-body">
+    				<h4 translate>Elle Subscription</h4>
+    				<p translate>Bling yourself in style! Get your Elle magazine one year subscription today!</p>
+    				<br>
+                    <h5 translate>What do you need?</h5>
+                    <div class="requirements row">
+                        <div class="col-xs-6">
+                            <div>40 BLINGS</div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div>{{ 'Level' | translate}} 15</div>
+                        </div>
+                    </div>
+
+                    <button ng-click="openSupport()" class="btn btn-primary btn-block" translate>Reward your Blings</button>
+                    <div><a href="#/promotions/bling-avenue" translate>Terms &amp; Conditions apply</a></div>
+                </div>
+			</div>
+		</div>
+		<div id="popover-dolce-gusto" class="popover bottom" ng-class="{'show': ui.visiblePopover === 'dolce-gusto'}">
+			<div class="arrow"></div>
+			<div class="popover-content media">
+                <div class="pull-left">
+                    <img class="media-object" ng-src="{{cdn}}/images/pages/showroom/products/coffee.jpg" alt="">
+                </div>
+                <div class="media-body">
+    				<h4 translate>Nescafe Edg625.s Dolce Gusto Melody</h4>
+    				<p translate>Wake up in a good mood with BlingCity that never sleeps - morning glory with Dolce Gusto!</p>
+    				<br>
+                    <h5 translate>What do you need?</h5>
+                    <div class="requirements row">
+                        <div class="col-xs-6">
+                            <div>60 BLINGS</div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div>{{ 'Level' | translate}} 30</div>
+                        </div>
+                    </div>
+
+                    <button ng-click="openSupport()" class="btn btn-primary btn-block" translate>Reward your Blings</button>
+                    <div><a href="#/promotions/bling-avenue" translate>Terms &amp; Conditions apply</a></div>
+                </div>
+			</div>
+		</div>
+		<div id="popover-victorias-secret" class="popover bottom" ng-class="{'show': ui.visiblePopover === 'victorias-secret'}">
+			<div class="arrow"></div>
+			<div class="popover-content media">
+                <div class="pull-left">
+                    <img class="media-object" ng-src="{{cdn}}/images/pages/showroom/products/victorias-secret.jpg" alt="">
+                </div>
+                <div class="media-body">
+    				<h4 translate>Victoria Secret Gift Card</h4>
+    				<p translate>Give yourself a secret with BlingCity - Glamour Up with Victoria Secret today!</p>
+    				<br>
+                    <h5 translate>What do you need?</h5>
+                    <div class="requirements row">
+                        <div class="col-xs-6">
+                            <div>50 BLINGS</div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div>{{ 'Level' | translate}} 25</div>
+                        </div>
+                    </div>
+
+                    <button ng-click="openSupport()" class="btn btn-primary btn-block" translate>Reward your Blings</button>
+                    <div><a href="#/promotions/bling-avenue" translate>Terms &amp; Conditions apply</a></div>
+                </div>
+			</div>
+		</div>
+		<div id="popover-ray-ban" class="popover bottom" ng-class="{'show': ui.visiblePopover === 'ray-ban'}">
+			<div class="arrow"></div>
+			<div class="popover-content media">
+                <div class="pull-left">
+                    <img class="media-object" ng-src="{{cdn}}/images/pages/showroom/products/rayban.jpg" alt="">
+                </div>
+                <div class="media-body">
+    				<h4 translate>Rayban Glasses</h4>
+    				<p translate>Cool down and walk around in BlingCity - Rayban sunglasses will make you look hot!</p>
+    				<br>
+                    <h5 translate>What do you need?</h5>
+                    <div class="requirements row">
+                        <div class="col-xs-6">
+                            <div>70 BLINGS</div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div>{{ 'Level' | translate}} 40</div>
+                        </div>
+                    </div>
+
+                    <button ng-click="openSupport()" class="btn btn-primary btn-block" translate>Reward your Blings</button>
+                    <div><a href="#/promotions/bling-avenue" translate>Terms &amp; Conditions apply</a></div>
+                </div>
+			</div>
+		</div>
+		<div id="popover-apple" class="popover bottom" ng-class="{'show': ui.visiblePopover === 'apple'}">
+			<div class="arrow"></div>
+			<div class="popover-content media">
+                <div class="pull-left">
+                    <img class="media-object" ng-src="{{cdn}}/images/pages/showroom/products/iphone.jpg" alt="">
+                </div>
+                <div class="media-body">
+    				<h4 translate>iPhone 5S</h4>
+    				<p translate>Stay in touch with your friends in BlingCity - Take a bite of your Apple iPhone today!</p>
+    				<br>
+                    <h5 translate>What do you need?</h5>
+                    <div class="requirements row">
+                        <div class="col-xs-6">
+                            <div>100 BLINGS</div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div>{{ 'Level' | translate}} 45</div>
+                        </div>
+                    </div>
+
+                    <button ng-click="openSupport()" class="btn btn-primary btn-block" translate>Reward your Blings</button>
+                    <div><a href="#/promotions/bling-avenue" translate>Terms &amp; Conditions apply</a></div>
+                </div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,55 @@
+<div id="leaders">
+    <div class="container-bg">
+        <div class="container">
+            <div class="row">
+                <div class="pane col-sm-11 col-sm-offset-2 col-md-10 col-md-offset-2 col-lg-8 col-lg-offset-2">
+                    <div class="row">
+                        <div class="hidden-xs col-sm-5 character" back-img="{{cdn}}/images/characters/{{leaders.entries[0].avatarBaseTypeId}}/736x736/1/s1h1.png"></div>
+                        <div class="col-sm-7">
+                            <h3 translate>Weekly Race</h3>
+                            <p translate>description describing the weekly race winner</p>
+                            <p><a href="#/promotions/penthouse" class="text-muted" translate>Terms and Conditions</a></p>
+                            <div class="featured-player">
+                                <i class="number-one"></i>
+                                <div class="pull-left">
+                                    <h3>{{leaders.entries[0].username}}</h3>
+                                    <p>{{leaders.entries[0].game.name}}</p>
+                                </div>
+                            </div>
+                            <a href="#/games/slots" class="btn btn-contrast" translate>Be on the top of the world</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+
+                <table class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-2 col-lg-8 col-lg-offset-2 table-striped-fancy">
+                    <thead>
+                        <tr>
+                        	<th translate>No</th>
+                            <th translate>Citizen</th>
+                            <th translate>Username</th>
+                            <th translate>Game Most Played</th>
+                            <th translate>Biggest Win</th>
+                            <th translate>Free Spins</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="leader in leaders.entries">
+                            <td class="c">{{$index+1}}</td>
+                            <td>
+                                <div class="character-thumb" ng-show="$index < 25" back-img="{{cdn}}/images/characters/{{leader.avatarBaseTypeId}}/112x112.png"></div>
+                                <span>{{getCharacterName(leader.avatarBaseTypeId)}}</span>
+                            </td>
+                            <td>{{leader.username}}</td>
+                            <td>{{leader.game.name}}</td>
+                            <td>&euro;{{leader.biggestWin}}</td>
+                            <td>{{leader.freeSpins}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

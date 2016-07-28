@@ -1,0 +1,112 @@
+#dashboard {
+    background: image-url('pages/home/stripe-bg.png');
+
+    > .container {
+        padding-top: 40px;
+        min-height: 736px;
+    }
+
+    .carousel {
+
+        &.game-carousel {
+            border: 1px solid #433549;
+            border-radius: $border-radius-base;
+
+            .carousel-indicators {
+                margin-top: 1px;
+            }
+
+        }
+
+        &.amazing-game-carousel {
+            img {   
+                border-radius: $border-radius-base;
+            }            
+        }
+
+    }
+
+    .item-list {
+        @include clearfix;
+    }
+
+    .character-item {
+        width: 67px;
+        height: 67px;
+        margin-right: 30px;
+        margin-bottom: 17px;
+        @include border-radius(2px);
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .character-summary {
+
+        h3 {
+            margin-top: 0;
+        }
+
+        i {
+            font-size: 18px;
+            color: #adaab1;
+        }
+
+        .key {
+            color: #acabad;
+        }
+
+        .value {
+            font-weight: 700;
+            color: #fff;
+        }
+
+        .action {
+            .popover {
+                min-width: 200px;
+                margin-top: -2px;
+                margin-left: 14px;
+            }
+        }
+
+    }
+
+    .story-btn {
+        margin-bottom: $line-height-computed;
+    }
+
+}
+
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    #dashboard {
+
+        .character-summary {
+            h3 {
+                font-size: 19px;
+            }
+        }
+
+        .character-item {
+            margin-right: 5px;
+        }
+        .activity-scroller {
+            height: 164px;
+        }
+    }
+}
+
+@media (max-width: $screen-sm-max) {
+    #dashboard {
+        .story-container {
+            right: 0;
+            left: initial;
+
+            > .back,
+            > .character {
+                background-position: right top;
+                background-size: 65%;
+            }
+        }
+    }
+}

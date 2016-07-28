@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        setTimeout(function() {
+
+            var status = 'failed';
+
+            if (window.location.href.indexOf('AUTHORISED') !== -1) {
+                status = 'success';
+            } else if (window.location.href.indexOf('PENDING') !== -1) {
+                status = 'pending';
+            }
+
+            window.location = window.location.origin + '/#/deposit/' + status;
+
+        }, 2000);
+        </script>
+        <style>
+        html {
+            color: #fff;
+        }
+        </style>
+    </head>
+    <body>
+        Redirecting...
+    </body>
+</html>

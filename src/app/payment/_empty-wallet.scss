@@ -1,0 +1,8 @@
+@media (min-width: $screen-xs-max) {
+	#emptyWallet,
+	.emptyWalletModal {
+        > .modal-dialog {
+            width: 400px;
+        }
+    }
+}

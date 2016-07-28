@@ -1,0 +1,20 @@
+#storyPreview {
+    .modal-dialog {
+        width: 736px;
+        height: 736px;
+    }
+    .modal-content, 
+    .modal-body {
+        height: 100%;
+    }
+
+    .character,
+    .back {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-size: 100%;
+    }
+}

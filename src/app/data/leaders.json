@@ -1,0 +1,120 @@
+{
+ "weekly": [{
+				"avatarId": 7,
+				"username": "Alessandro",
+				"game": {
+					"name": "wish-master",
+					"slug": "The Wish Master"
+				},
+				"biggest_win": "18200",
+				"free_spins": "0"
+			},{
+				"avatarId": 1,
+				"username": "jake",
+				"game": {
+					"name": "alien-robots",
+					"slug": "Alien Robots"
+				},
+				"biggest_win": "7050",
+				"free_spins": "0"
+			},{
+				"avatarId": 6,
+				"username": "Tommy",
+				"game": {
+					"name": "wish-master",
+					"slug": "The Wish Master"
+				},
+				"biggest_win": "5295",
+				"free_spins": "0"
+			},{
+				"avatarId": 5,
+				"username": "omido1337",
+				"game": {
+					"name": "gonzos-quest",
+					"slug": "Gonzo's Quest"
+				},
+				"biggest_win": "2270",
+				"free_spins": "0"
+			},
+			{
+				"avatarId": 3,
+				"username": "Tommy",
+				"game": {
+						"name": "gonzos-quest-touch",
+						"slug": "Gonzo's Quest Touch"
+				},
+				"biggest_win": "1811",
+				"free_spins": "0"
+			},
+			{
+				"avatarId": 7,
+				"username": "Tommy",
+				"game": {
+						"name": "lights",
+						"slug": "Lights"
+				},
+				"biggest_win": "1253",
+				"free_spins": "0"
+			},
+			{
+				"avatarId": 5,
+				"username": "jake",
+				"game": {
+						"name": "gonzos-quest",
+						"slug": "Gonzo's Quest"
+				},
+				"biggest_win": "800",
+				"free_spins": "0"
+			},
+			{
+				"avatarId": 6,
+				"username": "Tommy",
+				"game": {
+						"name": "secrets-of-horus",
+						"slug": "Secrets of Horus"
+				},
+				"biggest_win": "80",
+				"free_spins": "0"
+			},
+			{
+				"avatarId": 6,
+				"username": "Giru",
+				"game": {
+						"name": "aliens",
+						"slug": "Aliens"
+				},
+				"biggest_win": "60",
+				"free_spins": "0"
+			},
+			{
+				"avatarId": 5,
+				"username": "dannygust",
+				"game": {
+						"name": "south-park-touch",
+						"slug": "South Park Touch"
+				},
+				"biggest_win": "20",
+				"free_spins": "0"
+			},
+			{
+				"avatarId": 5,
+				"username": "Tommy",
+				"game": {
+						"name": "gonzos-quest",
+						"slug": "Gonzo's Quest"
+				},
+				"biggest_win": 15,
+				"free_spins": "0"
+			},
+			{
+				"avatarId": 7,
+				"username": "jake",
+				"game": {
+						"name": "starburst-touch",
+						"slug": "Starburst Touch"
+				},
+				"biggest_win": "0",
+				"free_spins": "0"
+			}
+		]
+}

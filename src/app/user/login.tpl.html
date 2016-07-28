@@ -1,0 +1,86 @@
+<div id="login" class="modal" tabindex="-1" role="dialog" ng-controller="LoginCtrl">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" ng-click="close()" aria-hidden="true">&times;</button>
+                <h4 translate>My Story Login</h4>
+            </div>
+            <div class="modal-body">
+
+                <ng-switch on="view">
+
+                    <form name="loginForm" ng-switch-when="login" novalidate role="form" autocomplete="off">
+
+                        <p ng-show="incorrectDetails" class="text-danger" translate>Wrong email address or password. Please try again</p>
+
+                        <div class="form-group has-feedback" ng-class="{'has-error': loginForm.submitted && loginForm.emailAddress.$invalid}">
+                            <input type="email" class="form-control" placeholder="{{'EMAIL' | translate}}" name="emailAddress" ng-model="emailAddress" focus-me="modalLoaded" autocomplete="off" required>
+                            <i class="form-control-feedback icon icon-user"></i>
+                            
+                            <div class="popover-container" ng-show="loginForm.submitted == true && loginForm.emailAddress.$error.required">
+                                <div class="popover bottom">
+                                    <div class="arrow"></div>
+                                    <div class="popover-content" translate>The field is required</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="form-group has-feedback" ng-class="{'has-error': loginForm.submitted && loginForm.password.$invalid}">
+                            <input type="password" class="form-control" placeholder="{{'PASSWORD' | translate}}" name="password" ng-model="password" autocomplete="off" required>
+                            <i class="form-control-feedback icon icon-lock"></i>
+                            
+                            <div class="popover-container" ng-show="loginForm.submitted == true && loginForm.password.$error.required">
+                                <div class="popover bottom">
+                                    <div class="arrow"></div>
+                                    <div class="popover-content" translate>The field is required</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="pull-left side-links">
+                            <div class="inner">
+                                <a ng-click="showForgotPassword()" translate>Lost your Password?</a>
+                            </div>
+                        </div>
+                        <div class="pull-right">
+                            <button class="btn btn-primary" ng-class="{disabled: thinking}" ng-click="login(loginForm, emailAddress, password)">{{(thinking && 'Checking...' | translate) || ('Login' | translate)}}</button>
+                        </div>
+                        <div class="clearfix"></div>
+
+                    </form>
+
+                    <form name="forgotPasswordForm" ng-switch-when="forgot-password" novalidate role="form">
+                        
+                        <p>
+                            <b translate>Forgot your username or password?</b>
+                            <br>
+                            {{"Don't worry! Please provide your e-mail address and we'll send you further instructions!" | translate}}
+                        </p>
+                    
+                        <div class="form-group has-feedback">
+                            <label class="sr-only" for="fpEmailAddress" translate>Email address</label>
+                            <input type="email" class="form-control" ng-model="emailAddress" id="fpEmailAddress" placeholder="{{'Your e-mail address' | translate}}" required>
+                            <i class="form-control-feedback icon icon-email"></i>
+                        </div>
+                
+                        <div class="pull-left side-links">
+                            <div class="inner">
+                                <a ng-click="openSupport()" translate>Contact Customer Support</a>
+                                <a ng-click="showLogin()" translate>Try to login again</a>
+                            </div>
+                        </div>
+                        <div class="pull-right">
+                            <button class="btn btn-primary" ng-disabled="thinking" ng-click="forgotPassword(forgotPasswordForm, emailAddress)">{{(thinking && 'Checking...' | translate) || ('Send' | translate)}}</button>
+                        </div>
+                        <div class="clearfix"></div>
+
+                    </form>
+
+                </ng-switch>
+
+            </div>
+        </div>
+    </div>
+</div>

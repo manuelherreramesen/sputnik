@@ -1,0 +1,29 @@
+<div id="promotions">
+
+    <div class="container-bg bg-{{randomBg}}">
+        <div class="container">
+            
+            <div class="row">
+
+                <div class="col-md-12 col-lg-10 col-lg-offset-1 promotion-list">
+     
+                    <div class="col-sm-{{promotion.columns}}" ng-repeat="promotion in promotions">
+                        <article class="promotion">
+                            <!-- Temporary? Add both versions, use media queries to display which one to display -->
+                            <div class="hidden-xs img" back-img="{{cdn}}/images/promotions/col-{{promotion.columns}}/{{promotion.name}}-{{currentLanguage}}.jpg"></div>
+                            <div class="visible-xs img" back-img="{{cdn}}/images/promotions/col-6/{{promotion.name}}-{{currentLanguage}}.jpg"></div>
+                            <div class="content">
+                                <h4>{{promotion.title}}</h4>
+                                <p class="hidden-xs">{{promotion.subtitle}}</p>
+                            </div>
+                            <a ng-if="promotion.link" target="{{promotion.target}}" ng-href="{{promotion.link}}">&nbsp;</a>
+                        </article>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>

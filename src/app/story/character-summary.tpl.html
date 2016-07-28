@@ -1,0 +1,45 @@
+<div class="character-summary">
+    
+    <h2>{{'Level' | translate}} {{user.level.level}}</h2>
+
+    <div class="progress progress-striped">
+        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="{{user.wallet.nextLevelPercentage}}" aria-valuemin="0" aria-valuemax="100" style="width: {{user.wallet.nextLevelPercentage}}%"></div>
+    </div>
+        
+    <table class="table table-inverse">
+        <tbody>
+            <tr>
+                <td class="key" translate>Alias</td>
+                <td colspan="2" class="value">{{user.nickname}}</td>
+            </tr>
+            <tr>
+                <td class="key" translate>Name</td>
+                <td colspan="2" class="value">{{user.firstName + ' ' + user.lastName}}</td>
+            </tr>
+            <tr>
+                <td class="key" translate>Citizen</td>
+                <td colspan="2" class="value">{{getCharacterName(user.avatar.avatarBaseTypeId)}}</td>
+            </tr>
+            <tr>
+                <td class="key" translate>Level</td>
+                <td class="value">{{user.level.level}}</td>
+                <td class="action r"><a data-placement="right" data-trigger="hover" data-content="{{ 'user level popover description' | translate }}" data-title="{{ 'Level' | translate }} {{user.level.level}}" bs-popover><i class="icon icon-info"></i></a></td>
+            </tr>
+            <tr>
+                <td class="key" translate>Blings</td>
+                <td class="value">{{user.wallet.creditsBalance | number}}</td>
+                <td class="action r"><a data-placement="right" data-trigger="hover" data-content="{{ 'blings popover description' | translate }}" data-title="{{ 'Blings' | translate }}: {{user.wallet.creditsBalance | number}}" bs-popover><i class="icon icon-info"></i></a></td>
+            </tr>
+            <tr>
+                <td class="key" translate>Cash Back</td>
+                <td class="value">{{user.level.cashbackPercentage | number:2}}%</td>
+                <td class="action r"><a data-placement="right" data-trigger="hover" data-content="{{ 'cash backs popover description' | translate }}" data-title="{{ 'Cash Backs' | translate }} {{user.level.cashbackPercentage | number:2}}%" bs-popover><i class="icon icon-info"></i></a></td>
+            </tr>
+            <tr>
+                <td class="key" translate>Deposit Bonus</td>
+                <td class="value">{{user.level.depositBonusPercentage}}%</td>
+                <td class="action r"><a data-placement="right" data-trigger="hover" data-content="{{ 'deposit bonus popover description' | translate }}" data-title="{{ 'Deposit Bonus' | translate }}" bs-popover><i class="icon icon-info"></i></a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

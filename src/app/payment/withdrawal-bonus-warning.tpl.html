@@ -1,0 +1,21 @@
+<div class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" ng-click="close()" aria-hidden="true">&times;</button>
+                <h4><i class="icon icon-error"></i> <span translate>WARNING</span></h4>
+            </div>
+            <div class="modal-body">
+                <p translate>Withdrawing funds will cause all your bonuses to be voided and removed from your account.</p>
+                <p><span translate>You would be missing:</span> <b><span class="text-contrast">{{bonusTotalAmount | currency: '€'}}</span></b></p>
+                <p translate>These are your current bonuses:</p>
+                <ul>
+                    <li ng-repeat="bonus in process.response.playerBonuses"><b>{{bonus.name}} (<span ng-class="bonus.active ? 'text-active' : 'text-contrast'">{{bonus.currentBalance | currency: '€'}}</span>)</b></li>
+                </ul>
+                <p>&nbsp;</p>
+                <p><button class="btn btn-primary" ng-click="close()" translate>Cancel withdrawal</button></p>
+                <a ng-click="accept()" class="ng-scope" translate>I wish to continue with my withdrawal</a>
+            </div>
+        </div>
+    </div>
+</div>

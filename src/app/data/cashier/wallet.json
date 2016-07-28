@@ -1,0 +1,20 @@
+{
+	"moneyBalance":20.00,
+	"bonusBalance":10.00,
+	"turnoverCashback":0.00,
+	"reservedBalance":0.00,
+	"creditsBalance":0.00,
+	"turnoverBonus":1.00,
+	"turnoverProgress":0.00,
+	"turnoverBonusGoal":200.00,
+	"turnoverMoney":0.00,
+	"turnoverWeekly":0.00,
+	"turnoverMonthly":0.00,
+	"accumulatedDailyLoss":0.00,
+	"accumulatedWeeklyLoss":0.00,
+	"accumulatedMonthlyLoss":0.00,
+	"accumulatedDailyBet":0.00,
+	"accumulatedWeeklyBet":0.00,
+	"accumulatedMonthlyBet":0.00,
+	"nextLevelTurnoverTarget":300.00
+}

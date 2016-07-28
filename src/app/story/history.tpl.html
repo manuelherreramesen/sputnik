@@ -1,0 +1,91 @@
+<div id="story" ng-if="user.id !== null">
+    <div class="container">
+
+        <div class="story-container">
+            <div class="back" back-img="{{cdn}}/images/stories/saturated/{{user.avatar.avatarBaseTypeId}}/{{getLatestStoryPicture()}}"></div>
+            <div class="character" back-img="{{cdn}}/images/characters/{{user.avatar.avatarBaseTypeId}}/736x736/{{getCorrectLevelPicture()}}/s{{user.avatar.skinColor}}h{{user.avatar.hairColor}}.png"></div>
+        </div>
+        
+        <div class="row">
+            
+            <div class="col-xs-6 col-md-3">
+
+                <div class="character-summary">
+                    
+                    <h2>{{'Level' | translate}} {{user.level.level}}</h2>
+
+                    <div class="progress progress-striped">
+                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="{{user.wallet.nextLevelPercentage}}" aria-valuemin="0" aria-valuemax="100" style="width: {{user.wallet.nextLevelPercentage}}%"></div>
+                    </div>
+                        
+                    <table class="table table-inverse">
+                        <tbody>
+                            <tr>
+                                <td class="key" translate>Alias</td>
+                                <td colspan="2" class="value">{{user.nickname}}</td>
+                            </tr>
+                            <tr>
+                                <td class="key" translate>Name</td>
+                                <td colspan="2" class="value">{{user.firstName + ' ' + user.lastName}}</td>
+                            </tr>
+                            <tr>
+                                <td class="key" translate>Citizen</td>
+                                <td colspan="2" class="value">{{getCharacterName(user.avatar.avatarBaseTypeId)}}</td>
+                            </tr>
+                            <tr>
+                                <td class="key" translate>Level</td>
+                                <td class="value">{{user.level.level}}</td>
+                                <td class="action r"><a data-placement="right" data-trigger="hover" data-content="{{ 'user level popover description' | translate }}" data-title="{{ 'Level' | translate }} {{user.level.level}}" bs-popover><i class="icon icon-info"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td class="key" translate>Blings</td>
+                                <td class="value">{{user.wallet.creditsBalance | number}}</td>
+                                <td class="action r"><a data-placement="right" data-trigger="hover" data-content="{{ 'blings popover description' | translate }}" data-title="{{ 'Blings' | translate }}: {{user.wallet.creditsBalance | number}}" bs-popover><i class="icon icon-info"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td class="key" translate>Cash Back</td>
+                                <td class="value">{{user.level.cashbackPercentage | number:2}}%</td>
+                                <td class="action r"><a data-placement="right" data-trigger="hover" data-content="{{ 'cash backs popover description' | translate }}" data-title="{{ 'Cash Backs' | translate }} {{user.level.cashbackPercentage | number:2}}%" bs-popover><i class="icon icon-info"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td class="key" translate>Deposit Bonus</td>
+                                <td class="value">{{user.level.depositBonusPercentage}}%</td>
+                                <td class="action r"><a data-placement="right" data-trigger="hover" data-content="{{ 'deposit bonus popover description' | translate }}" data-title="{{ 'Deposit Bonus' | translate }}" bs-popover><i class="icon icon-info"></i></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+            <div class="pages col-xs-12 col-md-offset-3 col-md-6">
+                
+                <nav class="navbar navbar-pills">
+                    <ul class="nav nav-pills">
+                        <li active-tab="2"><a href="#/story/items" translate>My Stuff</a></li>
+                        <li active-tab="2"><a href="#/story/history" translate>My History</a></li>
+                        <li active-tab="2"><a href="#/story/settings" translate>Settings</a></li>
+                    </ul>
+                </nav>
+
+                <div class="pane">
+                        
+                    <h5 translate>My Story Gallery</h5>
+                    <section>
+                        <div ng-repeat="story in stories" class="story-preview">
+                            <div class="back" ng-if="story.nightBackgroundUrl" back-img="{{cdn}}/images/stories/normal/{{story.avatarBaseTypeId}}/{{story.nightBackgroundUrl}}"></div>
+                            <div class="back" ng-if="!story.nightBackgroundUrl" back-img="{{cdn}}/images/stories/normal/{{story.avatarBaseTypeId}}/{{story.dayBackgroundUrl}}"></div>
+                            <div class="character" back-img="{{cdn}}/images/characters/{{story.avatarBaseTypeId}}/736x736/{{story.level}}/{{story.pictureUrl}}"></div>
+                            <a ng-click="preview(story)">{{ 'Level' | translate }} {{story.level}}</a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </section>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>

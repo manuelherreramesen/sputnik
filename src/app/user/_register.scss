@@ -1,0 +1,188 @@
+#register {
+
+    > .container-bg {
+        > .container {
+            padding-top: 40px;
+            padding-bottom: 70px;
+        }
+    }
+
+    .form-group {
+        position: relative;
+    }
+
+    .popover-content {
+        margin-top: 0;
+    }
+
+    .choose-your-citizen {
+        min-height: 820px;
+        background-image: image-url('pages/register/choose-your-citizen-en.png');
+        background-position: left 95px;
+        background-repeat: no-repeat;
+    }
+
+    .selected-character {
+        height: 465px;
+        width: 243px;
+        background-position: -266px -55px;
+        background-size: 230%;
+        background-repeat: no-repeat;
+    }
+
+    .character-container {
+        margin-bottom: $line-height-computed;
+    }
+
+    .character-selection {
+        display: inline-block;
+        width: 25%;
+        margin-bottom: 32px;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px;
+        font-weight: 700;
+        cursor: pointer;
+        color: #fff;
+
+        > .image {
+            width: 155px;
+            height: 155px;
+            margin: 0 auto 7px;
+        }
+    }
+
+    .customization {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        margin-right: 5px;
+        @include border-radius(20px);
+        cursor: pointer;
+    }
+
+    .date-of-birth {
+
+        select.form-control {
+            padding-left: 6px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 27px;
+            margin-top: 8px;
+        }
+
+        .col-xs-4 {
+            padding: 0 5px 0 0;
+
+            &.year {
+                padding-right: 0;
+            }
+        }
+    }
+
+    .glyphicon-info-sign {
+        font-size: 50px;
+        margin-top: -5px;
+        color: #d3d3d3;
+    }
+
+    .table {
+        .value {
+            color: #fff;
+        }
+    }
+
+    // Individual step styling
+    .step2 {
+        .popover-container {
+            height: 83px;
+        }
+
+        h4 {
+            color: #b6b6b6;
+        }
+
+        .table > tbody > tr > td {
+            border-top: 0;
+            padding: 4px;
+
+            &.key {
+                padding-left: 0;
+                width: 25%;
+            }
+
+        }
+    }
+
+    .step3 {
+        .popover-container {
+            height: 114px;
+        }
+        .table {
+            width: inherit;
+
+            > tbody > tr > td {
+                padding: 14px 8px;
+            }
+
+            .key {
+                padding-left: 0;
+                line-height: 25px;
+                text-transform: uppercase;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 12px;
+            }
+            .value {
+                line-height: 0;
+            }
+        }
+        .pane {
+            .pull-left {
+                width: 180px;
+                margin-right: 30px;
+            }
+        }
+    }
+
+    .step4 {
+        .popover-container {
+            height: 81px;
+        }
+        h2 {
+            text-align: center;
+            color: #fff;
+        }
+        .table {
+            width: 325px;
+        }
+        .pane {
+            min-height: 700px;
+            background: rgba(21, 10, 26, 0.7) image-url('pages/register/success-characters.png') center bottom no-repeat;
+        }
+
+        .character-item {
+            background-color: #413745;
+        }
+
+    }
+
+}
+
+.sv {
+    #register {
+        .choose-your-citizen {
+            background-image: image-url('pages/register/choose-your-citizen-sv.png');
+        }
+    }
+}
+
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    #register {
+        .character-selection {
+            width: 29.333333%;
+        }
+    }
+}

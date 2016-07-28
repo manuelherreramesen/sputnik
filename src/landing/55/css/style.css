@@ -1,0 +1,82 @@
+@font-face {
+	font-family:"Montserrat";
+	src:url("montserrat-regular-webfont.eot");
+	src:url("montserrat-regular-webfont.eot?#iefix") format("embedded-opentype"),
+		url("montserrat-regular-webfont.woff") format("woff"),
+		url("montserrat-regular-webfont.ttf") format("truetype"),
+		url("montserrat-regular-webfont.svg?#montserrat-regular-webfont") format("svg");
+	font-weight:400;
+	font-style:normal;
+}
+@font-face {
+	font-family:"Montserrat";
+	src:url("montserrat-bold-webfont.eot");
+	src:url("montserrat-bold-webfont.eot?#iefix") format("embedded-opentype"),
+		url("montserrat-bold-webfont.woff") format("woff"),
+		url("montserrat-bold-webfont.ttf") format("truetype"),
+		url("montserrat-bold-webfont.svg?#montserrat-bold-webfont") format("svg");
+	font-weight:700;
+	font-style:bold;
+}
+
+body{padding:0;margin:0;background:#1d1024;font-family:Montserrat;font-weight:400;font-size:14px;color:#fff;}
+#gWrapper{width:100%;min-height:920px;background:url('../img/bg.jpg') top center no-repeat;}
+#gWrapper > div{margin:auto;max-width:800px;}
+
+#logo{text-align:center;}
+
+#gWrapper div#steps{text-transform:uppercase;margin-top:-17px;text-align:center;}
+.step{display:inline-block;line-height:14px;position:relative;padding:14px 27px 12px 45px;}
+#stepThree{padding-right:0;}
+.step .number{position:absolute;top:0;left:0;display:block;width:40px;height:40px;border-radius:20px;background:#40223f;font-weight:700;font-size:22px;text-align:center;line-height:42px;}
+
+#middle{text-align:right;padding-top:240px;}
+
+#games{padding-top:142px;text-align:center;}
+.game{display:inline-block;margin-right:34px;}
+#gameThree{margin-right:0;}
+
+#footer{color:#5c5261;font-size:13px;text-align:center;padding-top:80px;}
+#footer a{color:#837788;}
+
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+  text-decoration:none;
+  font-weight: 700;
+}
+
+.btn-contrast {
+  background-color: #ffb350;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0,  startColorstr='#FFFFB350',  endColorstr='#FFF29217');
+  background-image: linear-gradient(to bottom, #ffb350 0, #fcac45 25%, #f59821 77%, #f29217 100%);
+  color: #3c2141;
+  padding:15px 0;
+  font-size: 28px;
+  width:363px;
+}
+
+.btn-contrast:focus, .btn-contrast:hover {
+  background-color: #f29216;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0,  startColorstr='#FFF29216',  endColorstr='#FFC57309');
+  background-image: linear-gradient(to bottom, #f29216 0, #e78a13 30%, #cd780b 77%, #c57309 100%);
+  color: #3c2141;
+}
+
+.ngdialog h1{font-size:13px;text-transform: uppercase;}
+.ngdialog li{padding-right:25px;font-size:12px;}
+.ngdialog p .btn-contrast{font-size: 17px;width:225px;padding:6px 0;margin-left:40px;}

@@ -1,0 +1,612 @@
+[{
+    "surprise": false,
+    "deposit_bonus": 0,
+    "cashback": 0,
+    "dice": 1
+}, {
+    "surprise": true,
+    "deposit_bonus": 0,
+    "cashback": 0,
+    "dice": 1
+}, {
+    "surprise": false,
+    "deposit_bonus": 0,
+    "cashback": 0,
+    "dice": 1
+}, {
+    "surprise": false,
+    "deposit_bonus": 0,
+    "cashback": 0,
+    "dice": 1
+}, {
+    "surprise": true,
+    "deposit_bonus": 0,
+    "cashback": 0,
+    "dice": 1
+}, {
+    "surprise": false,
+    "deposit_bonus": 0,
+    "cashback": 0,
+    "dice": 1
+}, {
+    "surprise": false,
+    "deposit_bonus": 0,
+    "cashback": 0,
+    "dice": 1
+}, {
+    "surprise": true,
+    "deposit_bonus": 0,
+    "cashback": 0,
+    "dice": 1
+}, {
+    "surprise": false,
+    "deposit_bonus": 0,
+    "cashback": 0,
+    "dice": 1
+}, {
+    "surprise": false,
+    "status_update": true,
+    "deposit_bonus": 0.10,
+    "cashback": 0.0025,
+    "dice": 1
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.10,
+    "cashback": 0.0025,
+    "dice": 1
+}, {
+    "surprise": true,
+    "deposit_bonus": 0.10,
+    "cashback": 0.0025,
+    "dice": 1
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.10,
+    "cashback": 0.0025,
+    "dice": 1
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.10,
+    "cashback": 0.0025,
+    "dice": 1
+}, {
+    "surprise": true,
+    "deposit_bonus": 0.10,
+    "cashback": 0.0025,
+    "dice": 1
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.10,
+    "cashback": 0.0025,
+    "dice": 1
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.10,
+    "cashback": 0.0025,
+    "dice": 1
+}, {
+    "surprise": true,
+    "deposit_bonus": 0.10,
+    "cashback": 0.0025,
+    "dice": 1
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.10,
+    "cashback": 0.0025,
+    "dice": 1
+}, {
+    "surprise": false,
+    "status_update": true,
+    "deposit_bonus": 0.20,
+    "cashback": 0.0030,
+    "dice": 1
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.20,
+    "cashback": 0.0030,
+    "dice": 1
+}, {
+    "surprise": true,
+    "deposit_bonus": 0.20,
+    "cashback": 0.0030,
+    "dice": 1
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.20,
+    "cashback": 0.0030,
+    "dice": 1
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.20,
+    "cashback": 0.0030,
+    "dice": 1
+}, {
+    "surprise": true,
+    "deposit_bonus": 0.20,
+    "cashback": 0.0030,
+    "dice": 1
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.20,
+    "cashback": 0.0030,
+    "dice": 1
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.20,
+    "cashback": 0.0030,
+    "dice": 1
+}, {
+    "surprise": true,
+    "deposit_bonus": 0.20,
+    "cashback": 0.0030,
+    "dice": 1
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.20,
+    "cashback": 0.0030,
+    "dice": 1
+}, {
+    "surprise": false,
+    "status_update": true,
+    "deposit_bonus": 0.30,
+    "cashback": 0.0035,
+    "dice": 2
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.30,
+    "cashback": 0.0035,
+    "dice": 2
+}, {
+    "surprise": true,
+    "deposit_bonus": 0.30,
+    "cashback": 0.0035,
+    "dice": 2
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.30,
+    "cashback": 0.0035,
+    "dice": 2
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.30,
+    "cashback": 0.0035,
+    "dice": 2
+}, {
+    "surprise": true,
+    "deposit_bonus": 0.30,
+    "cashback": 0.0035,
+    "dice": 2
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.30,
+    "cashback": 0.0035,
+    "dice": 2
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.30,
+    "cashback": 0.0035,
+    "dice": 2
+}, {
+    "surprise": true,
+    "deposit_bonus": 0.30,
+    "cashback": 0.0035,
+    "dice": 2
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.30,
+    "cashback": 0.0035,
+    "dice": 2
+}, {
+    "surprise": false,
+    "status_update": true,
+    "deposit_bonus": 0.40,
+    "cashback": 0.0040,
+    "dice": 2
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.40,
+    "cashback": 0.0040,
+    "dice": 2
+}, {
+    "surprise": true,
+    "deposit_bonus": 0.40,
+    "cashback": 0.0040,
+    "dice": 2
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.40,
+    "cashback": 0.0040,
+    "dice": 2
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.40,
+    "cashback": 0.0040,
+    "dice": 2
+}, {
+    "surprise": true,
+    "deposit_bonus": 0.40,
+    "cashback": 0.0040,
+    "dice": 2
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.40,
+    "cashback": 0.0040,
+    "dice": 2
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.40,
+    "cashback": 0.0040,
+    "dice": 2
+}, {
+    "surprise": true,
+    "deposit_bonus": 0.40,
+    "cashback": 0.0040,
+    "dice": 2
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.40,
+    "cashback": 0.0040,
+    "dice": 2
+}, {
+    "surprise": false,
+    "status_update": true,
+    "deposit_bonus": 0.50,
+    "cashback": 0.0050,
+    "dice": 2
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.50,
+    "cashback": 0.0050,
+    "dice": 2
+}, {
+    "surprise": true,
+    "deposit_bonus": 0.50,
+    "cashback": 0.0050,
+    "dice": 2
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.50,
+    "cashback": 0.0050,
+    "dice": 2
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.50,
+    "cashback": 0.0050,
+    "dice": 2
+}, {
+    "surprise": true,
+    "deposit_bonus": 0.50,
+    "cashback": 0.0050,
+    "dice": 2
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.50,
+    "cashback": 0.0050,
+    "dice": 2
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.50,
+    "cashback": 0.0050,
+    "dice": 2
+}, {
+    "surprise": true,
+    "deposit_bonus": 0.50,
+    "cashback": 0.0050,
+    "dice": 2
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.50,
+    "cashback": 0.0050,
+    "dice": 2
+}, {
+    "surprise": false,
+    "status_update": true,
+    "deposit_bonus": 0.60,
+    "cashback": 0.0055,
+    "dice": 3
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.60,
+    "cashback": 0.0055,
+    "dice": 3
+}, {
+    "surprise": true,
+    "deposit_bonus": 0.60,
+    "cashback": 0.0055,
+    "dice": 3
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.60,
+    "cashback": 0.0055,
+    "dice": 3
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.60,
+    "cashback": 0.0055,
+    "dice": 3
+}, {
+    "surprise": true,
+    "deposit_bonus": 0.60,
+    "cashback": 0.0055,
+    "dice": 3
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.60,
+    "cashback": 0.0055,
+    "dice": 3
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.60,
+    "cashback": 0.0055,
+    "dice": 3
+}, {
+    "surprise": true,
+    "deposit_bonus": 0.60,
+    "cashback": 0.0055,
+    "dice": 3
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.60,
+    "cashback": 0.0055,
+    "dice": 3
+}, {
+    "surprise": false,
+    "status_update": true,
+    "deposit_bonus": 0.70,
+    "cashback": 0.0060,
+    "dice": 3
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.70,
+    "cashback": 0.0060,
+    "dice": 3
+}, {
+    "surprise": true,
+    "deposit_bonus": 0.70,
+    "cashback": 0.0060,
+    "dice": 3
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.70,
+    "cashback": 0.0060,
+    "dice": 3
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.70,
+    "cashback": 0.0060,
+    "dice": 3
+}, {
+    "surprise": true,
+    "deposit_bonus": 0.70,
+    "cashback": 0.0060,
+    "dice": 3
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.70,
+    "cashback": 0.0060,
+    "dice": 3
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.70,
+    "cashback": 0.0060,
+    "dice": 3
+}, {
+    "surprise": true,
+    "deposit_bonus": 0.70,
+    "cashback": 0.0060,
+    "dice": 3
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.70,
+    "cashback": 0.0060,
+    "dice": 3
+}, {
+    "surprise": false,
+    "status_update": true,
+    "deposit_bonus": 0.80,
+    "cashback": 0.0070,
+    "dice": 3
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.80,
+    "cashback": 0.0070,
+    "dice": 3
+}, {
+    "surprise": true,
+    "deposit_bonus": 0.80,
+    "cashback": 0.0070,
+    "dice": 3
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.80,
+    "cashback": 0.0070,
+    "dice": 3
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.80,
+    "cashback": 0.0070,
+    "dice": 3
+}, {
+    "surprise": true,
+    "deposit_bonus": 0.80,
+    "cashback": 0.0070,
+    "dice": 3
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.80,
+    "cashback": 0.0070,
+    "dice": 3
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.80,
+    "cashback": 0.0070,
+    "dice": 3
+}, {
+    "surprise": true,
+    "deposit_bonus": 0.80,
+    "cashback": 0.0070,
+    "dice": 3
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.80,
+    "cashback": 0.0070,
+    "dice": 3
+}, {
+    "surprise": false,
+    "status_update": true,
+    "deposit_bonus": 0.90,
+    "cashback": 0.0080,
+    "dice": 4
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.90,
+    "cashback": 0.0080,
+    "dice": 4
+}, {
+    "surprise": true,
+    "deposit_bonus": 0.90,
+    "cashback": 0.0080,
+    "dice": 4
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.90,
+    "cashback": 0.0080,
+    "dice": 4
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.90,
+    "cashback": 0.0080,
+    "dice": 4
+}, {
+    "surprise": true,
+    "deposit_bonus": 0.90,
+    "cashback": 0.0080,
+    "dice": 4
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.90,
+    "cashback": 0.0080,
+    "dice": 4
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.90,
+    "cashback": 0.0080,
+    "dice": 4
+}, {
+    "surprise": true,
+    "deposit_bonus": 0.90,
+    "cashback": 0.0080,
+    "dice": 4
+}, {
+    "surprise": false,
+    "deposit_bonus": 0.90,
+    "cashback": 0.0080,
+    "dice": 4
+}, {
+    "surprise": false,
+    "status_update": true,
+    "deposit_bonus": 1,
+    "cashback": 0.0090,
+    "dice": 4
+}, {
+    "surprise": false,
+    "deposit_bonus": 1,
+    "cashback": 0.0090,
+    "dice": 4
+}, {
+    "surprise": true,
+    "deposit_bonus": 1,
+    "cashback": 0.0090,
+    "dice": 4
+}, {
+    "surprise": false,
+    "deposit_bonus": 1,
+    "cashback": 0.0090,
+    "dice": 4
+}, {
+    "surprise": false,
+    "deposit_bonus": 1,
+    "cashback": 0.0090,
+    "dice": 4
+}, {
+    "surprise": true,
+    "deposit_bonus": 1,
+    "cashback": 0.0090,
+    "dice": 4
+}, {
+    "surprise": false,
+    "deposit_bonus": 1,
+    "cashback": 0.0090,
+    "dice": 4
+}, {
+    "surprise": false,
+    "deposit_bonus": 1,
+    "cashback": 0.0090,
+    "dice": 4
+}, {
+    "surprise": true,
+    "deposit_bonus": 1,
+    "cashback": 0.0090,
+    "dice": 4
+}, {
+    "surprise": false,
+    "deposit_bonus": 1,
+    "cashback": 0.0090,
+    "dice": 4
+}, {
+    "surprise": false,
+    "status_update": true,
+    "deposit_bonus": 1.25,
+    "cashback": 0.01,
+    "dice": 4
+}, {
+    "surprise": false,
+    "deposit_bonus": 1.25,
+    "cashback": 0.01,
+    "dice": 4
+}, {
+    "surprise": true,
+    "deposit_bonus": 1.25,
+    "cashback": 0.01,
+    "dice": 4
+}, {
+    "surprise": false,
+    "deposit_bonus": 1.25,
+    "cashback": 0.01,
+    "dice": 4
+}, {
+    "surprise": false,
+    "deposit_bonus": 1.25,
+    "cashback": 0.01,
+    "dice": 4
+}, {
+    "surprise": true,
+    "deposit_bonus": 1.25,
+    "cashback": 0.01,
+    "dice": 4
+}, {
+    "surprise": false,
+    "deposit_bonus": 1.25,
+    "cashback": 0.01,
+    "dice": 4
+}, {
+    "surprise": false,
+    "deposit_bonus": 1.25,
+    "cashback": 0.01,
+    "dice": 4
+}, {
+    "surprise": true,
+    "deposit_bonus": 1.25,
+    "cashback": 0.01,
+    "dice": 4
+}, {
+    "surprise": false,
+    "deposit_bonus": 1.25,
+    "cashback": 0.01,
+    "dice": 4
+}, {
+    "surprise": false,
+    "deposit_bonus": 1.25,
+    "cashback": 0.01,
+    "dice": 4
+}]

@@ -1,0 +1,161 @@
+<div id="home">
+
+    <div class="container">
+                
+        <div class="top">
+            <form novalidate role="form" class="hidden-xs">
+                <div class="form-group">
+                    <input type="text" class="form-control" ng-model="user.firstName" placeholder="{{ 'FIRST NAME' | translate }}">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" ng-model="user.lastName" placeholder="{{ 'LAST NAME' | translate }}">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" ng-model="user.emailAddress" placeholder="{{ 'EMAIL' | translate }}">
+                </div>
+                <div class="form-group">
+                    <a href="#/register" class="btn btn-contrast btn-lg btn-block" translate>Sign up now</a>
+                </div>
+            </form>
+            
+            <div class="visible-xs btn-container">
+                <a href="#/register" class="btn btn-contrast btn-lg btn-block" translate>Sign up now</a>
+            </div>
+
+        </div>
+
+        <div class="row character-sheet" resizable>
+
+            <div class="col-xs-10 col-xs-offset-2" ng-hide="windowWidth < 768">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="character">
+                            <div class="photo character-citizen-3"></div>
+                            <div class="pane">
+                                <h5 translate>Harvey Goodlife</h5>
+                                <p>"{{getCharacterDescription(3)}}"</p>
+                                <div class="bottom">
+                                    <a href="#/register" class="btn btn-sm btn-primary" translate>Pick me</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="character">
+                            <div class="photo character-citizen-4"></div>
+                            <div class="pane">
+                                <h5 translate>Mr Vegas</h5>
+                                <p>"{{getCharacterDescription(4)}}"</p>
+                                <div class="bottom">
+                                    <a href="#/register" class="btn btn-sm btn-primary" translate>Pick me</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="character">
+                            <div class="photo character-citizen-8"></div>
+                            <div class="pane">
+                                <h5 translate>The DJ</h5>
+                                <p>"{{getCharacterDescription(8)}}"</p>
+                                <div class="bottom">
+                                    <a href="#/register" class="btn btn-sm btn-primary" translate>Pick me</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="character">
+                            <div class="photo character-citizen-5"></div>
+                            <div class="pane">
+                                <h5 translate>Mr Wallstreet</h5>
+                                <p>"{{getCharacterDescription(5)}}"</p>
+                                <div class="bottom">
+                                    <a href="#/register" class="btn btn-sm btn-primary" translate>Pick me</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="character">
+                            <div class="photo character-citizen-9"></div>
+                            <div class="pane">
+                                <h5 translate>The Driver</h5>
+                                <p>"{{getCharacterDescription(9)}}"</p>
+                                <div class="bottom">
+                                    <a href="#/register" class="btn btn-sm btn-primary" translate>Pick me</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="character">
+                            <div class="photo character-citizen-1"></div>
+                            <div class="pane">
+                                <h5 translate>Cosmogirl</h5>
+                                <p>"{{getCharacterDescription(1)}}"</p>
+                                <div class="bottom">
+                                    <a href="#/register" class="btn btn-sm btn-primary" translate>Pick me</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="character">
+                            <div class="photo character-citizen-2"></div>
+                            <div class="pane">
+                                <h5 translate>Fashionista</h5>
+                                <p>"{{getCharacterDescription(2)}}"</p>
+                                <div class="bottom">
+                                    <a href="#/register" class="btn btn-sm btn-primary" translate>Pick me</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="character">
+                            <div class="photo character-citizen-7"></div>
+                            <div class="pane">
+                                <h5 translate>Slotmachine Betty</h5>
+                                <p>"{{getCharacterDescription(7)}}"</p>
+                                <div class="bottom">
+                                    <a href="#/register" class="btn btn-sm btn-primary" translate>Pick me</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="character">
+                            <div class="photo character-citizen-6"></div>
+                            <div class="pane">
+                                <h5 translate>Rocker</h5>
+                                <p>"{{getCharacterDescription(6)}}"</p>
+                                <div class="bottom">
+                                    <a href="#/register" class="btn btn-sm btn-primary" translate>Pick me</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="character">
+                            <div class="photo character-citizen-10"></div>
+                            <div class="pane">
+                                <h5 translate>Yacht Club William</h5>
+                                <p>"{{getCharacterDescription(10)}}"</p>
+                                <div class="bottom">
+                                    <a href="#/register" class="btn btn-sm btn-primary" translate>Pick me</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 char-slider" ng-controller="sliderCtrl" ng-hide="windowWidth > 767">
+                <carousel interval="myInterval">
+                    <slide ng-repeat="slide in slides" active="slide.active">
+                        <div class="character">
+                            <div class="photo character-citizen-{{slide.index}}"></div>
+                            <div class="pane">
+                                <h5 translate>{{slide.title}}</h5>
+                                <p>"{{slide.text}}"</p>
+                                <div class="bottom">
+                                    <a href="#/register" class="btn btn-sm btn-primary" translate>Pick me</a>
+                                </div>
+                            </div>
+                        </div>
+                    </slide>
+                </carousel>
+            </div>
+
+            <div class="visible-xs btn-container">
+                <a href="#/register" class="btn btn-contrast btn-lg btn-block" translate>Sign up now</a>
+            </div>
+
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,89 @@
+[
+    {
+        "slug": "mr-wallstreet",
+        "name": "Mr Wallstreet",
+        "gender": "m",
+        "description": "Mr Wallstreet has years playing in Las Vegas casinos. You can go wrong with her! You can go wrong with her!",
+        "options": {
+            "hair": {
+                "label": "Hair",
+                "items": [
+                    "dcc894",
+                    "766662",
+                    "6c4d45",
+                    "161616"
+                ]
+            },
+            "skin": {
+                "label": "Skin",
+                "items": [
+                    "f1c9be",
+                    "474747"
+                ]
+            }
+        }
+    },
+    {
+        "slug": "rocker-girl",
+        "name": "Rocker Girl",
+        "gender": "f",
+        "description": "Rocker Girl might be a rocker but she spent years playing in Las Vegas casinos. You can go wrong with her! You can go wrong with her!",
+        "options": {
+            "hair": {
+                "label": "Hair",
+                "items": [
+                    "161616"
+                ]
+            },
+            "skin": {
+                "label": "Skin",
+                "items": [
+                    "474747"
+                ]
+            }
+        }
+    },
+    {
+        "slug": "slot-machine-betty",
+        "name": "Slot Machine Betty",
+        "gender": "f",
+        "description": "Slot lady might be old but has lots of experience playing slots. She spent years playing in Las Vegas casinos. You can go wrong with her! You can go wrong with her!",
+        "options": {
+            "hair": {
+                "label": "Hair",
+                "items": [
+                    "dcc894",
+                    "766662",
+                    "6c4d45"
+                ]
+            },
+            "skin": {
+                "label": "Skin",
+                "items": [
+                    "f1c9be",
+                    "474747"
+                ]
+            }
+        }
+    },
+    {
+        "slug": "harvey-goodlife",
+        "name": "Harvey Goodlife",
+        "gender": "m",
+        "description": "Harvey Goodlife knows how to have a good life. She spent years playing in Las Vegas casinos. You can go wrong with her! You can go wrong with her!",
+        "options": {
+            "hair": {
+                "label": "Hair",
+                "items": [
+                    "dcc894"
+                ]
+            },
+            "skin": {
+                "label": "Skin",
+                "items": [
+                    "474747"
+                ]
+            }
+        }
+    }
+]
